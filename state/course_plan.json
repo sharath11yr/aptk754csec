@@ -1,0 +1,61 @@
+{
+ "active": [
+  "Cybersecurity Basics",
+  "Networking for Security",
+  "Linux for Hackers",
+  "Ethical Hacking",
+  "Web Application Security",
+  "Cryptography",
+  "Defensive Security",
+  "Cloud and Mobile Security",
+  "Malware Analysis",
+  "Careers and Certifications"
+ ],
+ "queue": [
+  "Advanced Penetration Testing",
+  "Active Directory Security",
+  "Wireless Security",
+  "Digital Forensics",
+  "Reverse Engineering",
+  "Red Teaming",
+  "DevSecOps",
+  "Zero Trust Security",
+  "Threat Intelligence",
+  "Security for AI and LLM apps",
+  "Python for Hackers",
+  "API Security",
+  "Social Engineering Defense",
+  "Security Compliance and Laws",
+  "Blockchain Security"
+ ],
+ "done": [],
+ "lessons": {
+  "Cybersecurity Basics": [
+   "Lesson 1: What is Cybersecurity? - Definition and Importance",
+   "Lesson 2: The Evolution of Cyber Threats - From Viruses to APTs",
+   "Lesson 3: Understanding the CIA Triad - Confidentiality, Integrity, Availability",
+   "Lesson 4: The CIA Triad in Action - Real World Examples",
+   "Lesson 5: Types of Hackers - White, Grey, and Black Hat",
+   "Lesson 6: Script Kiddies vs. State-Sponsored Actors",
+   "Lesson 7: Common Cyber Attacks Overview - The Big Picture",
+   "Lesson 8: Introduction to Malware - How it Infects Systems",
+   "Lesson 9: Viruses and Worms - The Classic Threats",
+   "Lesson 10: Trojans and Backdoors - The Silent Invaders",
+   "Lesson 11: Ransomware - The Modern Nightmare",
+   "Lesson 12: Understanding Phishing - The Art of the Deception",
+   "Lesson 13: Deep Dive into Social Engineering - Psychology of Attack",
+   "Lesson 14: Password Security - Why Simple Passwords Fail",
+   "Lesson 15: How Passwords are Cracked - Brute Force and Dictionary",
+   "Lesson 16: Password Protection - Hashing and Salting Explained",
+   "Lesson 17: Introduction to Two-Factor Authentication (2FA)",
+   "Lesson 18: Types of 2FA - SMS, Authenticator Apps, and Hardware Keys",
+   "Lesson 19: Bypassing 2FA - Common Attack Vectors",
+   "Lesson 20: Safe Browsing - Recognizing Secure Websites (HTTPS)",
+   "Lesson 21: Public Wi-Fi Risks - Why you should avoid it or use a VPN",
+   "Lesson 22: What is a VPN? - How it Works and Why you Need One",
+   "Lesson 23: Software Updates and Patch Management",
+   "Lesson 24: Safe Downloading - Avoiding Malicious Software",
+   "Lesson 25: Course Recap and Next Steps for Beginners"
+  ]
+ }
+}
