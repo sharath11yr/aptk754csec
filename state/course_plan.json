@@ -109,6 +109,30 @@
    "Intro to shell customization: .bashrc",
    "Intro to cron jobs: scheduling tasks",
    "Security basics: sudo and su"
+  ],
+  "Ethical Hacking": [
+   "What is Ethical Hacking and the Law (Part 1): Definitions and Scope",
+   "What is Ethical Hacking and the Law (Part 2): Understanding Legal Frameworks and Ethics",
+   "The Hacking Methodology: The 7 Phases Explained",
+   "Phase 1: Reconnaissance (Part 1): Passive Information Gathering",
+   "Phase 1: Reconnaissance (Part 2): Active Information Gathering",
+   "Phase 2: Scanning (Part 1): Network Scanning Fundamentals",
+   "Phase 2: Scanning (Part 2): Port Scanning with Nmap Basics",
+   "Phase 2: Scanning (Part 3): OS Detection and Version Detection",
+   "Phase 3: Enumeration (Part 1): SMB and Service Enumeration",
+   "Phase 3: Enumeration (Part 2): DNS and SNMP Enumeration",
+   "Vulnerability Scanning (Part 1): Introduction to Automated Scanners",
+   "Vulnerability Scanning (Part 2): Running Your First Scan with Nmap Scripts",
+   "Vulnerability Scanning (Part 3): Interpreting Results and False Positives",
+   "Exploitation Basics (Part 1): Understanding Payloads and Shells",
+   "Exploitation Basics (Part 2): Introduction to the Metasploit Framework",
+   "Exploitation Basics (Part 3): Using Metasploit to Launch an Attack",
+   "Privilege Escalation (Part 1): Local Privilege Escalation Concepts",
+   "Privilege Escalation (Part 2): Windows Privilege Escalation Techniques",
+   "Privilege Escalation (Part 3): Linux Privilege Escalation Techniques",
+   "Post-Exploitation (Part 1): Maintaining Access and Persistence",
+   "Post-Exploitation (Part 2): Data Exfiltration and Cleanup",
+   "Reporting and Documentation: How to Write a Professional Pen Test Report"
   ]
  }
 }
