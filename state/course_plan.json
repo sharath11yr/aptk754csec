@@ -56,6 +56,33 @@
    "Lesson 23: Software Updates and Patch Management",
    "Lesson 24: Safe Downloading - Avoiding Malicious Software",
    "Lesson 25: Course Recap and Next Steps for Beginners"
+  ],
+  "Networking for Security": [
+   "Lesson 1: The Internet as a Network of Networks (An Analogy)",
+   "Lesson 2: IP Addresses - The Digital Postal Address",
+   "Lesson 3: IPv4 vs IPv6 - The Address Evolution",
+   "Lesson 4: How Data Travels - The Concept of Packets",
+   "Lesson 5: Ports - The Building Entrances",
+   "Lesson 6: Common Ports Every Hacker Must Know (Top 20)",
+   "Lesson 7: The OSI Model - The 7-Layer Security Framework",
+   "Lesson 8: The TCP/IP Model - The Practical 4-Layer Stack",
+   "Lesson 9: The Transport Layer - TCP vs UDP Explained",
+   "Lesson 10: The Three-Way Handshake - Establishing a Connection",
+   "Lesson 11: The Four-Way Handshake - Closing a Connection",
+   "Lesson 12: Understanding Flags - SYN, ACK, FIN, RST",
+   "Lesson 13: DNS - The Phonebook of the Internet",
+   "Lesson 14: How DNS Resolution Works Step-by-Step",
+   "Lesson 15: DNS Spoofing and Cache Poisoning Attacks",
+   "Lesson 16: Introduction to Firewalls - The Digital Gatekeeper",
+   "Lesson 17: Packet Filtering Firewalls - The Security Guard",
+   "Lesson 18: Stateful Inspection - Tracking Connection State",
+   "Lesson 19: Application Layer Firewalls - Deep Packet Inspection",
+   "Lesson 20: What is a VPN? - Creating a Secure Tunnel",
+   "Lesson 21: How VPNs Hide Your IP and Encrypt Traffic",
+   "Lesson 22: Proxy Servers - The Middleman Approach",
+   "Lesson 23: Wireshark Introduction - Capturing Live Traffic",
+   "Lesson 24: Analyzing a TCP Handshake in Wireshark",
+   "Lesson 25: Identifying Malicious Packets using Wireshark"
   ]
  }
 }
