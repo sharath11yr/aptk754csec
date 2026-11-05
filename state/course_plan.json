@@ -83,6 +83,32 @@
    "Lesson 23: Wireshark Introduction - Capturing Live Traffic",
    "Lesson 24: Analyzing a TCP Handshake in Wireshark",
    "Lesson 25: Identifying Malicious Packets using Wireshark"
+  ],
+  "Linux for Hackers": [
+   "Why Linux for cybersecurity",
+   "Linux file system hierarchy explained",
+   "Navigating the terminal: pwd, cd, ls",
+   "Essential navigation commands: mkdir, rmdir, touch",
+   "Viewing and editing files: cat, less, nano",
+   "File manipulation commands: cp, mv, rm",
+   "Understanding file permissions: chmod, chown, chgrp",
+   "Users and groups: useradd, userdel, usermod",
+   "Advanced permissions: SUID, SGID, Sticky bit",
+   "Process management: ps, top, kill",
+   "Service management: systemctl start, stop, status",
+   "Bash scripting basics: variables and echo",
+   "Bash scripting basics: conditionals (if/else)",
+   "Bash scripting basics: loops (for, while)",
+   "Intro to Kali Linux: tools and interface",
+   "Networking fundamentals: ifconfig, ip addr",
+   "Networking fundamentals: ping, traceroute",
+   "Intro to networking tools: netstat, ss",
+   "Searching and grepping: grep, find",
+   "File permissions workshop: practice lab",
+   "Process management workshop: practice lab",
+   "Intro to shell customization: .bashrc",
+   "Intro to cron jobs: scheduling tasks",
+   "Security basics: sudo and su"
   ]
  }
 }
