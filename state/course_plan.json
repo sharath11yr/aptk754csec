@@ -165,6 +165,30 @@
    "Lesson 28: Secure Coding Practices - Authentication Best Practices",
    "Lesson 29: Secure Coding Practices - Error Handling and Logging",
    "Lesson 30: Course Conclusion and Capstone Project Guide"
+  ],
+  "Cryptography": [
+   "What is Cryptography? An Introduction to Secure Communication",
+   "Symmetric Encryption: Understanding the Secret Key Model",
+   "Symmetric Encryption: The Caesar Cipher and Substitution",
+   "Symmetric Encryption: Modern Standards - AES Explained",
+   "Symmetric Encryption: Modes of Operation - ECB and CBC",
+   "Symmetric Encryption: Modes of Operation - CTR and GCM",
+   "Asymmetric Encryption: The Trapdoor Function Concept",
+   "Asymmetric Encryption: How RSA Works - Key Generation",
+   "Asymmetric Encryption: How RSA Works - Encryption and Decryption",
+   "Asymmetric Encryption: RSA vs ECC - Understanding Key Sizes",
+   "Hashing: What is a Cryptographic Hash Function?",
+   "Hashing: The Avalanche Effect and Collision Resistance",
+   "Hashing: SHA-256 Walkthrough and Applications",
+   "Digital Signatures: Signing and Verifying Messages",
+   "Digital Signatures: How They Relate to Asymmetric Encryption",
+   "Certificates and HTTPS: The Problem of Trust on the Internet",
+   "Certificates and HTTPS: Public Key Infrastructure (PKI) Explained",
+   "Certificates and HTTPS: How a Browser Verifies a Certificate",
+   "Certificates and HTTPS: The Handshake Process (TLS/SSL)",
+   "Common Crypto Mistakes: Hardcoding Secrets",
+   "Common Crypto Mistakes: Using Broken Algorithms (MD5, DES)",
+   "Common Crypto Mistakes: Not Using Authenticated Encryption"
   ]
  }
 }
