@@ -133,6 +133,38 @@
    "Post-Exploitation (Part 1): Maintaining Access and Persistence",
    "Post-Exploitation (Part 2): Data Exfiltration and Cleanup",
    "Reporting and Documentation: How to Write a Professional Pen Test Report"
+  ],
+  "Web Application Security": [
+   "Lesson 1: How Web Applications Work - Client-Server Model",
+   "Lesson 2: How Web Applications Work - HTTP Request-Response Cycle",
+   "Lesson 3: How Web Applications Work - HTML, CSS, and JavaScript Basics",
+   "Lesson 4: OWASP Top 10 - Introduction and Overview",
+   "Lesson 5: OWASP Top 10 - A01:2021 Broken Access Control",
+   "Lesson 6: OWASP Top 10 - A02:2021 Cryptographic Failures",
+   "Lesson 7: OWASP Top 10 - A03:2021 Injection (Part 1: Concepts)",
+   "Lesson 8: OWASP Top 10 - A03:2021 Injection (Part 2: SQL Theory)",
+   "Lesson 9: SQL Injection - Practical Lab: Basic String Concatenation",
+   "Lesson 10: SQL Injection - Practical Lab: Using Single Quotes to Break Logic",
+   "Lesson 11: SQL Injection - Practical Lab: Bypassing Authentication (OR 1=1)",
+   "Lesson 12: SQL Injection - Advanced: Union-Based Extraction",
+   "Lesson 13: SQL Injection - Advanced: Error-Based Extraction",
+   "Lesson 14: SQL Injection - Advanced: Blind SQL Injection (Part 1)",
+   "Lesson 15: SQL Injection - Advanced: Blind SQL Injection (Part 2)",
+   "Lesson 16: Cross-Site Scripting (XSS) - Introduction and Types",
+   "Lesson 17: XSS - Reflected XSS: The Mechanics of the Attack",
+   "Lesson 18: XSS - Stored XSS: Persistent Threats and Victim Impact",
+   "Lesson 19: XSS - DOM-Based XSS: Client-Side Vulnerabilities",
+   "Lesson 20: CSRF - Cross-Site Request Forgery: How It Works",
+   "Lesson 21: Broken Authentication - Password Weakness and Brute Force",
+   "Lesson 22: Broken Authentication - Session Management Issues",
+   "Lesson 23: File Upload Vulnerabilities - Bypassing Filename Restrictions",
+   "Lesson 24: File Upload Vulnerabilities - Executing Uploaded Scripts",
+   "Lesson 25: Burp Suite Basics - Intercepting and Modifying Requests",
+   "Lesson 26: Secure Coding Practices - Input Validation Strategies",
+   "Lesson 27: Secure Coding Practices - Output Encoding and Escaping",
+   "Lesson 28: Secure Coding Practices - Authentication Best Practices",
+   "Lesson 29: Secure Coding Practices - Error Handling and Logging",
+   "Lesson 30: Course Conclusion and Capstone Project Guide"
   ]
  }
 }
