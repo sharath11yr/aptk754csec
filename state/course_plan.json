@@ -216,6 +216,32 @@
    "Lesson 23: Security Hardening - Operating System Basics",
    "Lesson 24: Security Hardening - Service and Application Hardening",
    "Lesson 25: Course Conclusion and Career Pathways in Defensive Security"
+  ],
+  "Cloud and Mobile Security": [
+   "Cloud Security Basics: Understanding the Shared Responsibility Model",
+   "Cloud Security Basics: The CIA Triad in Cloud Context",
+   "Cloud Security Basics: Types of Cloud Services (IaaS, PaaS, SaaS) Explained",
+   "Cloud Security Basics: Types of Cloud Deployment Models",
+   "AWS Security Essentials: IAM Users vs IAM Roles",
+   "AWS Security Essentials: Creating and Attaching IAM Policies",
+   "AWS Security Essentials: Understanding AWS Root Account Risks",
+   "AWS Security Essentials: Enabling MFA for Root and IAM Users",
+   "AWS Security Essentials: AWS Security Groups vs Network ACLs",
+   "AWS Security Essentials: Introduction to AWS Shield and WAF",
+   "Mobile App Security: Threat Modeling for Mobile Applications",
+   "Mobile App Security: OWASP Top 10 Mobile Risks (Part 1)",
+   "Mobile App Security: OWASP Top 10 Mobile Risks (Part 2)",
+   "Mobile App Security: Secure Data Storage on iOS and Android",
+   "Mobile App Security: Authentication and Session Management",
+   "IoT Security: Understanding the IoT Attack Surface",
+   "IoT Security: Default Credentials and How to Change Them",
+   "IoT Security: Network Segmentation for IoT Devices",
+   "IoT Security: OTA (Over-The-Air) Update Security",
+   "IoT Security: Physical Security and Physical Tampering",
+   "Cloud Security Advanced: Cloud Native Security Tools and CSPM",
+   "Cloud Security Advanced: Incident Response in the Cloud",
+   "Mobile Security Advanced: Reverse Engineering Mobile Apps (Legal/Ethical Context)",
+   "IoT Security Advanced: Botnets and Mirai Malware Analysis"
   ]
  }
 }
