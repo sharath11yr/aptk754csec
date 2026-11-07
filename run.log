@@ -1,0 +1,126 @@
+2026-11-07 10:01:20,609 INFO Already scheduled: ['2026-11-07T12:00:00+05:30', '2026-11-07T18:00:00+05:30', '2026-11-08T12:00:00+05:30']
+2026-11-07 10:01:24,421 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 10:01:24,422 INFO Next lesson: Cloud and Mobile Security #1 - Cloud Security Basics: Understanding the Shared Responsibility Model
+2026-11-07 10:01:44,571 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 10:02:08,499 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 10:02:41,100 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 10:02:41,100 INFO Review fix: In the IaaS section, the script states the provider is responsible for 'the servers themselves'. This is misleading. The provider secures the physical hardware, but the server hardware is part of the physical infrastructure. The correct phrasing should specify the physical data center and the underlying hardware, not the server as a customer-facing entity.
+2026-11-07 10:02:41,100 INFO Review fix: In the PaaS section, the script says the provider is responsible for the 'middleware'. While often true, PaaS responsibility can vary; it is safer and more accurate to say the provider manages the runtime and platform services, leaving middleware responsibility nuanced. I have updated the text to focus on the runtime and underlying OS.
+2026-11-07 10:02:41,100 INFO Review fix: In the SaaS section, the script states the provider is responsible for 'the data transmission'. While providers secure the transport, the customer is often responsible for data encryption at rest or in transit depending on the contract. I have refined this to 'data transmission security' but added a note that customers must manage encryption keys if required.
+2026-11-07 10:02:41,100 INFO Review fix: In the IaaS example code block, the command `sudo apt-get update` is followed by `sudo apt-get upgrade`. The script implies these are the only steps, but `apt-get upgrade` can sometimes change dependencies or break configurations. For a strict security lesson, `apt-get dist-upgrade` or a specific security patch command is more appropriate to avoid unintended side effects. I have updated the example to use `apt-get update && apt-get upgrade -y` and added a comment about testing in a staging environment.
+2026-11-07 10:02:41,100 INFO Review fix: In the PaaS example, the script says the provider will patch vulnerabilities in the 'underlying Python runtime'. This is generally true, but the provider patches the runtime environment, not necessarily the specific Python version's security flaws if the customer brings their own runtime. I clarified that the provider patches the platform's supported runtime.
+2026-11-07 10:02:41,100 INFO Review fix: In the SaaS example script, the administrator writes a script to enforce password policies. The line `They might write a script to enforce that passwords must be at least 12 characters long and changed every 90 days` is a simplification. Modern best practices (like NIST) actually recommend against forced periodic password changes as they lead to weaker passwords. I updated the example to focus on password complexity and the use of a password manager, or simply state the administrator configures the policy via the admin console.
+2026-11-07 10:02:41,100 INFO Review fix: In the 'Under the hood' section for IaaS, the script says the provider 'secures the hypervisor'. While true, the hypervisor is the software layer. The provider secures the host OS and the hypervisor configuration. I refined the language to: 'The provider secures the hypervisor and the host operating system.'
+2026-11-07 10:02:41,100 INFO Review fix: In the 'Under the hood' section for PaaS, the script describes containers as 'lightweight boxes'. This is a good analogy, but technically, a container is a process isolation technique using kernel namespaces and cgroups. For a professor script, the analogy is fine, but I added a brief technical footnote clarifying that containers share the host kernel.
+2026-11-07 10:02:41,101 INFO Review fix: In the Common Mistakes section, the script says a service might be 'compliant with laws like GDPR, meaning they have certain controls in place'. GDPR is a regulation, not a compliance standard like ISO 27001. I corrected this to say the service might be compliant with standards *to meet* GDPR requirements.
+2026-11-07 10:02:41,101 INFO Review fix: In the Common Mistakes section regarding the S3 bucket example, the script says the bucket is 'compliant' but permissions are public. This is a great example, but 'compliant' is the wrong word here. Compliance refers to adhering to a standard. I changed the example to: 'You might have an S3 bucket configured according to company policy, but if you accidentally set the bucket permissions to public...'
+2026-11-07 10:02:44,009 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-07 10:02:44,009 INFO YouTube title: Cloud Security Basics: Understanding the Shared Responsibility Model | Cloud and Mobile Security Cou
+2026-11-07 10:02:45,577 INFO Created notebook c9f99e35-25b2-455c-b365-4b7eaf2416d5
+2026-11-07 10:02:49,795 INFO Script added as source
+2026-11-07 10:02:53,586 INFO Started cinematic video generation (task b5421626-fda9-42bb-b4e6-1f9209093705)
+2026-11-07 10:02:53,587 INFO Waiting for cinematic video (can take 30+ minutes)
+2026-11-07 10:33:08,797 INFO Downloaded cinematic video to output/video_raw.mp4
+2026-11-07 10:33:12,484 INFO Started NotebookLM Short (task 320d3244-f198-49a2-aaca-f50c8d4f9ba1)
+2026-11-07 10:41:41,286 INFO Downloaded NotebookLM Short to output/short_raw.mp4
+2026-11-07 10:41:44,822 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-07 10:41:46,537 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-07 10:41:47,541 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-07 10:42:05,965 INFO Watermark removal: 0%
+2026-11-07 10:42:10,972 INFO Watermark removal: 1%
+2026-11-07 10:42:15,977 INFO Watermark removal: 3%
+2026-11-07 10:42:20,984 INFO Watermark removal: 5%
+2026-11-07 10:42:25,990 INFO Watermark removal: 7%
+2026-11-07 10:42:30,996 INFO Watermark removal: 9%
+2026-11-07 10:42:36,002 INFO Watermark removal: 11%
+2026-11-07 10:42:41,008 INFO Watermark removal: 13%
+2026-11-07 10:42:46,014 INFO Watermark removal: 15%
+2026-11-07 10:42:51,022 INFO Watermark removal: 17%
+2026-11-07 10:42:56,316 INFO Watermark removal: 19%
+2026-11-07 10:43:01,328 INFO Watermark removal: 21%
+2026-11-07 10:43:06,347 INFO Watermark removal: 23%
+2026-11-07 10:43:11,353 INFO Watermark removal: 25%
+2026-11-07 10:43:16,359 INFO Watermark removal: 27%
+2026-11-07 10:43:21,365 INFO Watermark removal: 29%
+2026-11-07 10:43:26,371 INFO Watermark removal: 31%
+2026-11-07 10:43:31,378 INFO Watermark removal: 33%
+2026-11-07 10:43:36,384 INFO Watermark removal: 35%
+2026-11-07 10:43:41,390 INFO Watermark removal: 37%
+2026-11-07 10:43:46,397 INFO Watermark removal: 38%
+2026-11-07 10:43:51,402 INFO Watermark removal: 40%
+2026-11-07 10:43:56,715 INFO Watermark removal: 42%
+2026-11-07 10:44:01,720 INFO Watermark removal: 43%
+2026-11-07 10:44:06,726 INFO Watermark removal: 45%
+2026-11-07 10:44:11,733 INFO Watermark removal: 47%
+2026-11-07 10:44:16,740 INFO Watermark removal: 49%
+2026-11-07 10:44:21,746 INFO Watermark removal: 51%
+2026-11-07 10:44:26,751 INFO Watermark removal: 53%
+2026-11-07 10:44:31,756 INFO Watermark removal: 55%
+2026-11-07 10:44:36,762 INFO Watermark removal: 57%
+2026-11-07 10:44:41,768 INFO Watermark removal: 59%
+2026-11-07 10:44:46,773 INFO Watermark removal: 61%
+2026-11-07 10:44:51,779 INFO Watermark removal: 63%
+2026-11-07 10:44:57,046 INFO Watermark removal: 64%
+2026-11-07 10:45:02,053 INFO Watermark removal: 66%
+2026-11-07 10:45:07,058 INFO Watermark removal: 68%
+2026-11-07 10:45:12,064 INFO Watermark removal: 70%
+2026-11-07 10:45:17,070 INFO Watermark removal: 71%
+2026-11-07 10:45:22,076 INFO Watermark removal: 72%
+2026-11-07 10:45:27,082 INFO Watermark removal: 74%
+2026-11-07 10:45:32,089 INFO Watermark removal: 76%
+2026-11-07 10:45:37,095 INFO Watermark removal: 78%
+2026-11-07 10:45:42,101 INFO Watermark removal: 80%
+2026-11-07 10:45:47,107 INFO Watermark removal: 82%
+2026-11-07 10:45:52,114 INFO Watermark removal: 83%
+2026-11-07 10:45:57,432 INFO Watermark removal: 86%
+2026-11-07 10:46:02,438 INFO Watermark removal: 88%
+2026-11-07 10:46:07,445 INFO Watermark removal: 90%
+2026-11-07 10:46:12,451 INFO Watermark removal: 92%
+2026-11-07 10:46:17,457 INFO Watermark removal: 94%
+2026-11-07 10:46:22,463 INFO Watermark removal: 96%
+2026-11-07 10:46:27,469 INFO Watermark removal: 98%
+2026-11-07 10:46:32,474 INFO Clicking 'Download Clean Video'
+2026-11-07 10:46:41,345 INFO Downloaded clean video after 293s
+2026-11-07 10:46:41,553 INFO Website result: {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 335.876644, 'has_audio': True} (original {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 338.918458, 'has_audio': True})
+2026-11-07 10:46:41,611 INFO Adding channel name watermark: GetYr_CYBERSEC
+2026-11-07 10:48:59,390 INFO Added intro + video_final_main + outro
+2026-11-07 10:48:59,390 INFO Edited video saved to output/video_final.mp4
+2026-11-07 10:48:59,576 INFO Thumbnail candidate at 0.5s: detail 33.1
+2026-11-07 10:48:59,773 INFO Thumbnail candidate at 1.0s: detail 34.8
+2026-11-07 10:48:59,982 INFO Thumbnail candidate at 1.5s: detail 36.0
+2026-11-07 10:49:00,209 INFO Thumbnail candidate at 2.0s: detail 38.1
+2026-11-07 10:49:00,449 INFO Thumbnail candidate at 2.5s: detail 40.5
+2026-11-07 10:49:00,697 INFO Thumbnail candidate at 3.0s: detail 40.8
+2026-11-07 10:49:00,951 INFO Thumbnail candidate at 3.5s: detail 41.2
+2026-11-07 10:49:01,213 INFO Thumbnail candidate at 4.0s: detail 40.8
+2026-11-07 10:49:01,505 INFO Thumbnail candidate at 5.0s: detail 40.6
+2026-11-07 10:49:01,557 INFO Thumbnail taken from the video at 3.5s -> output/thumbnail.jpg
+2026-11-07 10:49:03,915 INFO Upload 28%
+2026-11-07 10:49:04,065 INFO Upload 56%
+2026-11-07 10:49:04,215 INFO Upload 84%
+2026-11-07 10:49:05,127 INFO Uploaded: https://youtu.be/DEE9OqgXJnw (scheduled to go public at 2026-11-08 18:00 IST)
+2026-11-07 10:49:07,696 INFO Thumbnail set
+2026-11-07 10:49:08,447 INFO Created playlist: Cloud and Mobile Security Course - Beginner to Advanced
+2026-11-07 10:49:08,677 WARNING Could not add to playlist: <HttpError 409 when requesting https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&alt=json returned "The operation was aborted.". Details: "[{'domain': 'youtube.CoreErrorDomain', 'reason': 'SERVICE_UNAVAILABLE'}]">
+2026-11-07 10:49:11,577 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-07 10:49:13,223 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-07 10:49:14,226 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-07 10:49:17,249 INFO Watermark removal: 0%
+2026-11-07 10:49:22,552 INFO Watermark removal: 11%
+2026-11-07 10:49:27,560 INFO Watermark removal: 22%
+2026-11-07 10:49:32,566 INFO Watermark removal: 35%
+2026-11-07 10:49:37,621 INFO Watermark removal: 47%
+2026-11-07 10:49:42,627 INFO Watermark removal: 60%
+2026-11-07 10:49:47,633 INFO Watermark removal: 71%
+2026-11-07 10:49:52,639 INFO Watermark removal: 84%
+2026-11-07 10:49:57,643 INFO Clicking 'Download Clean Video'
+2026-11-07 10:50:05,763 INFO Downloaded clean video after 51s
+2026-11-07 10:50:05,957 INFO Website result: {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 54.775873, 'has_audio': True} (original {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 57.817687, 'has_audio': True})
+2026-11-07 10:50:15,879 INFO Using NotebookLM's Short (watermark removed)
+2026-11-07 10:50:18,122 INFO Uploaded: https://youtu.be/idLeEih-dpI (scheduled to go public at 2026-11-08 18:00 IST)
+2026-11-07 10:50:18,123 INFO Short uploaded: https://youtu.be/idLeEih-dpI
+2026-11-07 10:50:20,682 INFO Reel queued for 2026-11-07T10:50:20.682406+00:00
+2026-11-07 10:51:44,820 INFO Instagram Reel posted (id 17981578518132247)
+2026-11-07 10:51:53,098 INFO Facebook Reel posted (id 1662695332058100)
+2026-11-07 10:51:54,545 INFO Done: Cloud Security Basics: Understanding the Shared Responsibility Model | Cloud and Mobile Security Cou
+2026-11-07 10:51:57,709 INFO Deleted old NotebookLM notebook c9f99e35-25b2-455c-b365-4b7eaf2416d5
