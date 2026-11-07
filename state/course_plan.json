@@ -242,6 +242,33 @@
    "Cloud Security Advanced: Incident Response in the Cloud",
    "Mobile Security Advanced: Reverse Engineering Mobile Apps (Legal/Ethical Context)",
    "IoT Security Advanced: Botnets and Mirai Malware Analysis"
+  ],
+  "Malware Analysis": [
+   "Lesson 1: What is Malware Analysis? Definition and Purpose",
+   "Lesson 2: The Malware Analysis Lifecycle Overview",
+   "Lesson 3: Legal and Ethical Considerations in Malware Analysis",
+   "Lesson 4: Setting Up a Safe Analysis Environment (Part 1)",
+   "Lesson 5: Setting Up a Safe Analysis Environment (Part 2)",
+   "Lesson 6: Understanding the Tools: VirusTotal and Online Scanners",
+   "Lesson 7: Introduction to Static Analysis Fundamentals",
+   "Lesson 8: Examining File Metadata and Properties",
+   "Lesson 9: Analysing PE Headers in Windows Executables (Part 1)",
+   "Lesson 10: Analysing PE Headers in Windows Executables (Part 2)",
+   "Lesson 11: Strings Extraction and Initial Code Review",
+   "Lesson 12: Identifying Packers and Protectors (Part 1)",
+   "Lesson 13: Identifying Packers and Protectors (Part 2)",
+   "Lesson 14: Introduction to Dynamic Analysis Concepts",
+   "Lesson 15: Running Malware in a Controlled Sandbox (Part 1)",
+   "Lesson 16: Running Malware in a Controlled Sandbox (Part 2)",
+   "Lesson 17: Monitoring Process Creation and Network Activity",
+   "Lesson 18: Capturing and Interpreting System Calls",
+   "Lesson 19: Analysing Ransomware Behaviour (Part 1)",
+   "Lesson 20: Analysing Ransomware Behaviour (Part 2)",
+   "Lesson 21: Reverse Engineering Simple C Code (Part 1)",
+   "Lesson 22: Reverse Engineering Simple C Code (Part 2)",
+   "Lesson 23: Using IDA Pro and Ghidra for Disassembly (Part 1)",
+   "Lesson 24: Using IDA Pro and Ghidra for Disassembly (Part 2)",
+   "Lesson 25: Course Wrap-up and Next Steps for Advanced Learning"
   ]
  }
 }
