@@ -34,5 +34,11 @@
     "topic": "Cryptography: What is Cryptography? An Introduction to Secure Communication",
     "title": "What is Cryptography? An Introduction to Secure Communication | Cryptography Course #1",
     "youtube_id": "nQtvtCEKtbI"
+  },
+  {
+    "date": "2026-11-07",
+    "topic": "Defensive Security: Lesson 1: Course Introduction - Blue Team vs Red Team Mindset",
+    "title": "Buffer Overflow Explained | Defensive Security Course #1",
+    "youtube_id": "hiI8Etq-Wd8"
   }
 ]

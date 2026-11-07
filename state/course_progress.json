@@ -1,9 +1,10 @@
 {
  "Cybersecurity Basics": 1,
- "_last_course": "Cryptography",
+ "_last_course": "Defensive Security",
  "Networking for Security": 1,
  "Linux for Hackers": 1,
  "Ethical Hacking": 1,
  "Web Application Security": 1,
- "Cryptography": 1
+ "Cryptography": 1,
+ "Defensive Security": 1
 }

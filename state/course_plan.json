@@ -189,6 +189,33 @@
    "Common Crypto Mistakes: Hardcoding Secrets",
    "Common Crypto Mistakes: Using Broken Algorithms (MD5, DES)",
    "Common Crypto Mistakes: Not Using Authenticated Encryption"
+  ],
+  "Defensive Security": [
+   "Lesson 1: Course Introduction - Blue Team vs Red Team Mindset",
+   "Lesson 2: Understanding the Cyber Kill Chain - A Blue Team Perspective",
+   "Lesson 3: Common Attack Vectors - How Breaches Happen",
+   "Lesson 4: Fundamentals of Logging - What gets recorded?",
+   "Lesson 5: Log Analysis Basics - Reading the Digital Footprints",
+   "Lesson 6: Introduction to SIEM - Centralising Security Data",
+   "Lesson 7: SIEM Use Cases - Detecting the Obvious",
+   "Lesson 8: SIEM Correlation Rules - Connecting the Dots",
+   "Lesson 9: Alert Fatigue - Why more data isn't always better",
+   "Lesson 10: Intrusion Detection Systems (IDS) - Part 1: Network IDS Concepts",
+   "Lesson 11: Intrusion Detection Systems (IDS) - Part 2: Signature-Based Detection",
+   "Lesson 12: Intrusion Detection Systems (IDS) - Part 3: Anomaly-Based Detection",
+   "Lesson 13: Host-Based vs Network-Based IDS - Key Differences",
+   "Lesson 14: Incident Response Framework - The Preparation Phase",
+   "Lesson 15: Incident Response Framework - The Identification Phase",
+   "Lesson 16: Incident Response Framework - The Containment Phase",
+   "Lesson 17: Incident Response Framework - The Eradication Phase",
+   "Lesson 18: Incident Response Framework - The Recovery Phase",
+   "Lesson 19: Incident Response Framework - The Lessons Learned Phase",
+   "Lesson 20: Introduction to Threat Hunting - Proactive vs Reactive",
+   "Lesson 21: Threat Hunting Methodologies - The Hunt Process",
+   "Lesson 22: Common Threat Hunting Techniques - IOCs and IOAs",
+   "Lesson 23: Security Hardening - Operating System Basics",
+   "Lesson 24: Security Hardening - Service and Application Hardening",
+   "Lesson 25: Course Conclusion and Career Pathways in Defensive Security"
   ]
  }
 }
