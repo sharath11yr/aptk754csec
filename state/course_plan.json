@@ -269,6 +269,31 @@
    "Lesson 23: Using IDA Pro and Ghidra for Disassembly (Part 1)",
    "Lesson 24: Using IDA Pro and Ghidra for Disassembly (Part 2)",
    "Lesson 25: Course Wrap-up and Next Steps for Advanced Learning"
+  ],
+  "Careers and Certifications": [
+   "Cybersecurity career paths: Overview of roles and industries",
+   "Cybersecurity career paths: Entry-level roles and required skills",
+   "Certifications explained: Industry standards and accreditation bodies",
+   "Certifications explained: Entry-level certifications for beginners",
+   "Certifications explained: Advanced and expert-level certifications",
+   "Building a home lab: Choosing hardware and software requirements",
+   "Building a home lab: Virtualization basics and setup",
+   "Building a home lab: Network segmentation and lab architecture",
+   "Bug bounty basics: Understanding the bug bounty ecosystem",
+   "Bug bounty basics: Legal boundaries and responsible disclosure",
+   "Bug bounty basics: Common vulnerability categories (OWASP Top 10)",
+   "CTF challenges explained: Capture The Flag fundamentals and types",
+   "CTF challenges explained: Web exploitation basics (SQLi & XSS)",
+   "CTF challenges explained: Cryptography basics and common pitfalls",
+   "CTF challenges explained: Reverse engineering introduction",
+   "Cybersecurity career paths: Mid-level roles and specializations",
+   "Cybersecurity career paths: Senior/Lead and management roles",
+   "Certifications explained: Industry-recognized vs. vendor-specific certs",
+   "Building a home lab: Advanced lab scenarios and automation",
+   "Bug bounty basics: Tools of the trade and workflow",
+   "Bug bounty basics: Writing effective write-ups and reports",
+   "CTF challenges explained: Cryptography advanced techniques",
+   "CTF challenges explained: Forensic analysis fundamentals"
   ]
  }
 }
