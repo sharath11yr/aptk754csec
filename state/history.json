@@ -82,5 +82,11 @@
     "topic": "How Buffer Overflow Attacks Work (And How to Prevent Them)",
     "title": "Buffer Overflow: How One Crash Crashed Cybersecurity Forever",
     "youtube_id": "CUwYiun7P98"
+  },
+  {
+    "date": "2026-11-09",
+    "topic": "How to Install Kali Linux on Windows 11 (The WSL Method)",
+    "title": "How to Install Kali Linux on Windows 11 (WSL2 vs VirtualBox)",
+    "youtube_id": "ho3021Y2CG4"
   }
 ]
