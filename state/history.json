@@ -76,5 +76,11 @@
     "topic": "How Hackers Hack Your Computer (And How to Defend Against It)",
     "title": "How Hackers Hack Your Computer: The 3 Silent Defenses That Stop 99% of Attacks",
     "youtube_id": "25SGolxVckE"
+  },
+  {
+    "date": "2026-11-09",
+    "topic": "How Buffer Overflow Attacks Work (And How to Prevent Them)",
+    "title": "Buffer Overflow: How One Crash Crashed Cybersecurity Forever",
+    "youtube_id": "CUwYiun7P98"
   }
 ]
