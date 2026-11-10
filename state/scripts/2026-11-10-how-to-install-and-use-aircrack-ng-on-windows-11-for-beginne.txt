@@ -1,0 +1,33 @@
+How to Install and Use Aircrack-ng on Windows 11 for Beginners
+search: aircrack-ng wifi password cracker in laptop
+tutorial: True
+
+Welcome. If you have ever wondered if your home Wi-Fi is truly secure, or if you need to test the strength of a network you own, you are in the right place. Right now, millions of devices are vulnerable because default settings are outdated. By the end of this video, I will show you exactly how to install Aircrack-ng on Windows 11, step-by-step, with the exact commands you need to type. We will also cover the one critical setting you must change to stop these attacks from working on your own network. No theory—just the real steps to get you started.
+
+Before we begin, a quick legal note: This tutorial is for educational purposes only. You should only test networks you own or have explicit permission to test. I am not responsible for misuse of this information.
+
+Okay, let's get started. To follow along, you need a few things first. You must be running Windows 11. You will need a USB Wi-Fi adapter that supports monitor mode and packet injection. While many adapters claim compatibility, the only way to be sure is to check the chipset manufacturer's compatibility list. If you are unsure, purchasing an adapter with a verified Atheros or Realtek RTL8812AU chipset is recommended, as these are widely supported out of the box. You will also need about 2GB of free disk space and a stable internet connection to download the tools. If you have those, plug in your adapter now.
+
+Step 1: Open PowerShell as Administrator. Right-click the Start button, select 'Terminal (Admin)' or 'PowerShell', and click Yes if prompted. This is the foundation for the rest of the installation.
+
+Step 2: Install the Windows Subsystem for Linux. In the PowerShell window, type the following command exactly and press Enter: wsl --install. The system will prompt you to restart your computer. Do that now, then come back.
+
+Step 3: Once your computer has rebooted, open PowerShell again as Administrator. We need to download the Linux kernel update package. Type wsl --update and press Enter. Wait for the progress bar to finish; you should see a message saying the update is complete.
+
+Step 4: Now we will set up the Kali Linux environment. In that same PowerShell window, type the following command to install Kali Linux from the Microsoft Store: wsl --install -d Kali. The first time you run this, it may take a few minutes to download and set up. You will see a command prompt asking to create a user account. Type a username, press Enter, type and confirm a password, and press Enter.
+
+Step 5: Inside the Kali Linux terminal, we need to update the software sources. Type sudo apt update and press Enter. Type your password when prompted—note that for security, the terminal may not display characters as you type, which is normal. Wait for the 'All packages are up to date' message.
+
+Step 6: Install Aircrack-ng. Type sudo apt install aircrack-ng and press Enter. You will see a list of packages that will be installed. Press Y and then Enter to confirm. Wait for the installation to finish; you should see a summary saying 'Installed aircrack-ng (version number).'
+
+Step 7: Verify the installation worked. Type aircrack-ng --help and press Enter. If the command runs successfully and outputs help text, you have succeeded. If you get a 'command not found' error, ensure you have restarted your Kali terminal or type 'source ~/.bashrc' and press Enter, then run the command again.
+
+Now that the tools are installed, let's look at the one setting you must change to stop these attacks from working on your network. Most modern routers use WPA2 or WPA3 encryption. The vulnerability we just tested relies on capturing a four-way handshake. To protect yourself, ensure your router is set to WPA2-AES (CCMP) or WPA3 only. Avoid mixed modes like WPA2-PSK TKIP, as those use legacy encryption that is easier to exploit. If you own the router, log in to your admin page, go to wireless security, and select the strongest option available, preferably WPA3 or WPA2-AES.
+
+But wait—before you try cracking your own network, there is a very common mistake beginners make. They try to use any Wi-Fi adapter they have lying around. As mentioned, if your adapter does not support monitor mode, Aircrack-ng will simply fail to detect any networks. The fix is to research your adapter's chipset. If you are using a generic adapter, I recommend returning it and buying one with an Atheros or Realtek RTL8812AU chipset. These are proven to work with Linux and Aircrack-ng out of the box.
+
+Another common error is forgetting to start the wireless interface. In the Kali terminal, type ip link and press Enter. Find the name of your wireless card, it will usually say wlan0 or wlan1. To put it into monitor mode, type sudo airmon-ng start wlan0 and press Enter. You should see a message saying 'Interface wlan0mon put into monitor mode.' If you see an error about 'Device or resource busy,' it means another process is using the card. The fix is to stop any conflicting processes by typing sudo airmon-ng check kill and then running the monitor mode command again.
+
+Let's do a quick recap. We opened PowerShell as Administrator, installed the Windows Subsystem for Linux with the wsl --install command, installed the Kali Linux distribution, updated the package lists using apt update, installed Aircrack-ng using apt install, and verified it worked with the --help command. We also learned that the router setting must be WPA2-AES or WPA3 to defend against handshake attacks, and that your Wi-Fi adapter must support monitor mode, or you will need to buy a compatible one.
+
+If you found this tutorial helpful and want to see more step-by-step guides on cybersecurity and networking, hit the like button and subscribe for more videos like this one. Thanks for watching, and stay secure out there.
