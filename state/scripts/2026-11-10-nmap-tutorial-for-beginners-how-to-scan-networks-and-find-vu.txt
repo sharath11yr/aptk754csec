@@ -1,0 +1,29 @@
+Nmap Tutorial for Beginners: How to Scan Networks and Find Vulnerabilities
+search: nmap tutorial to find network vulnerabilities
+tutorial: True
+
+Welcome. In the next nine minutes, you will learn exactly how to scan a network using Nmap to find vulnerabilities—before someone else does. I'm going to give you the exact commands, step-by-step, so you can run this on your own lab network right now.
+
+Nmap is the industry-standard tool for network discovery. Security professionals use it to see what's actually visible on a network. Today, we are running a full vulnerability scan.
+
+First, what you need. You need a computer running Windows, macOS, or Linux. If you are on Windows, we will use WSL, the Windows Subsystem for Linux, which gives you the full Nmap power without complex setups. You need administrative access on your machine. And you need a target network—this tutorial is for educational purposes only; please scan only your own home lab or a network you own.
+
+Step 1: Install Nmap. If you are on Windows using WSL, open your terminal (PowerShell or Command Prompt) and ensure the Windows Subsystem for Linux is enabled. If you have not installed the Linux kernel update yet, type: wsl --update and press Enter, then restart your computer. Once rebooted, open a new PowerShell window and type: wsl --install -d Ubuntu and press Enter to install the Ubuntu distribution. Restart your computer when prompted. Once rebooted, a new Ubuntu terminal window will open automatically. If you are on macOS or Linux, open your terminal and type: sudo apt update && sudo apt install nmap and press Enter. Type your password. You will see a confirmation that Nmap is installed.
+
+Step 2: Find your local IP address. This is the address of your own machine on your network. On Linux or macOS, type: ip addr show and press Enter. Look for the line starting with inet and note the number next to it—this is your local IP. On Windows inside WSL, type: ip addr show and press Enter. Note that IP address. Additionally, to find your network CIDR range, type: ip route show and press Enter; note the number following 'src' (e.g., 192.168.1.0/24) as you will need this for Step 3.
+
+Step 3: Scan your local network for live hosts. We will use the ping sweep technique. Type: nmap -sn 192.168.1.0/24 and press Enter (replace the CIDR range with the one you noted in Step 2). You will see a list of IP addresses. The ones marked as 'Host up' are live devices on your network.
+
+Step 4: Perform a version detection scan on those live hosts. This tells us what software is running on each device. Take the first IP address marked as 'Host up' from the Step 3 output. To extract the first live IP, you can pipe the output: nmap -sn 192.168.1.0/24 | grep 'Host up' | head -1. Type: nmap -sV [IP_ADDRESS] and press Enter. Replace [IP_ADDRESS] with the first live host you found. You will see output showing the open ports and the version of the service running on each.
+
+Step 5: Run a vulnerability scan. We will use the Nmap NSE scripts designed for this. Type: nmap -sV --script vuln [IP_ADDRESS] and press Enter. Replace [IP_ADDRESS] with the first live host you found. This runs a suite of scripts that check for known vulnerabilities in the services detected. You will see a detailed list of potential vulnerabilities. Note: Nmap does not output CVSS scores by default; severity is indicated by the script output tags (e.g., VULNERABLE, SAFE). If you need CVSS data, you must parse the results or use additional tools.
+
+How do you check it worked? After Step 5, look at the terminal output. You should see a list of vulnerabilities, each with a description and a severity rating. If you see 'VULNERABLE' next to a service, that service has a known flaw. If the scan returns 'Host seems down', double-check your CIDR range from Step 2 and ensure the target device is powered on and connected to the same network. Ensure you are running the terminal with administrative or sudo privileges, as detailed in the error section.
+
+Now, the most common errors and how to fix them. Error one: 'Permission denied'. This happens if you are not running the terminal as an administrator or with sudo. On Windows WSL, right-click your terminal and select 'Run as administrator'. On macOS or Linux, prepend sudo to your commands and type your password. Error two: 'No such file or directory'. This means Nmap is not in your path. Ensure you completed Step 1 correctly and ran the update/install commands. If you are on Windows WSL, ensure you restarted your computer after the install. Error three: 'Host seems down'. This means Nmap cannot reach the device. Check that the device is on, not in sleep mode, and that your CIDR range in the command matches your actual network from Step 2. If you are scanning a cloud server, ensure the firewall allows Nmap traffic.
+
+Here is a quick pro tip: Always update Nmap to get the latest vulnerability scripts. Inside your terminal, type: sudo apt update && sudo apt full-upgrade nmap and press Enter. This keeps your scans accurate.
+
+Let's recap. We installed Nmap via WSL or package manager. We found our local IP and network CIDR range. We scanned the network for live hosts using the CIDR range we identified. We detected service versions on those live hosts. And we ran a vulnerability scan using the NSE scripts on the specific hosts we found. You now have the exact commands to see what a hacker would see on your network, so you can lock those doors.
+
+The most important takeaway: Knowing is half the battle. By running these steps, you have discovered the doors in your network that need locking. If you found this tutorial helpful, smash the like button and subscribe for more ethical hacking and defense guides. Stay safe out there.
