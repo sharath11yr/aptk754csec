@@ -1,0 +1,33 @@
+How to Install and Use Aircrack-ng on Kali Linux for Beginners
+search: aircrack-ng wifi password crack kali
+tutorial: True
+
+Welcome. In the next nine minutes, you will turn a standard laptop into a Wi‑Fi security testing lab and capture a WPA handshake on your own network using Aircrack-ng on Kali Linux. I'm not going to waste your time with theory. Let's get straight to the commands.
+
+First, what you need. A laptop or desktop with at least 4 gigabytes of RAM and 20 gigabytes of free disk space. You must be running Kali Linux—version 2024.x is ideal. Your Wi‑Fi adapter must support monitor mode and packet injection. Most modern Intel and Realtek chips do not work out of the box; if you do not already have one, an Alfa AWUS036NHA or an Alfa AWUS036ACM is the reliable choice. Finally, you need a router you own, or explicit permission from the owner, to test on.
+
+Step 1: Update your system. Open a terminal. Type: sudo apt update && sudo apt upgrade -y. Press Enter. You will see a list of packages scrolling by. When it finishes, you will be returned to the prompt. This ensures you have the latest drivers and security patches.
+
+Step 2: Install Aircrack-ng. In the same terminal, type: sudo apt install aircrack-ng -y. Press Enter. The system will resolve dependencies and install the tool. When it says 'The following NEW packages will be installed,' confirm by pressing Y. When the installation finishes, you will see a message stating 'aircrack-ng is now installed.'
+
+Step 3: Verify your Wi‑Fi adapter is recognized and check for monitor mode support. Type: airmon-ng. Press Enter. Look at the output. You should see your wireless interface listed, typically something like wlan0. If you see nothing, your adapter is not supported, and you must plug in a compatible USB adapter now. **Critical: Run 'airmon-ng check kill' immediately to clear any conflicting processes that may block monitor mode. If the interface is not listed, your adapter is not supported.**
+
+Step 4: Put your adapter into monitor mode. This is the part most people get wrong. Type: airmon-ng start wlan0. Press Enter. The command will output something like 'Interface wlan0 put into monitor mode on mon0'. Notice the new interface mon0. **You must use the mon0 interface for all subsequent steps.** If you get an error saying 'Operation not supported,' double-check that your adapter supports injection. If you are using a virtual machine, monitor mode often fails; use a native boot or a Raspberry Pi.
+
+Step 5: Scan for networks. Type: airodump-ng mon0. Press Enter. A window will appear listing nearby networks. You will see columns for BSSID, ESSID, and PWR. Find the network you own. Note its BSSID—the string of letters and numbers—and the channel number, usually 1 through 13. Keep this window open; you will need the BSSID and channel for the next step.
+
+Step 6: Capture the handshake. Keep the airodump-ng window running. Now type: airodump-ng -c "channel number" -w capture --bssid "BSSID" mon0. Replace 'channel number' and 'BSSID' with the values you noted from the previous step's output. Press Enter. The tool will start writing packets to a file named capture.cap (or capture-01.cap, etc., depending on existing files). Leave this window running; you must monitor it for a successful handshake capture.
+
+In a separate terminal window, deauthenticate a device connected to your network. Type: aireplay-ng -0 10 -a "BSSID" mon0. Press Enter. You will see 'Sending 10 deauthentication packets.' Wait for a device to disconnect and reconnect. Look at the airodump-ng window; when you see 'WPA handshake: XX:XX:XX:XX:XX:XX' appear in the output, the handshake has been captured. Immediately stop the deauth process by pressing Ctrl+C in the aireplay-ng terminal.
+
+Step 7: Crack the password. Once you have the handshake file—determine the exact filename from the airodump-ng output (e.g., capture-01.cap). Type: aircrack-ng "filename". Press Enter. The program will attempt to crack the password using dictionary attacks. If you have a strong password, it may take time. When it finds the key, it will display 'KEY FOUND!' followed by the password.
+
+How to check it worked. If Step 7 returns 'KEY FOUND,' the password has been recovered. If it says 'No handshake found,' go back to Step 5 and ensure you captured a genuine handshake—the deauth packets must be sent while a device is actively transferring data, and you must see the handshake line in the airodump-ng output. If you see 'PTW attack failed,' your password might be too long or the capture file is corrupted; try a different dictionary file.
+
+Common mistakes. First, running airodump-ng and aireplay-ng on the same channel without confirming the channel number leads to zero packets captured. Second, using a weak dictionary, such as the default rockyou.txt, on a WPA2‑Enterprise network will never work; you must use a custom list. Third, forgetting to stop monitor mode after you finish. To revert, type: airmon-ng stop mon0. Fourth, failing to press Ctrl+C in the aireplay-ng terminal after the handshake is captured, which leaves the deauth process running and can fill your capture file with useless packets.
+
+Pro tip. If you are serious about Wi‑Fi security, invest in an Alfa adapter with the RTL8812AU chipset. It supports both monitor mode and injection out of the box on Kali. Always test on your own network. Cracking networks you do not own is illegal and unethical.
+
+Recap. We updated the system, installed Aircrack-ng, verified the adapter, put it in monitor mode, scanned for networks, captured a handshake with deauth packets, and cracked the password. If you followed every step, you now have a working Wi‑Fi security lab.
+
+If you want to learn how to secure your own router against these exact attacks, hit that subscribe button for the next video in this series. Stay legal, stay ethical.

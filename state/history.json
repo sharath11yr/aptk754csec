@@ -130,5 +130,11 @@
     "topic": "AirCrack-ng for Beginners: Cracking Wi-Fi Passwords on Laptop and Mobile",
     "title": "How 60% of Home Wi-Fi Gets Cracked in Minutes (Aircrack-ng Tutorial)",
     "youtube_id": "2a9zAzX7zMk"
+  },
+  {
+    "date": "2026-11-11",
+    "topic": "How to Install and Use Aircrack-ng on Kali Linux for Beginners",
+    "title": "Turn Laptop into Wi-Fi Lab: Capture WPA Handshake with Aircrack-ng",
+    "youtube_id": "ux24LcK6hfg"
   }
 ]
