@@ -1,0 +1,105 @@
+nmap basics
+search: nmap basics
+tutorial: False
+
+Welcome. If you have ever wondered what the internet sees when it looks at your computer, or if you have ever typed 'nmap basics' into YouTube hoping to finally understand how to secure your network, then stay tuned. Because today, we are going to run the most important scan of your digital life. I am about to show you exactly what is on your network, and more importantly, how to secure it before anyone else finds it.
+
+[HOOK]
+
+Imagine this: You leave your front door wide open. You might not even know it’s open. But a stranger walks up, walks right in, and looks at everything you own. They don't steal anything today. They just make a map. They note that the living room window is unlocked, they see the safe in the bedroom, and they leave. You would be furious. But this happens every single day to computers connected to the internet. This scanning is called Nmap. And the scary part is, if you don't know how to use it defensively, you are that open door.
+
+In the next nine minutes, we are going to run a real Nmap scan. We will look at the exact commands step-by-step. We will see what the results mean. And most importantly, we will show you the exact steps to lock those doors. By the end of this video, you will know exactly how to see what is on your network, and how to hide your services so they stay safe. Let's get started.
+
+[PART 1: THE LANDSCAPE]
+
+Before we type a single command, we need to understand what Nmap actually is. Nmap stands for Network Mapper. It is the most famous network scanning tool in the world. Security professionals use it to audit networks. It is powerful, but it is just a flashlight. It shines a light on your network to see what is there.
+
+When you type 'nmap basics' into a search engine, you are looking for how to use the tool on your own network and how to secure your services. To perform the most basic scan on your own local network, the exact command is: \`nmap 192.168.1.0/24". Hit enter. What happens? Nmap sends a packet—a tiny piece of data—to every single IP address in that range. It asks, 'Are you there?' If a device answers, Nmap marks it as 'up'. This is the first step. Discovery.
+
+But here is the part most people get wrong. They think Nmap only finds computers. It finds anything with an IP address. Your printer, your smart fridge, your phone. Every single one.
+
+[TEASE]
+
+Stick around, because in about sixty seconds, I am going to show you the specific command to find open ports, called ports. And I will show you the exact command you should use to make sure you aren't exposing more than you need to.
+
+[PART 2: THE SCAN - DISCOVERING OPEN PORTS]
+
+Okay, we have discovered that your phone and laptop are on the network. But an IP address is just a location. It doesn't tell us what is running. To find that, we need to look at the ports.
+
+In networking, a port is like a door to a specific service. Think of your computer like a large apartment building. The IP address is the building address. The port is the specific apartment number. Nmap's job is to knock on those doors and see which ones open.
+
+The most common way to do a basic port scan is with the '-sS' flag. This stands for 'SYN scan'. It is the fastest and most standard way to scan. The exact command is: \`nmap -sS 192.168.1.0/24".
+
+When you run this, Nmap sends a SYN packet. This is the first part of a three-way handshake. If the port is open, the target sends back a SYN-ACK. Nmap sees this and marks the port as 'open'. If the port is closed, the target sends back a RST packet. Nmap marks it as 'closed'.
+
+Let's look at a real example. Imagine you run that command. The results might look like this.
+
+PORT STATE SERVICE
+22/tcp open ssh
+80/tcp open http
+443/tcp open https
+
+Do you see those numbers? 22, 80, 443. Those are ports.
+Port 22 is SSH. It is used for secure remote login. On a home network, this is common if you are running a remote access service. If you are not, this port should be closed to secure your network.
+Port 80 is HTTP. It is used for unencrypted web traffic.
+Port 443 is HTTPS. It is used for secure web traffic.
+
+The key takeaway? An open port is not a crime. It is just a service running. The problem arises when you have a service running that you don't recognize, or a service that is outdated and vulnerable.
+
+[TEASE]
+
+Stick with me. In the next minute, I am going to reveal the specific Nmap command to detect what version of software is running on those open ports. This is the part where we check for outdated software, and I will show you the exact step to hide that information if you don't need it shared.
+
+[PART 3: VERSION DETECTION - DEFENSIVE CHECK]
+
+This is the part most people get wrong. They run a scan, they see ports are open, and they stop there. But a defensive administrator doesn't stop. They want to know: Is the version of Windows or Linux outdated? Is the Apache web server the latest version, or is it three years old with known bugs?
+
+To find this out, we use the '-sV' flag. This stands for 'Version Detection'. The exact command is: \`nmap -sV 192.168.1.10".
+
+When you run this, Nmap tries to identify the service running on each open port and report the version number.
+
+Imagine the output now.
+
+PORT STATE SERVICE VERSION
+22/tcp open ssh OpenSSH 7.4
+80/tcp open http Apache httpd 2.4.7
+
+See that? 'OpenSSH 7.4' and 'Apache httpd 2.4.7'. A defender looks at that. If they know there is a security hole in OpenSSH 7.4, they will update the service. If you are running OpenSSH 9.0, you are safe from that specific hole.
+
+This is the power of version detection. It is the map to your vulnerabilities, so you can patch them.
+
+But, there is a pro tip here. If you are running a service and you don't want the version number advertised to the world, you can configure the service configuration file (such as /etc/ssh/sshd_config for SSH or /etc/apache2/conf-available.conf for Apache) to suppress the version number. If you are just scanning your own network for fun, you can use the '-O' flag for OS detection, but be careful, as that requires root privileges.
+
+The most important pro tip? If you see a version number in the Nmap output that you didn't intend to run, you have found a service you forgot about. Go disable it. That is the number one way to secure a network.
+
+[PART 4: MYTHS, MISTAKES, AND DEFENSE]
+
+Let's talk about the myths. Myth number one: 'If I hide my SSID, I am secure.' Many people turn off the broadcast of their Wi-Fi name. They think if the name isn't visible, no one can find them. This is false. Nmap and other tools can still detect the network signal. It just makes it slightly harder for a casual user. It is not security.
+
+Myth number two: 'Nmap is illegal.' This is a dangerous myth. Nmap is a tool. It is legal to use on your own network, or on a network where you have explicit written permission. It becomes illegal when you scan networks you do not own or manage. Always ask permission. If you are a student, use a virtual lab. If you are a professional, use a test environment.
+
+Now, let's look at the mistakes.
+
+Mistake one: Scanning without a goal. Just typing 'nmap' and walking away is useless. You need to know what you are looking for, and you must use the exact commands provided in this video to get a result you can act on.
+
+Mistake two: Ignoring the firewall. Nmap can tell you if a port is open, but it cannot always tell you if your firewall is blocking it correctly. You must check your local firewall settings separately. On Linux, the exact command to enable the firewall and allow your scan range is: \`sudo ufw enable\` and \`sudo ufw allow from 192.168.1.0/24 to any port 22\`. On Windows, check Windows Defender Firewall rules to ensure they match the results you see here.
+
+Mistake three: Forgetting about the localhost. Many people scan their external IP address. But your best security practice is to scan 'localhost'. The exact command is: \`nmap localhost\`. This scans only your own machine. It shows you what services are listening on your own computer. If you see port 3306 (MySQL) open on localhost and you aren't running a database, you have a problem.
+
+[DEFENSE SECTION]
+
+How do we lock the doors? First, disable unused services. If you are not running a web server, uninstall Apache or Nginx. If you are not using SSH, disable it unless you absolutely need it.
+
+Second, use a firewall. On Linux, use the exact commands: \`sudo ufw enable\` and \`sudo ufw allow from 192.168.1.0/24 to any port 22\`. This only allows SSH from your home network, not the whole internet.
+
+Third, keep software updated. That version number we saw earlier? Update your software regularly. Patches fix the holes that hackers find.
+
+[RECAP]
+
+Let's recap what we learned today. We learned that Nmap is a network mapping tool. We learned the exact basic command to discover devices on your network: \`nmap 192.168.1.0/24". We learned the '-sS' SYN scan to find open ports using the exact command: \`nmap -sS 192.168.1.0/24". We learned the '-sV' version detection to see what software is running using the exact command: \`nmap -sV 192.168.1.10". And most importantly, we learned that the best defense is disabling what you don't need and keeping the rest updated.
+
+[CALL TO ACTION]
+
+If you found this walkthrough helpful, smash that like button. It helps other people find the video. And if you want to see how we defend a network against a real attack in a controlled lab environment, hit the subscribe button. We post new ethical hacking and network defense videos every week. Thanks for watching, and stay safe out there.
+
+[END SCRIPT]
