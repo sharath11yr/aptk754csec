@@ -1,0 +1,41 @@
+How to test if your phone is hacked
+search: is my phone hacked test
+tutorial: True
+
+Your phone is with you 24/7. It knows where you sleep, what you buy, and who you talk to. But what if someone else is watching? If you've noticed your battery draining fast, apps opening on their own, or weird texts, your phone might be compromised. Right now. In the next nine minutes, I'm going to walk you through exactly how to test if your phone is hacked, step-by-step, with real commands and checks you can do right now. No fluff. Just the fixes.
+
+First, let's clear the air. Most 'hacked' fears are just glitchy apps. But real spyware is silent. It runs in the background, stealing data. The good news is, you can hunt it down. We will check for suspicious apps, weird network activity, and hidden settings. By the end, you will know exactly if your phone is safe or if it's time to clean house.
+
+Are you ready? Let's get started.
+
+**Step 1: Check Your Battery and Data Usage.**
+The first sign of hacking is often the easiest to spot. Open your Settings app. On both iPhone and Android, go to Battery. Look at the usage list. Is there an app using power you don't recognize? Now, go to Data Usage or Mobile Data. Look for spikes. A hacked phone often sends data home even when you aren't using it. If you see an app using massive data in the background, that's a red flag. Here, think of your battery like a car's fuel tank. If the tank empties fast while the car is parked, that is usually due to rogue background activity.
+
+**Step 2: Look for Unknown Apps.**
+Hackers need a way in. They often hide apps that look like system tools. On Android, go to Settings, then Apps or Application Manager. Scroll through the full list of all apps, including system apps. Look for names you don't remember downloading, or apps with generic names like 'Update' or 'Service'. On iPhone, go to Settings, then General, then iPhone Storage. Look at the list of apps. If you see something suspicious, tap and hold the app icon to uninstall it. 
+
+**Pro Tip:** On Android, review the list for apps with Administrator privileges. If you find an app you didn't install, do not open it. Check its permissions first, then uninstall it immediately via the Settings menu to ensure it is fully removed and does not retain device control.
+
+**Step 3: Check for Spyware Permissions.**
+This is the part most people get wrong. Hackers ask for permissions that make no sense. On Android, go to Settings, then Privacy, then Permission manager. You will see lists for Location, Camera, Microphone, and SMS. Look at the apps listed under each. If a flashlight app has access to your SMS messages, revoke that permission immediately. On iPhone, go to Settings, then Privacy & Security. Review each category. If an app has access it shouldn't, revoke the permission for that specific category.
+
+**Step 4: Dial USSD Codes to Check Redirections.**
+This is a quick check that works on almost any phone. Open your phone's dialer. Type this code exactly: *#21# and press call. This displays the status of your Call Forwarding. It will show if your voice calls, data, or SMS are being redirected to another number. If you see 'Voice call forwarding', 'Data call forwarding', or 'SMS forwarding' enabled, and you didn't set it, someone else is intercepting your traffic. To cancel any redirections, type **004# and press call. This resets all forwarding settings to default.
+
+**Step 5: Use a Security Scanner.**
+If you want a deep check, download a reputable security app from your device's official store. On Android, look for security tools in the Play Store. On iPhone, Apple's built-in protections are strong, but you can run a scan using a reputable free tool from the App Store. Open the app and run a 'Full Scan'. This will look for known threats. If it finds nothing, you are likely safe. If it finds something, follow the app's removal steps.
+
+**How to Check It Worked and Fixes.**
+After you finish these steps, check your battery usage again. Is it back to normal? Check your data usage. Is the mystery gone? If you fixed a forwarding code in Step 4, make a call and ensure it goes to your phone, not a stranger.
+
+**Common Mistakes and Fixes.**
+*Mistake 1: Ignoring system updates.* If your OS is old, hackers use known holes. Go to Settings > System > System Update and install any pending updates. This patches the doors the hackers used.
+*Mistake 2: Rooting or Jailbreaking.* Doing this opens your phone to risk. If you have done this, you must be extra vigilant about app sources. Stick to the official store only.
+*Mistake 3: Thinking a factory reset deletes the hack.* A factory reset removes user data and resets system settings. However, if you restore from an old backup, you might restore the hacker's persistence. After a reset, set up the phone as new, and do not restore the old backup.
+
+**Recap.**
+We checked battery and data usage for leaks. We looked for unknown apps. We reviewed permissions that don't make sense. We dialed *#21# to check for call forwarding status. And we ran a security scanner.
+
+**Question for you:** Which of these five steps did you find the most surprising? Was it the USSD code check, or perhaps the permission manager? Tell me your answer in the comments below.
+
+If you found this tutorial helpful, smash that like button and subscribe for more tech tips. I'll see you in the next video.
