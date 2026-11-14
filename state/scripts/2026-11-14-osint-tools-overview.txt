@@ -1,0 +1,79 @@
+osint tools overview
+search: osint tools
+tutorial: False
+
+Welcome to our channel. If you have ever wondered how the 'invisible' intelligence is gathered in the cyber world, you are in the right place. Right now, over 3 billion searches are made daily for OSINT tools, yet most people only see the surface. By the end of this video, you will understand exactly what these tools are, how they work under the hood, and—most importantly—how to defend yourself against them. We are diving deep into the invisible intelligence toolkit every cyber pro uses.
+
+But first, a quick question: Have you ever felt like someone was watching your digital footprint without you knowing? In the next nine minutes, we will pull back the curtain. We will walk through the most powerful OSINT tools, the exact commands the pros use, and the critical mistakes you must avoid. Stay tuned, because what you don't know about OSINT could cost you your privacy.
+
+Segment 1: What is OSINT, really?
+
+Let's start with the basics. OSINT stands for Open Source Intelligence. But here is the mistake most beginners make: they think it is just 'googling things.' That is not the case. OSINT is the art and science of collecting information from publicly available sources to produce actionable intelligence. Think of it as a treasure hunt, but the treasure is data, and the map is the entire internet.
+
+Why does this matter right now? Because your data is being harvested every second. Every profile picture, every check-in, every public post is a piece of the puzzle. Cyber professionals use OSINT not just for hacking, but for threat intelligence, background checks, and competitive analysis. But the same tools they use can be used against you.
+
+So, what are the core categories? We have Social Media Intelligence, where we look at platforms like Twitter, LinkedIn, and Facebook. We have Domain and IP analysis, where we trace who owns a website. And we have People Search, aggregating data from breaches and public records.
+
+Here is the everyday analogy to help this click: Imagine OSINT is like a detective walking into a city. They do not have special powers; they just know where to look legally. They look at the bulletin board at the café, which is publicly posted. They check the public records at city hall, and they listen to conversations in the park that are audible to the public. All this information is 'open source,' but connecting the dots requires skill. The tools we are about to cover are just the detective's magnifying glass and notebook, digitized.
+
+But here is the part most people get wrong: they assume OSINT is illegal. That is a myth. Because the data is publicly available, using OSINT on your own lab environment or with explicit permission is completely legal and ethical. We will stick to that rule throughout this video. The moment you use these techniques on a real person without consent, you cross the line into unethical—and often illegal—territory. We are here to defend and understand, not to invade.
+
+Segment 2: The Toolkit - Step by Step with Exact Commands.
+
+Okay, let's get hands-on. If you search for 'OSINT tools,' you will see a massive list. But the pros rely on a core set. We are going to cover three of the most critical categories today, and I will give you the exact commands so you can try them in your own safe environment later, and a final check to verify they worked.
+
+First up: The Harvester. This is a classic tool for gathering emails, subdomains, and employee names from public sources. Here is how it works step-by-step.
+
+You open your terminal. You type a command to specify the target domain. For example, if we were analyzing 'example.com', the command would look like this: `theHarvester -d example.com -l 500 -b google`. Let's break that down. The `-d` flag sets the domain. The `-l` flag sets the limit of results—500 in this case tells the tool to scrape up to 500 results. The `-b google` tells the tool to use Google as the search engine.
+
+Now, here is the critical part most tutorials skip. The Harvester pulls raw data. It might find 50 email addresses. Your job, the pro tip, is to validate those emails. You do not trust the output blindly. You cross-reference them. This is where the 'invisible' work happens. You take those emails and plug them into a verification tool, such as `verifalia` or a similar open-source checker, to see if they are active. That is how you turn raw data into intelligence.
+
+Real example? Imagine a company wants to check its exposure. They run The Harvester. It finds a list of employee emails. The security team then checks those emails against known data breaches using a tool like `have i been pwned`. If an employee's email appears in a breach from 2021, that is a massive risk. The tool revealed the data; the defender action mitigates the risk.
+
+**Final Check:** After running the command, verify the output by counting the results. If you get 0 results, check your internet connection or try a different search engine flag (e.g., `-b bing`).
+
+Second tool in the toolkit: Maltego. If The Harvester is a net, Maltego is a map. It is a graphing tool that visualizes relationships between entities. You start with one node—a person's name, a domain—and you drag links to show connections.
+
+Here is the step-by-step for the setup. You open your terminal and launch Maltego CE. You create a new transform by right-clicking on the canvas and selecting 'Add Transform'. You select the 'DNS' transform. You input the target domain. The tool then queries public DNS records. It pulls A records, MX records, and NS records. It draws lines connecting the domain to its mail servers, to its IP addresses, to other domains hosted on the same server.
+
+The pro tip here is the 'Link Analysis.' Beginners just look at the nodes. Pros look at the lines. You might see that two seemingly unrelated domains share the same IP address. That is a clue. They might be operated by the same entity. That is the power of OSINT visualization.
+
+**Final Check:** After the transform runs, verify that at least one record (A, MX, or NS) appears on the graph. If no records appear, check that the domain spelling is correct and that you have an active internet connection.
+
+Third tool: Shodan. This is the search engine for the Internet of Things. Most people think of the internet as websites. Shodan looks at devices. Cameras, routers, servers.
+
+Here is the command structure. First, you must initialize the API. Type `shodan init` and enter your API key when prompted. This saves your key to the configuration file. Then, to search for a specific device, you might type `shodan search "apache"`. This returns every server running Apache that is publicly exposed, along with its banner and location.
+
+Before you run any Shodan command, ensure your API key is valid. You can test this by typing `shodan info`. If you see your key details, you are ready. The everyday analogy: Shodan is like walking through a city and checking every front door to see if it is open. If you find a router with the default password still set, that is a vulnerability. That is why defense is so critical. We will cover defense in a moment.
+
+**Legal and Setup Check:** Remember, these tools are powerful. Use them only on domains you own or have written permission to test. Running `theHarvester` or `shodan search` on a target you do not own is a violation of ethical guidelines and potentially computer misuse laws in your region. We are teaching you how the cyber professional thinks, so you can defend better.
+
+**Final Check:** After running `shodan info`, verify that your API key is listed and active. If "Error: Invalid API key" appears, re-run `shodan init` with the correct key.
+
+Segment 3: Defending Against the Invisible.
+
+Now that we have seen how the tools work, the big question is: How do you defend against OSINT? This is the part viewers search for most. If you are a professional, you need to know how to harden your digital footprint.
+
+Step one: Social Media Hygiene. Look at your own profiles. Are your friends lists public? Your birthday? Your workplace? These are nuggets of data that OSINT tools love. The pro tip is to audit your 'about' sections. Remove birth years. Remove specific locations. Make your friend list private. It sounds small, but it breaks the automation.
+
+**Defense Final Check:** Go to your profile settings and set your friend list to "Friends Only." Verify the change by looking at your profile page; the list should no longer be visible to the public.
+
+Step two: Domain Hardening. If you own a website, check your DNS records. Open your terminal and type the exact command: `dig yourdomain.com MX`. This shows what is exposed. If you don't have a mail server for your domain, you must remove the MX record from public view using your DNS provider's interface. Every piece of information you remove is a piece the OSINT attacker cannot use.
+
+**Defense Final Check:** After removing the MX record via your DNS provider, go back to your terminal and type `dig yourdomain.com MX` again. The output should show "NO ERROR" but zero MX records. If records still appear, wait for DNS propagation or contact your provider.
+
+Step three: The most important defense: Awareness. You cannot defend what you cannot see. I recommend setting up a Google Alert for your own name or your company name. If new information pops up, you know. It is the digital equivalent of a neighborhood watch.
+
+**Defense Final Check:** Create a Google Alert for your name. After 5 minutes, search for your name on Google. You should see the alert notification or the new result at the top of the search page.
+
+Segment 4: Recap and Call to Action.
+
+Let's recap the invisible intelligence toolkit we covered today. We started with the definition of OSINT—open source intelligence, the art of connecting public dots. We walked through three core tools: The Harvester for gathering emails and subdomains, Maltego for visualizing relationships, and Shodan for finding exposed devices. We talked about the exact commands, the flags, and how to interpret the results, and most importantly, the final checks to verify everything worked.
+
+Most importantly, we covered the defense. Social media hygiene, domain hardening, and setting up awareness alerts. The goal is not to live in fear, but to live with knowledge.
+
+Here is the question I have for you today, and I want you to answer it in the comments to help the algorithm and help other viewers: Which of the three tools we covered—The Harvester, Maltego, or Shodan—have you used before in your own lab or professional work? Tell me in the comments. I read every comment, and I love hearing your experience.
+
+If you found this breakdown useful, smash the like button it helps the algorithm reach other cyber pros like you. And hit subscribe for more deep dives into cyber tools and defense strategies. We have a video on password cracking next, and you won't want to miss it. Thanks for watching, and stay secure out there.
+
+[End of Video]
