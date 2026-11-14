@@ -1,0 +1,49 @@
+How to install and use Kali Linux tools
+search: kali linux tools and how to use them
+tutorial: True
+
+So you want to master Kali Linux, but every tutorial either skips the basics or gets too technical. Here is the truth: over 90% of beginners quit because they try to run before they walk. Today, I am going to give you the exact roadmap to install Kali Linux, set up your first tool, and actually use it in your own safe lab environment. By the end of this video, you will have a working security testing environment and the knowledge to use five essential tools without breaking your computer.
+
+First, what do you need? You need a computer with at least 4 gigabytes of RAM and 20 gigabytes of free disk space. You will also need a USB drive of at least 2 gigabytes. Most importantly, you need a willingness to learn in a controlled environment. We are doing this on your own virtual machine or a dedicated partition so that your main operating system stays safe.
+
+Step 1: Download the Kali Linux ISO. Go to the official Kali website and download the 64-bit official Kali Linux image. Do not download from third-party sites. Verify the checksum if you are advanced, but for now, just grab the file.
+
+Step 2: Create a bootable USB drive. On Windows, download a tool called Rufus. Insert your USB drive, open Rufus, select the Kali ISO you just downloaded, and make sure the partition scheme is set to MBR for BIOS or GPT for modern UEFI systems. Click start and wait for the 'READY' status to appear. This is the most common point of failure—if you see an error about 'syslinux', you likely downloaded the wrong ISO version.
+
+Step 3: Boot from the USB. Restart your computer and enter the BIOS or UEFI menu, usually by pressing F12 or Del during startup. Change the boot order to prioritize the USB drive. You will see the Kali boot menu. Select 'Graphical Install' and press Enter. The installer will launch.
+
+Step 4: Follow the installer prompts. You will be asked to select your language, location, and keyboard layout. Select your defaults. Next, you will set the hostname. You can just type 'kali' and hit Enter. This is the name of your computer on the network.
+
+Step 5: Configure the network. The installer will detect your network card. Select your Wi-Fi or Ethernet connection. If you are using Wi-Fi, you will need to enter your password. You should verify network connectivity by opening a terminal and typing 'ping -c 4 127.0.0.1'. If you see replies, your network interface is active and configured.
+
+Step 6: Set up a user account. This is critical. You will be asked to enter your real name and a username. For the password, type a strong password twice. The installer will confirm the password has been updated. Choose something secure but memorable.
+
+Step 7: Partition the disk. For beginners, select 'All entire disk' and choose 'All files in one partition'. The installer will write the changes to the disk. You will see a summary of the changes. Confirm and hit Enter.
+
+Step 8: Finish the install. The installer will copy files to your disk. This takes about 10 minutes. When it is done, you will see a prompt saying 'Installation complete'. Remove the USB drive and hit Enter to reboot. The system will reboot to the Kali login screen, confirming a successful installation.
+
+Congratulations. You now have Kali Linux running. But now the question is: what do you actually do with it?
+
+Here is your first pro tip: Kali is not meant to be your daily driver. It is a toolbox. Let us install the top three tools beginners ask for.
+
+Step 9: Update and upgrade. Open the terminal. Type the exact command: sudo apt update && sudo apt upgrade -y. Press Enter. You will see a list of packages being downloaded. When it finishes, you will see '0 upgraded, 0 newly installed'. This ensures all your tools are the latest version.
+
+Step 10: Install Nmap. Nmap is the network scanner. In the terminal, type: sudo apt install nmap -y. Press Enter. You will see a progress bar. When it hits 100%, type 'nmap -h' and hit Enter. You should see the help output. If you see 'command not found', double-check that you ran the install command with sudo.
+
+Step 11: Install Wireshark. Wireshark captures network traffic. Type: sudo apt install wireshark -y. During the install, you will be asked if you want to allow non-superusers to capture packets. A configuration dialog will appear. Use the arrow keys to select 'Yes' and hit Enter. Once installed, you can launch Wireshark from the application menu. If you encounter an error about permissions, you need to add your user to the 'wireshark' group using the command: sudo usermod -aG wireshark $USER. Log out and log back in for this to take effect.
+
+Step 12: Install John the Ripper. This is a password cracking tool for educational purposes. Type: sudo apt install john -y. When it finishes, type 'john --version'. You should see a version number, confirming it is ready to use on your own password files for educational testing.
+
+Step 13: Install Burp Suite Community Edition. This is for web application testing. Because Burp Suite is a Java application, the installation is different. Go to the Burp Suite website and download the Community Edition .jar file. Open your terminal in the download directory and type: ls. Verify the exact filename of the downloaded file. Then type: java -jar <filename>.jar. Follow the graphical installer. When it finishes, type 'burpsuite' to launch it. You should see the Burp Suite interface asking you to start a new project.
+
+Now, how do you check if everything worked? Simple. Open your terminal. Type 'ifconfig' or 'ip a' to see your network interfaces. You should see 'eth0' or 'wlan0'. If you see those, your network is up.
+
+Let us talk about the two most common errors beginners face. Error one: the 'command not found' error. This happens if you misspelled the command or forgot to install the package. Double-check the spelling and run the update command again.
+
+Error two: the permission denied error. This happens with tools like Wireshark or Aircrack-ng. The solution is always to restart your terminal or log out and log back in so the group changes take effect.
+
+Here is a quick analogy to remember this: Think of Kali Linux as a Swiss Army knife. The installation is taking the knife out of the box. Updating is preparing the tools for use. Using the tools is performing authorized security testing on your own lab systems. If you try to test without updating first, you will struggle with outdated vulnerability databases. Always update first.
+
+You have made it to the end. Let us recap quickly. You learned how to download Kali, create a bootable USB, install it as a dual boot or virtual machine, and install the essential tools Nmap, Wireshark, John the Ripper, and Burp Suite. You also learned how to troubleshoot the two most common errors.
+
+If you found this tutorial helpful and you want to see more step-by-step guides on cybersecurity tools, hit the like button and subscribe for the next video in this series. Stay safe, and keep your lab ethical.
