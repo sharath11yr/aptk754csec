@@ -1,0 +1,130 @@
+2026-11-14 15:56:29,387 INFO Already scheduled: ['2026-11-09T12:00:00+05:30', '2026-11-09T15:00:00+05:30', '2026-11-09T18:00:00+05:30', '2026-11-10T12:00:00+05:30', '2026-11-10T15:00:00+05:30', '2026-11-10T18:00:00+05:30']
+2026-11-14 15:56:33,265 INFO Channel winners: Hydra Tool Explained 🔥 | Kali Linux Practical Demo (212); What Are Cyber-Physical Systems (CPS)? 🤖 | Definit (178); Hashcat Tutorial for Beginners 🔥 | Install & Use H (171); Password Cracking Tools Explained 🔐 | John the Rip (134); Wireshark Tutorial for Beginners | Complete Guide  (126); Password Attacks Explained 🔐 | Password Spraying,  (111)
+2026-11-14 15:56:35,350 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 15:56:35,354 INFO Search-led topic: Cybersecurity roadmap 2025 (targets 'cybersecurity roadmap 2025')
+2026-11-14 15:56:35,670 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 15:56:36,310 INFO Search demand for 'cybersecurity roadmap 2025': median 480,882 views of the top 10 results (want 50,000-1,000,000)
+2026-11-14 15:57:17,339 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 15:57:17,339 WARNING Draft unusable (0 words, on topic: False) - writing it again
+2026-11-14 15:57:41,484 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 15:57:41,484 WARNING Draft unusable (0 words, on topic: False) - writing it again
+2026-11-14 15:58:09,039 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 15:58:32,079 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 15:58:32,080 INFO Fact-check 1 fix: The script references 'ipconfig' and 'ifconfig'/'ip addr' as verification steps, but 'ipconfig' is deprecated on modern Windows and 'ifconfig' is deprecated on modern Linux (replaced by 'ip addr'). Using deprecated commands violates the 'exact commands' requirement for 'how to' titles.
+2026-11-14 15:58:32,080 INFO Fact-check 1 fix: The script states 'The mistake viewers caught in earlier videos was promising 'how to' setups and then only showing theory.' This is a direct contradiction to the channel's strict rules against repeating past mistakes, effectively admitting to the exact error the professor is tasked to prevent.
+2026-11-14 15:58:32,080 INFO Fact-check 1 fix: The script recommends installing 'Kali Linux' as a beginner distribution for a virtual machine. Kali is a penetration testing distribution designed for offensive security and contains hundreds of pre-installed hacking tools. For a defensive, educational roadmap focused on foundational skills, recommending Kali as a first Linux distro is misleading and potentially dangerous for a beginner, as it encourages offensive tool use before defensive fundamentals are mastered. Ubuntu or Debian are appropriate alternatives.
+2026-11-14 15:58:32,080 INFO Fact-check 1 fix: The script provides the command 'grep -i failed /var/log/auth.log' as a verification step. On many modern Linux distributions (especially those using systemd), '/var/log/auth.log' is either missing, symlinked, or inactive by default, making the command fail. The modern, reliable path for authentication logs is '/var/log/auth.log' on Debian/Ubuntu systems using rsyslog, but on Fedora/RHEL it is '/var/log/secure'. The script generalizes incorrectly.
+2026-11-14 15:58:32,080 INFO Fact-check 1 fix: The script states: 'The CompTIA Security+ is the classic starting point. It is vendor-neutral and respected. But the real differentiator is the Certified Ethical Hacker, or CEH.' Recommending CEH (Certified Ethical Hacker) as a primary differentiator for a defensive roadmap is problematic. CEH focuses heavily on offensive methodologies and tool usage. For a defensive-focused roadmap aiming for a salary, Security+ or CySA+ (Cybersecurity Analyst) is the appropriate industry standard certification, as they validate defensive and analysis skills.
+2026-11-14 15:58:58,254 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 15:58:58,254 INFO Fact-check 2 fix: Step 1: The analogy states 'The physical layer is the road; the data packets are the envelopes.' In reality, the physical layer transmits bits over a medium; packets are encapsulated at higher layers (Network/Transport). Comparing physical layer to a 'road' and packets to 'envelopes' is scientifically inaccurate and misleading for beginners learning the OSI model.
+2026-11-14 15:58:58,254 INFO Fact-check 2 fix: Step 1: The command 'ping 8.8.8.8' is used to verify connectivity, but the script claims 'If you get a reply, your network is working' as a final verification of the roadmap. This is vague. A ping reply only confirms ICMP is not blocked; it does not verify the full network stack or the specific roadmap steps.
+2026-11-14 15:58:58,254 INFO Fact-check 2 fix: Step 2: The script suggests using 'sudo dnf upgrade' on Fedora as a critical command. 'dnf' is the package manager, but the command to update and upgrade specifically is typically 'sudo dnf upgrade' or 'sudo dnf update'. While not inherently wrong, the context of 'sudo' as the *only* critical command to master is reductive. More importantly, the verification step asks 'Can you create a new user account and assign them specific permissions...' This is a valid administrative task, but the transition from 'sudo apt update' to user creation is a large leap in difficulty not explicitly bridged in the narrative.
+2026-11-14 15:58:58,254 INFO Fact-check 2 fix: Step 3: The script states 'The verification step: Can you use 'curl' to send a custom header to a website and see how the server responds? If you can change the 'User-Agent' string and the server reacts, you are thinking like a security professional.' Changing a User-Agent is a basic browser feature and does not inherently demonstrate 'thinking like a security professional' or protocol understanding in a defensive context. It is a superficial check.
+2026-11-14 15:58:58,254 INFO Fact-check 2 fix: Step 4: The script provides the command 'grep -i failed /var/log/auth.log'. On many modern Linux distributions (especially those using systemd), /var/log/auth.log does not exist or is symlinked/managed differently, and the default logging location for authentication may vary. Providing a specific path without noting the distribution dependency is technically incomplete for a 'strict' review.
+2026-11-14 15:58:58,254 INFO Fact-check 2 fix: Step 5: The script recommends 'CompTIA CySA+ (Cybersecurity Analyst) or similar analyst-focused certifications, rather than offensive-focused ones.' While CySA+ is defensive-leaning, recommending it as the primary differentiator for a $95k salary without mentioning experience level or specific job roles (e.g., vs. PenTest+) could mislead viewers into thinking certification alone guarantees the salary, which violates the 'accurate and in depth' requirement.
+2026-11-14 15:59:02,340 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 15:59:02,421 INFO People search for: cybersecurity roadmap 2025; cyber security full roadmap 2025; complete cybersecurity roadmap 2025; cyber security course roadmap 2025; cyber security career roadmap 2025; cybersecurity roadmap for beginners 2025
+2026-11-14 15:59:02,898 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-14 15:59:02,898 INFO Title polished: Cybersecurity Roadmap 2025: Zero to $95k Job Without a Degree -> Cybersecurity Roadmap 2025: Zero to $95k Without a Degree
+2026-11-14 15:59:02,898 INFO YouTube title: Cybersecurity Roadmap 2025: Zero to $95k Without a Degree
+2026-11-14 15:59:03,894 INFO Created notebook 5060445d-d045-4a42-950c-7fdda250e7f1
+2026-11-14 15:59:05,809 INFO Script added as source
+2026-11-14 15:59:07,773 INFO Started cinematic video generation (task 8f7d1120-dc07-4276-bf1e-fd12d06f5353)
+2026-11-14 15:59:07,774 INFO Waiting for cinematic video (can take 30+ minutes)
+2026-11-14 16:25:59,222 INFO Downloaded cinematic video to output/video_raw.mp4
+2026-11-14 16:26:01,123 INFO Started NotebookLM Short (task d3737987-70df-4ad7-afef-0417fb877a60)
+2026-11-14 16:43:07,123 INFO Downloaded NotebookLM Short to output/short_raw.mp4
+2026-11-14 16:43:10,140 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-14 16:43:11,775 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-14 16:43:12,779 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-14 16:43:31,086 INFO Watermark removal: 1%
+2026-11-14 16:43:36,091 INFO Watermark removal: 3%
+2026-11-14 16:43:41,095 INFO Watermark removal: 6%
+2026-11-14 16:43:46,100 INFO Watermark removal: 8%
+2026-11-14 16:43:51,104 INFO Watermark removal: 10%
+2026-11-14 16:43:56,110 INFO Watermark removal: 11%
+2026-11-14 16:44:01,114 INFO Watermark removal: 13%
+2026-11-14 16:44:06,118 INFO Watermark removal: 15%
+2026-11-14 16:44:11,123 INFO Watermark removal: 17%
+2026-11-14 16:44:16,128 INFO Watermark removal: 20%
+2026-11-14 16:44:21,355 INFO Watermark removal: 22%
+2026-11-14 16:44:26,360 INFO Watermark removal: 25%
+2026-11-14 16:44:31,364 INFO Watermark removal: 27%
+2026-11-14 16:44:36,368 INFO Watermark removal: 29%
+2026-11-14 16:44:41,374 INFO Watermark removal: 32%
+2026-11-14 16:44:46,379 INFO Watermark removal: 34%
+2026-11-14 16:44:51,385 INFO Watermark removal: 35%
+2026-11-14 16:44:56,390 INFO Watermark removal: 36%
+2026-11-14 16:45:01,394 INFO Watermark removal: 39%
+2026-11-14 16:45:06,398 INFO Watermark removal: 41%
+2026-11-14 16:45:11,403 INFO Watermark removal: 44%
+2026-11-14 16:45:16,408 INFO Watermark removal: 46%
+2026-11-14 16:45:21,592 INFO Watermark removal: 48%
+2026-11-14 16:45:26,596 INFO Watermark removal: 51%
+2026-11-14 16:45:31,600 INFO Watermark removal: 53%
+2026-11-14 16:45:36,605 INFO Watermark removal: 55%
+2026-11-14 16:45:41,610 INFO Watermark removal: 57%
+2026-11-14 16:45:46,615 INFO Watermark removal: 60%
+2026-11-14 16:45:51,620 INFO Watermark removal: 62%
+2026-11-14 16:45:56,625 INFO Watermark removal: 64%
+2026-11-14 16:46:01,630 INFO Watermark removal: 67%
+2026-11-14 16:46:06,635 INFO Watermark removal: 68%
+2026-11-14 16:46:11,639 INFO Watermark removal: 69%
+2026-11-14 16:46:16,643 INFO Watermark removal: 72%
+2026-11-14 16:46:21,837 INFO Watermark removal: 74%
+2026-11-14 16:46:26,842 INFO Watermark removal: 76%
+2026-11-14 16:46:31,846 INFO Watermark removal: 79%
+2026-11-14 16:46:36,851 INFO Watermark removal: 81%
+2026-11-14 16:46:41,855 INFO Watermark removal: 83%
+2026-11-14 16:46:46,859 INFO Watermark removal: 85%
+2026-11-14 16:46:51,864 INFO Watermark removal: 88%
+2026-11-14 16:46:56,869 INFO Watermark removal: 90%
+2026-11-14 16:47:01,873 INFO Watermark removal: 92%
+2026-11-14 16:47:06,878 INFO Watermark removal: 94%
+2026-11-14 16:47:11,883 INFO Watermark removal: 97%
+2026-11-14 16:47:16,888 INFO Watermark removal: 99%
+2026-11-14 16:47:22,090 INFO Clicking 'Download Clean Video'
+2026-11-14 16:47:30,641 INFO Downloaded clean video after 257s
+2026-11-14 16:47:30,817 INFO Website result: {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 426.504127, 'has_audio': True} (original {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 429.569161, 'has_audio': True})
+2026-11-14 16:47:30,865 INFO Adding channel name watermark: GetYr_CYBERSEC
+2026-11-14 16:49:33,843 INFO Added intro + video_final_main + outro
+2026-11-14 16:49:33,843 INFO Edited video saved to output/video_final.mp4
+2026-11-14 16:49:34,026 INFO Thumbnail candidate at 0.5s: detail 14.3
+2026-11-14 16:49:34,210 INFO Thumbnail candidate at 1.0s: detail 14.3
+2026-11-14 16:49:34,399 INFO Thumbnail candidate at 1.5s: detail 14.3
+2026-11-14 16:49:34,593 INFO Thumbnail candidate at 2.0s: detail 14.3
+2026-11-14 16:49:34,793 INFO Thumbnail candidate at 2.5s: detail 14.4
+2026-11-14 16:49:35,000 INFO Thumbnail candidate at 3.0s: detail 14.4
+2026-11-14 16:49:35,212 INFO Thumbnail candidate at 3.5s: detail 14.4
+2026-11-14 16:49:35,431 INFO Thumbnail candidate at 4.0s: detail 14.4
+2026-11-14 16:49:35,659 INFO Thumbnail candidate at 5.0s: detail 14.4
+2026-11-14 16:49:35,692 INFO Thumbnail taken from the video at 5.0s -> output/thumbnail.jpg
+2026-11-14 16:49:36,971 INFO Upload 15%
+2026-11-14 16:49:37,166 INFO Upload 31%
+2026-11-14 16:49:37,337 INFO Upload 47%
+2026-11-14 16:49:37,486 INFO Upload 63%
+2026-11-14 16:49:37,681 INFO Upload 79%
+2026-11-14 16:49:37,852 INFO Upload 94%
+2026-11-14 16:49:38,257 INFO Uploaded: https://youtu.be/-OsMXWkWkvU (public)
+2026-11-14 16:49:40,426 INFO Thumbnail set
+2026-11-14 16:49:40,994 INFO Added to playlist: Cybersecurity Fundamentals
+2026-11-14 16:49:43,938 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-14 16:49:45,565 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-14 16:49:46,569 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-14 16:49:49,596 INFO Watermark removal: 1%
+2026-11-14 16:49:54,807 INFO Watermark removal: 15%
+2026-11-14 16:49:59,813 INFO Watermark removal: 30%
+2026-11-14 16:50:04,818 INFO Watermark removal: 45%
+2026-11-14 16:50:09,823 INFO Watermark removal: 58%
+2026-11-14 16:50:14,830 INFO Watermark removal: 74%
+2026-11-14 16:50:19,836 INFO Watermark removal: 88%
+2026-11-14 16:50:24,839 INFO Clicking 'Download Clean Video'
+2026-11-14 16:50:32,913 INFO Downloaded clean video after 46s
+2026-11-14 16:50:33,054 INFO Website result: {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 62.856417, 'has_audio': True} (original {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 65.898231, 'has_audio': True})
+2026-11-14 16:50:41,091 INFO Using NotebookLM's Short (watermark removed)
+2026-11-14 16:50:42,472 INFO Uploaded: https://youtu.be/N43qg6JmvjE (public)
+2026-11-14 16:50:42,472 INFO Short uploaded: https://youtu.be/N43qg6JmvjE
+2026-11-14 16:51:33,703 WARNING Instagram direct upload failed: Instagram upload failed (400): {"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} - trying the public-link method
+2026-11-14 16:52:28,034 INFO Instagram Reel posted via link (id 18200270689389622)
+2026-11-14 16:52:29,645 INFO Done: Cybersecurity Roadmap 2025: Zero to $95k Without a Degree
+2026-11-14 16:52:30,862 INFO Deleted old NotebookLM notebook 5060445d-d045-4a42-950c-7fdda250e7f1
