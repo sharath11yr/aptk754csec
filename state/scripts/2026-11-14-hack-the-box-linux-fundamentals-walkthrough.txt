@@ -1,0 +1,61 @@
+Hack The Box Linux Fundamentals Walkthrough
+search: hack the box linux fundamentals walkthrough
+tutorial: False
+
+You are staring at a Hack The Box machine. The clock is ticking. You have your notes open, your terminal ready, and you are about to type the command that every guide promises will get you in. But if you type it wrong—just slightly wrong—you will spend the next hour chasing ghosts, hitting dead ends, and wondering why the box isn't responding. Here is the truth: 90% of machines on Hack The Box fall not because the command is missing, but because the command is used out of order, or without the right flags. In this video, we are going to dissect the single Linux command that is essential for initial reconnaissance. We will walk through every step, the exact commands, and a final check so you can stop guessing and start owning. I am [Name], and welcome to the walkthrough.
+
+[HOOK AND PREMISE]
+
+Imagine you have the perfect key for a lock, but you are trying to turn it upside down. It won't budge, right? In the world of Hack The Box, that is exactly what happens when you run a penetration testing tool without first understanding the network state. The command we are talking about is `netstat`. But not just running it blindly. We are going to look at it with the specific flags that reveal open ports, listening services, and established connections. Why does this matter right now? Because the first thing any HTB machine does when you connect is listen on a port. If you don't see that port, you are already locked out before you start. By the end of this video, you will know exactly how to run this command, read the output like a pro, and use that information to pivot into the machine. We will cover the step-by-step setup, the common mistakes that waste your time, and a pro tip that will save you hours on your next box. Let's dive in.
+
+[STEP-BY-STEP WALKTHROUGH]
+
+First, let's set the stage. You have your VPN connected, you have your IP address, and you are ready to scan. The command we rely on is `netstat -tuln`. Let's break down exactly what each part does, because getting this right is the difference between seeing the goal and hitting a wall.
+
+The `-t` flag stands for TCP. This filters the output to show only Transmission Control Protocol connections. In a Hack The Box environment, almost all your initial interactions—SSH, HTTP, FTP—run over TCP. By filtering for TCP only, we cut through the noise of UDP packets that rarely matter during the initial foothold phase.
+
+The `-u` flag stands for UDP. **We include `-u` only if you specifically want to see UDP datagrams.** Unlike some tools, `netstat` does not toggle between modes; specifying `-u` simply adds UDP entries to the output. For the first 60 seconds of attacking a box, you will almost always be looking at the TCP column, and you can safely omit `-u` if you are only interested in TCP services like SSH or HTTP.
+
+The `-l` flag is the critical one. It stands for listening. This is the flag that makes the output manageable. When you add `-l`, `netstat` only shows ports that are currently listening for connections. This is huge. If you run `netstat` without `-l`, you will see a massive list of every connection your computer has ever made, every background process, every established session. It is overwhelming. But with `-l`, the list shrinks dramatically. You only see the services the machine is actively offering to the world. On a fresh HTB machine, you will typically see SSH on port 22, maybe a web server on port 80 or 8080, and sometimes other services like MySQL or Redis. If you don't see those ports in the listening state, you know immediately that either the service isn't running, or you are looking at the wrong network interface.
+
+The `-n` flag stands for numeric. This is an efficiency flag. Without `-n`, `netstat` tries to resolve every single IP address and port name into a human-readable label. It queries DNS, it queries your local host files, and it can literally slow down your terminal output by seconds on a busy system. With `-n`, it just prints the numbers. `127.0.0.1:22`. That is it. No delays. No resolution errors. Just raw data.
+
+So, putting it all together: `netstat -tuln`. Let's visualize the output so you know exactly what you are looking for.
+
+When you type that command and hit enter, you will see columns. The first column usually shows the protocol, `tcp` or `udp`. The second column is the local address. This is the IP and port the service is listening on. Look for `0.0.0.0:22` or `0.0.0.0:80`. `0.0.0.0` means the service is listening on all network interfaces. If you see `127.0.0.1:22`, that means SSH is only listening on the local machine (loopback), and you cannot connect to it from your attacking machine over the network—you would have to tunnel or use a different method. The third column is the foreign address. If this is empty, the socket is listening and waiting for someone to connect. If it shows an IP address, it means there is already an established connection from somewhere else. The fourth column is the state. For a listening socket, this will almost always be `LISTEN`. If you see `ESTABLISHED`, that means someone is already talking to that service.
+
+Now, let's look at a real example. Imagine you type `netstat -tuln` and you get this output:
+
+`tcp        0      0 0.0.0.0:22      0.0.0.0      LISTEN
+tcp        0      0 127.0.0.1:3306  0.0.0.0      LISTEN
+tcp        0      0 0.0.0.0:8080   0.0.0.0      LISTEN'
+
+What does this tell you? The first line is SSH. It is listening on all interfaces on port 22. That means you can connect via SSH from your terminal using the box's IP address. The second line is MySQL, but it is only listening on `127.0.0.1`, the loopback address. This is a common mistake. Many beginners try to connect to MySQL from their attacking machine using the box's IP, and it fails. They forget that MySQL is only bound to the local machine. You would need to use SSH tunneling to get to it. The third line is a service on port 8080, listening on all interfaces. This is likely the HTTP web server you are looking for.
+
+Here is the everyday analogy I promised. Think of `netstat -tuln` as looking through the window of a house. Without the `-l` flag, you are trying to see every person who has ever walked up to the door in the last hour. It is chaotic. With the `-l` flag, you only see people currently standing on the porch, waiting to be let in. The `-n` flag means you aren't reading name tags; you are just seeing the numbers on their shirts. And the `-t` flag means you are only looking at the front door, not the back window. If you see someone standing at the front door on port 22, you know exactly where to go. If the porch is empty, you know you need to find another way in. This command is your map. Get it right, and the machine opens. Get it wrong, and you are knocking on a closed door.
+
+[THE MISTAKE most people get wrong]
+
+Now, I want to pause here because there is a mistake that wastes so much time on Hack The Box. I see it in comments and forums every single day. People run `netstat -tuln`, they don't see port 80, and they immediately assume the machine is broken or that there is no web server. They start looking for exploits for SSH instead. But here is the pro tip: often, the web server is running, but it is bound to a specific IP, or it has not fully started yet, or it is running inside a Docker container with a different network namespace.
+
+The mistake is ignoring the `Recv-Q` and `Send-Q` columns. These show the queue length for received and sent data. If you see `0 0` next to your listening port, that is normal. But if you see a number greater than zero, it means there is traffic waiting to be processed. If you see a backlog, it might mean the service is overloaded, or it might be a sign of a firewall or rate limiting in action. Beginners often miss this and wonder why their `nmap` scan returns 'filtered' instead of 'open'. Checking `netstat` first tells you if the service is even claiming to listen. If it is not listening, `nmap` won't help you. If it is listening, `nmap` will confirm it. The order matters. Always check `netstat -tuln` before you run heavy scans. It is the flashlight before you enter the room.
+
+[COMMON MYTHS AND PRO TIPS]
+
+Let's bust a couple of myths real quick. Myth number one: 'I need admin rights to run netstat.' Not true. You can run `netstat -tuln` as a standard user and see the services that are publicly listening. If you want to see established connections or kernel routing information, then yes, you need root, but for the initial HTB footwork, standard user permissions are enough.
+
+Myth number two: 'Netstat is old, use ss.' That is a fair point. The `ss` command is the modern successor and is faster. However, for the purpose of this walkthrough and for clarity for new learners, `netstat` is still the most readable. If you want to use `ss`, the equivalent command is `ss -tuln`. The output format is slightly different, but it shows exactly the same information. I recommend learning `netstat` first because the flags are more intuitive to remember, and then switch to `ss` for speed.
+
+Here is a pro tip that will save you on your next box: Combine `netstat` with `grep`. If you have a long list of listening ports and you only care about HTTP, type `netstat -tuln | grep :80`. The pipe and grep will filter the output instantly, showing you only the line with port 80. This is a lifesaver when you are debugging a machine and you have ten services running. You don't have to scroll through lines of noise. Just grep for the service you are hunting.
+
+[RECAP AND CALL TO ACTION]
+
+Let's recap what we covered today. The command that is essential for initial reconnaissance on a Hack The Box machine is `netstat -tuln`. The `-t` filters for TCP, the `-l` shows only listening ports, the `-n` gives you numeric addresses for speed, and combining them gives you a clean map of what the machine is offering to the network. We looked at the output columns—Local Address, Foreign Address, and State—and realized that `0.0.0.0` means the service is open to the world, while `127.0.0.1` means it is locked to the local machine (loopback). We discussed the common mistake of ignoring the Recv-Q and Send-Q columns, and the pro tip of using `grep` to filter the noise. Remember, always check listening services before you start heavy scanning. It is the fastest way to orient yourself.
+
+Here is your comment question for today: Which of these three commands do you use most often when starting a new Hack The Box machine: `netstat -tuln`, `nmap -sV`, or `ifconfig`? Tell me `netstat`, `nmap`, or `ifconfig` in the comments. I read every comment and I love hearing which tools you guys rely on.
+
+If you found this walkthrough helpful, smash that like button it helps the algorithm bring more boxes to you, and subscribe for more walkthroughs where we break down the exact commands step-by-step. I'll see you in the next video.
+
+[OUTRO]
+
+Thanks for watching. Stay ethical, keep your lab legal, and I'll catch you next time.
