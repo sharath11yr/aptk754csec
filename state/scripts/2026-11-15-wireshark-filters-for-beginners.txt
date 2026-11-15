@@ -1,0 +1,63 @@
+Wireshark filters for beginners
+search: wireshark discord
+tutorial: False
+
+Welcome. If you have ever wondered what your devices are actually doing behind your back, stay tuned. In the last few seconds, your Wi‑Fi router is juggling dozens of invisible conversations. Some are harmless—your phone checking for updates. Others? They could be leaking your passwords or exposing private messages. Today we are diving into Wireshark filters for beginners, specifically the invisible traffic on your Wi‑Fi that reveals passwords and secrets. I’m [Name], and this is the exact step‑by‑step guide you were searching for.
+
+[HOOK]
+
+Did you know that every time you connect to a public Wi‑Fi network, your data travels through the air like radio waves that anyone with the right tools can read? In fact, studies show that over sixty percent of public Wi‑Fi hotspots have no encryption at all, meaning your usernames, passwords, and even credit card numbers could be floating in the open. But here is the good news: you can see exactly what is happening, and you can protect yourself. If you have ever searched for "Wireshark Discord" or wanted to understand the hidden traffic on your network, you are in the right place. By the end of this video, you will know exactly how to filter Wireshark to see the critical traffic, understand what those packets mean, and—most importantly—how to lock your data down. Let’s get started.
+
+[STEP 1: SETUP]
+
+First, let’s make sure we have the right foundation. Wireshark is a network protocol analyzer. It captures packets—the tiny chunks of data that travel across your network—and lets you inspect them. To follow along, you will need a laptop or computer, Wireshark installed (it’s free and open-source), and a Wi‑Fi adapter. **Important:** Capturing live Wi‑Fi traffic in Wireshark requires the adapter to be put into monitor mode \*and* the capture source to support 802.11 frame injection/monitoring. Simply having "Monitor" mode listed in `iwconfig` is often not enough; the adapter must be compatible with the underlying capture library (WinPcap/Npcap on Windows, libpcap on Linux/macOS) and often requires specific drivers or a supported capture device (e.g., Cisco AirPCAP, or a USB adapter explicitly tested for Wireshark 802.11 capture such as the Alfa AWUS036NHA with compatible firmware).
+
+Here is how you check if your adapter supports capture. Open a terminal—on Windows, use Command Prompt; on Mac or Linux, use Terminal. Type the command `iwconfig` and press Enter. Look for the line that says "Mode." If it says "Master" or "Managed," you are in managed mode, which is the default for connecting to the internet. If it says "Monitor," your adapter has entered monitor mode. **Note:** If it says nothing or an error, you may need to check your driver or use a compatible USB Wi‑Fi adapter known to work with Wireshark's 802.11 capture support, such as the Alfa AWUS036NHA. If your adapter supports it, select the interface ending in `mon` (e.g., `wlan0mon`) in Wireshark's interface list.
+
+Now, once your adapter is selected, we can start capturing.
+
+Open Wireshark. You will see a list of available interfaces. Select the one that says "monitor" next to it. Click the shark fin icon, or go to Capture and start. Wireshark will immediately start dumping packets. Don’t panic if the screen looks like a wall of gibberish; we will filter it in the next step.
+
+[STEP 2: THE FILTERS – LET’S TALK ABOUT DNS]
+
+This is the part most people get wrong. They type a filter, hit Enter, and see nothing. Why? Because they are looking for the wrong thing. If you want to see what websites are being visited, you need to look at DNS traffic. DNS is the phonebook of the internet. When you type "youtube.com," your computer asks a DNS server, "What is the IP address for youtube.com?" The server replies with an IP address, and your browser connects. If you want to see those requests, the filter is simple.
+
+Type `dns` into the filter bar at the top and press Enter. Wireshark will instantly narrow the view to only DNS packets. You will see a column labeled "Info" that usually says things like "Standard query A" or "Standard query response." That is the magic right there. You are now seeing the exact domain names your devices are asking for.
+
+Let me give you an everyday analogy. Think of DNS like calling an operator to get a phone number. You don’t dial the number yourself; you ask the operator to connect you. In the same way, your device asks the DNS server for the "number"—the IP address—so it can connect. By filtering for DNS, you are seeing every time someone on your network asks for a website.
+
+[STEP 3: FILTERING FOR PASSWORDS – HTTP VS HTTPS]
+
+Now, let’s talk about the elephant in the room: passwords. This is why most people search for this topic. You might type `http` into the filter, hoping to see login forms. And you would be partly right, but there is a catch. HTTP—unencrypted web traffic—is becoming rare. Most major sites force HTTPS, which encrypts the data between your browser and the server. If you filter for `http`, you will only see unencrypted traffic. If the site uses HTTPS, the packet content will look like gibberish, even if you capture it.
+
+However, there is a clever filter many overlook. Type `tls.handshake` into the filter. This shows you the moment a secure connection is being set up. You will see a field called "Server Name Indication" or SNI. **Critical Update for 2024:** In TLS 1.3, the Server Name Indication (SNI) field is encrypted during the handshake. While older TLS 1.2 and below leak SNI, modern connections protect this metadata. If you filter for `tls.handshake`, you will see the handshake packets. To specifically view the domain name if it is visible, look for the `tls.handshake.extensions_server_name` field in the packet details. It won’t give you the password, but it tells you exactly which services are being used, with the caveat that this may be encrypted on newer sites.
+
+[STEP 4: REAL EXAMPLE – CAPTURING A SIMPLE LOGIN]
+
+Let’s put this all together with a real example. Imagine you are on a coffee shop’s Wi‑Fi, and you decide to check a website that still uses HTTP—maybe an old blog or a local service. You open the site, and Wireshark is running in the background. You apply the filter `http`. Suddenly, a packet appears. In the "Info" column, you see "POST /login HTTP/1.1." That means your browser is sending data to the login page. If you double-click that packet, Wireshark will show you the packet details. Expand the "Hypertext Transfer Protocol" section, and then look at "Request." There, you might see the actual username and password being sent in plain text. This is the invisible traffic the title promised.
+
+But here is the defense. If that same site had HTTPS, the "Info" column would just say "TLSv1.2" or similar. The packet details would look like scrambled letters. The username and password are safely tucked inside an encrypted tunnel. This is why, in 2024, we almost always recommend using HTTPS everywhere. If you are a network administrator, you can use a tool like Wireshark to analyze encrypted traffic, but for a beginner, the takeaway is: always look for the padlock icon in your browser. **Important Note:** Decrypting HTTPS traffic in Wireshark requires installing a custom Certificate Authority certificate on the client device beforehand. This is an advanced lab technique involving a Man-in-the-Middle setup. **Do not attempt this on public or third-party networks.** It should only be performed on networks you own or have explicit, written permission to test, and even then, it is strictly for authorized security testing lab environments.
+
+[COMMON MISTAKES AND PRO TIPS]
+
+Let’s talk about the most common mistakes I see beginners make.
+
+First, forgetting to stop the capture. Wireshark keeps saving every packet forever. If you leave it running for an hour, your file will be gigabytes large, and searching through it will be slow. Always click the stop sign icon when you are done, and save the file with a meaningful name, like "home‑network‑morning."
+
+Second, trying to filter after the capture is complete. It is much easier to apply filters while capturing, as we just did. If you have a huge file, use the filter bar at the top; it works on the already‑captured data too, but it’s slower.
+
+A pro tip: use the display filter syntax to save time. Instead of typing `dns` and then `http`, you can combine them: `dns or http`. This will show you either DNS requests or unencrypted HTTP traffic in one go. Another pro tip: if you want to follow a specific conversation, right-click a packet, choose "Follow," and then "Stream" or "TCP." This will show you the entire back‑and‑forth between two devices, which is incredibly helpful when troubleshooting why a video buffer keeps stopping.
+
+**Legal and Ethical Disclaimer:** All demonstrations in this video are for educational purposes only. Capture and analysis of network traffic must only be performed on networks you own or for which you have explicit, written permission from the owner. Analyzing captured data for credentials or private communications on networks you do not own is illegal and unethical. The instructor is not responsible for misuse of this information.
+
+[RECAP]
+
+Let’s recap what we covered today. We started with the setup: making sure your Wi‑Fi adapter can enter monitor mode and support Wireshark 802.11 capture. We then dove into the essential filter `dns`, which reveals every website request your devices make. We explored `http` versus `https`, and learned that even secure traffic may leak domain names via SNI depending on the TLS version, but modern TLS 1.3 encrypts this field. We looked at a real example of an unencrypted login, proving that HTTP is a security risk, and we finished with pro tips on saving captures and following streams. We emphasized that defense is using HTTPS and that decryption techniques are advanced lab-only procedures requiring explicit permission.
+
+[CALL TO ACTION]
+
+So, here is my question for you: Which of these three filters did you find most surprising—`dns`, `http`, or `tls.handshake`? Tell me the number in the comments, or type the word "SNI" if you had no idea that domain names leak even on secure connections (with the caveat that modern TLS 1.3 may encrypt it). I read every comment, and I use your answers to make the next video even better.
+
+If you found this step‑by‑step guide helpful, hit the like button and subscribe for more deep‑dives into networking and cybersecurity. Next week, we’ll be looking at how to encrypt your own traffic so nothing ever looks like that again. Thanks for watching, and stay safe out there.
+
+[END VIDEO]
