@@ -1,0 +1,29 @@
+Ransomware explained simply
+search: ransomware fnaf 2
+tutorial: False
+
+Ransomware is not just a computer virus. It is a digital hostage situation that happens in seconds. Right now, a business falls victim to ransomware every 11 seconds. In the last year alone, ransomware attacks have cost the global economy over 20 billion dollars. You might think this only happens to big corporations, but the truth is, if you have files on a computer or phone, you are a target. Today, we are going to look at exactly what happens to your files the moment ransomware strikes, and the backup strategy that can stop it in its tracks.
+
+[HOOK END]
+
+So, how does ransomware actually get inside your system? Most of the time, it starts with a simple mistake. You receive an email that looks legitimate, perhaps pretending to be a receipt or an invoice. Or maybe you click a link on a website that looks harmless. That link downloads a small piece of code, often hidden in a document or an executable file. Once you open that file, the ransomware silently begins its work. It doesn't announce itself. It just starts scanning your computer for files.
+
+Here is the step-by-step process of what happens next. First, the ransomware establishes a connection with the attacker's command-and-control server. This connection allows the malware to receive encryption credentials. Now, the real damage begins.
+
+The ransomware uses a process called hybrid encryption. Think of your files as a locked box. The ransomware generates a random symmetric key to lock your files quickly. It then encrypts that symmetric key using a public key. It locks every single document, photo, and video on your drive. It renames the files, often adding a strange extension like .encrypted or .locked, so you can't open them. The speed is terrifying. In a matter of minutes, hundreds of files can be locked. You try to open a family photo, and instead, you see gibberish. You try to open a work spreadsheet, and it is dead.
+
+But here is the part most people get wrong. The ransomware often attempts to delete the 'Shadow Copy' backups that Windows creates automatically. These are previous versions of your files. By deleting them, the attacker makes it much harder for you to restore your data without paying. Note: The methods used to delete these shadows vary by ransomware family, but the intent to eliminate recovery options is consistent.
+
+Now, you are looking at a ransom note. Usually, it is a text file left on your desktop. It tells you that your files are encrypted. To get them back, you must pay a specific amount of money, often in cryptocurrency like Bitcoin, within a certain time limit. If you don't pay, the note threatens to delete the key or leak your data.
+
+So, what is the backup strategy that stops ransomware in its tracks? The answer is the 3-2-1 rule. You need at least three copies of your data. Two different types of media, like an internal hard drive and a removable SSD. And one copy must be offsite. This means physically disconnected from your network. If your external hard drive is always plugged into your computer, ransomware will encrypt it too. The trick is to keep a backup drive that you only plug in once a week to copy new files, and then immediately unplug it. Better yet, use a cloud service that has versioning, so you can roll back to a version of the file from before the attack.
+
+But wait, there is a common myth I need to bust. Many people think that if they have an antivirus, they are safe from ransomware. Antivirus is great, but modern ransomware often uses 'polymorphic' code. This means it changes its own code every time it runs, making it invisible to standard virus definitions. The only true defense is having that offline backup we just talked about.
+
+Here is a pro tip for Windows users. If you suspect an infection, immediately disconnect your internet cable or turn off your Wi-Fi. Do not shut down the computer forcefully unless instructed by a professional, as this can interfere with forensic analysis or trigger unpredictable behavior. Disconnect and seek professional help.
+
+Let's do a quick recap. Ransomware enters usually through a phishing email or a malicious link. It connects to a server to receive encryption keys. It uses hybrid encryption: a random symmetric key is generated to lock your files quickly, and that symmetric key is then encrypted using a public key. It deletes or attempts to delete local Shadow Copies to trap you. It then demands payment, usually in crypto. The only way to get your files back for sure is the 3-2-1 backup rule: three copies, two different media types, one offsite.
+
+Here is your question for the comments today. Did you know that ransomware attempts to delete Windows Shadow Copies before encrypting your files? Comment "Yes" if you knew that, or "No" if this was a surprise. It helps us know if we are teaching you something new.
+
+If you found this breakdown helpful, smash the like button so the algorithm pushes this to someone else who needs to secure their data. And don't forget to subscribe for more videos breaking down the tech you use every day, right here on this channel. Stay safe out there.
