@@ -256,5 +256,11 @@
     "topic": "Hydra theory and attack methodology explained",
     "title": "Hydra Theory: How the Password Cracking Machine Works & How to Defend",
     "youtube_id": "EFC8Z2fk_dY"
+  },
+  {
+    "date": "2026-11-16",
+    "topic": "How to set up Hashcat on Android for password cracking",
+    "title": "How to Run Hashcat on Android Offline",
+    "youtube_id": "CFW1HqKmbRY"
   }
 ]
