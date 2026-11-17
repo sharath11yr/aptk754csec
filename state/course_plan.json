@@ -1,5 +1,8 @@
 {
  "active": [
+  "Kali Linux Tools Hands-On"
+ ],
+ "queue": [
   "Cybersecurity Basics",
   "Networking for Security",
   "Linux for Hackers",
@@ -9,9 +12,7 @@
   "Defensive Security",
   "Cloud and Mobile Security",
   "Malware Analysis",
-  "Careers and Certifications"
- ],
- "queue": [
+  "Careers and Certifications",
   "Advanced Penetration Testing",
   "Active Directory Security",
   "Wireless Security",

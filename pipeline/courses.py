@@ -23,6 +23,7 @@ log = logging.getLogger(__name__)
 PROGRESS_FILE = Path("state/course_progress.json")
 
 COURSES = {
+    "Kali Linux Tools Hands-On": ["Nmap port scanning step by step", "Wireshark packet analysis hands-on", "Hydra password attacks on your own lab", "Hashcat cracking hashes in a lab", "John the Ripper explained", "Metasploit basics in a home lab", "Burp Suite for web testing", "sqlmap and SQL injection in a lab", "Nikto web server scanning", "Gobuster and directory brute forcing", "Netcat the Swiss army knife", "theHarvester and OSINT", "Aircrack-ng and Wi-Fi security in your own network", "WPScan for WordPress", "SearchSploit and Exploit-DB", "tcpdump on the command line", "Crunch and CeWL wordlists", "Social-Engineer Toolkit awareness demo", "OpenVAS vulnerability scanning", "Volatility memory forensics", "Autopsy disk forensics", "Ghidra reverse engineering basics"],
     "Cybersecurity Basics": ["What is cybersecurity", "The CIA triad", "Types of hackers", "Common cyber attacks overview", "How passwords are cracked and protected", "Two-factor authentication", "Malware types", "Phishing and social engineering", "Staying safe online"],
     "Networking for Security": ["How the internet works for hackers and defenders", "IP, ports and protocols", "TCP/IP and the OSI model for security", "DNS and how it is attacked", "Firewalls", "VPNs and proxies", "Wireshark and packet analysis"],
     "Linux for Hackers": ["Why Linux for cybersecurity", "Linux file system", "Essential commands", "Users, groups and permissions", "Processes and services", "Bash scripting basics", "Kali Linux overview"],
@@ -60,7 +61,7 @@ QUEUE = [
     "Security for AI and LLM apps", "Python for Hackers", "API Security", "Social Engineering Defense",
     "Security Compliance and Laws", "Blockchain Security",
 ]
-ACTIVE_COURSES = 10       # courses that take turns at the same time
+ACTIVE_COURSES = 1        # one focused playlist at a time
 COURSE_LESSONS_MAX = 120  # a course is "complete" after this many lessons (a queued one starts)
 PLAN_FILE = Path("state/course_plan.json")
 
