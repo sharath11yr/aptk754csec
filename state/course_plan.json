@@ -295,6 +295,38 @@
    "Bug bounty basics: Writing effective write-ups and reports",
    "CTF challenges explained: Cryptography advanced techniques",
    "CTF challenges explained: Forensic analysis fundamentals"
+  ],
+  "Kali Linux Tools Hands-On": [
+   "Nmap Fundamentals: Scanning Your First Network",
+   "Nmap Port Scanning: TCP Connect vs SYN Scan",
+   "Nmap Service & Version Detection Deep Dive",
+   "Nmap OS Detection & Scripting Engine (NSE) Intro",
+   "Nmap NSE Scripts: HTTP and Vulnerability Scanning",
+   "Wireshark Interface: Capturing and Filtering Basics",
+   "Wireshark TCP Analysis: Handshakes and Retransmissions",
+   "Wireshark Follow TCP Streams & HTTP Analysis",
+   "Hydra SSH & VNC Brute Force in a Local Lab",
+   "Hydra Cracking SMB and HTTP Form Passwords",
+   "Hashcat Introduction: Understanding Hash Types and Modes",
+   "Hashcat Attack Modes: Dictionary vs Mask Attack",
+   "Hashcat GPU Acceleration and Custom Rules",
+   "John the Ripper: Single Crack and Wordlist Modes",
+   "John the Ripper: Incremental Mode and Performance Tuning",
+   "Metasploit Framework: Searching and Launching Exploits",
+   "Metasploit Auxiliary Scanners: Port and Version Detection",
+   "Burp Suite: Installing and Configuring the Community Edition",
+   "Burp Suite: Intercepting and Modifying HTTP Requests",
+   "sqlmap: Automated SQL Injection and Database Extraction",
+   "Nikto Web Server Scanner: Identifying Out-of-Date Software",
+   "Gobuster: Directory and DNS Brute Forcing Basics",
+   "Netcat: Reverse Shells and Basic File Transfer",
+   "theHarvester: Email and Subdomain Discovery",
+   "Aircrack-ng: Capturing WPA Handshakes",
+   "WPScan: Enumerating WordPress Plugins and Themes",
+   "SearchSploit: Searching and Using Exploits from Command Line",
+   "tcpdump: Command Line Packet Capture and Basic Usage",
+   "Crunch: Generating Custom Wordlists for Password Attacks",
+   "CEWL: Generating Custom Wordlists from Target Websites"
   ]
  }
 }
