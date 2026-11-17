@@ -1,0 +1,43 @@
+Osint tutorial for beginners
+search: osint tutorial
+tutorial: True
+
+Welcome. In the time it takes to drink your morning coffee, someone can piece together your entire digital life from scattered breadcrumbs you didn't even know you left. Maybe you're trying to reconnect with an old friend, verifying a date, or just curious about how much of yourself is actually public. By the end of this video, you will have a complete, legal OSINT toolkit. You will know exactly how to find someone's digital footprint using free, legal methods, and you will learn how to protect your own privacy in the process. Let's get started.
+
+Finding someone online isn't about magic; it's about knowing where to look and how to connect the dots. Most beginners start with a simple Google search, but that only scratches the surface. The real power comes from understanding the different layers of the internet—social media profiles, public records, and professional networks. Think of it like detective work: you are gathering clues, but every clue must be gathered legally and ethically. We are doing this in your own lab environment, focusing on how the tools work and how to defend against this kind of exposure.
+
+First, let's talk about what you need. You don't need expensive software. A standard computer with an internet connection is enough. However, for serious OSINT work, privacy is key. I highly recommend using a virtual machine or a privacy-focused browser profile to keep your own data separate. Ensure you are using a current version of Windows, macOS, or Linux. No special hardware is required, but having a notepad or a digital document to record your findings is helpful. Okay, let's begin the actual steps.
+
+**Step 1: Exact name search in browser address bar.** Open your preferred web browser. In the address bar, type: "\\"John Doe\\" New York". Press Enter. You should see a results page filled with news articles, social media links, and maybe old forum posts. This is your baseline. If the name is common, add more specific details like their profession or a known hobby to narrow it down. 
+
+**Final Check for Step 1:** Verify the results page loaded correctly and identify at least one result that matches the name and location criteria.
+
+Step 2: Check the major social media platforms. Go to Twitter X, Instagram, and Facebook. On each, use their internal search bars. Type the person's full name. 
+
+**Instagram Specific Steps:** Click the profile when it appears. Look at the bio section and note the follower count displayed. If the profile is private, do not try to bypass the privacy settings. Move on to the next platform.
+
+**Facebook Specific Steps:** Click the first result, then click the 'About' tab in the left menu. What you should see is a consistent pattern of activity or a dead end. If the profile is private, do not try to bypass the privacy settings. Move on to the next platform.
+
+The goal here is to find public posts or mutual connections that can give you more clues.
+
+Step 3: Use professional networks. Go to LinkedIn. Type the person's name in the search bar. Above the results, click the 'Filters' button. Select 'Location' and enter your known city, and select 'Industry' if you have that detail. Click 'Show results'. What you should see is a list of past companies, skills, and education. This is often the most reliable source for professional information. If you find a profile, take note of the connections. Mutual connections can be a goldmine for verification, but remember to respect privacy boundaries.
+
+**Final Check for Step 3:** Verify that the filtered results list contains profiles matching the known city and industry.
+
+Step 4: Explore public records and people search engines. Open your web browser. Go to TruePeopleSearch.com. In the search bar, type the person's name and select their state from the dropdown menu. Click the 'Search' button. What you should see is a list of possible matches with age, relatives, and sometimes phone numbers or addresses. Click on the correct match. These sites aggregate public data. Again, use this information responsibly. Do not use it for stalking or harassment.
+
+**Final Check for Step 4:** Verify the match list contains at least one entry with the correct name and state; if multiple matches exist, note the age or relatives to identify the correct person.
+
+Step 5: The Google Dorks technique. This is a powerful tool for expanding your search beyond the obvious. Open Google Chrome. In the address bar, type exactly: site:linkedin.com/in/ "John Doe". Press Enter. You should see only LinkedIn profiles for that person. You can also search for file types. Type exactly: filetype:pdf "John Doe" resume. Press Enter. You should see PDF resumes or documents that the person may have uploaded to a public site. This technique expands your search beyond the obvious.
+
+**Final Check for Step 5:** Verify that the search results are limited to the specified site (LinkedIn) or file type (PDF) as requested.
+
+Okay, you have gathered your information. Now, how do you check if it's accurate? First, cross-reference. If you find a Facebook profile and a LinkedIn profile with the same employer and graduation year, that's a strong signal. Second, check the dates. Old information is common in OSINT. If the last post was five years ago, the person may have changed their digital habits. Third, verify the location. Does the city match what you know? If something doesn't add up, it might be a different person with the same name.
+
+Now, let's talk about common mistakes. Myth number one: Incognito mode hides your IP from websites. This is incorrect. Incognito only stops your browser from saving history on your local machine; it does not make you anonymous on the web. The sites you visit still see your IP address, and your ISP can still track your activity. For true privacy in OSINT, use a VPN or a virtual machine.
+
+Myth two: Deleting a post does not remove it from the internet forever. Once something is indexed or shared, it can be cached or reposted. Always assume anything you post is permanent. A pro tip: If you are doing this for defense, Google yourself regularly. Set up Google Alerts for your name so you know what new information pops up.
+
+Let's do a quick recap. Step 1: Exact name search in browser address bar with final check verification of results. Step 2: Social media check on Instagram and Facebook with exact menu paths (profile click, bio check, About tab via left menu) and final checks. Step 3: LinkedIn lookup with filters applied (Location and Industry) and final check of results. Step 4: People search engine search on TruePeopleSearch.com with state selection and final check of match list. Step 5: Google Dorks commands for LinkedIn search (site:) and filetype search (filetype:) with final check of result filters. We checked our findings by cross-referencing dates and locations.
+
+Here is your comment question for today: Of the five steps we covered—exact name search, social media check with exact menu paths, LinkedIn lookup with filters and final check, people search engine search with final check verification, or Google Dorks commands with result filter verification—which one did you find most surprising or useful? Let me know your answer in the comments below. If you found this tutorial helpful and want more step-by-step guides on digital privacy and investigation, hit that subscribe button and ring the bell for our next video. Thanks for watching.
