@@ -298,5 +298,11 @@
     "topic": "Kali Linux Tools Hands-On: Nmap Service & Version Detection Deep Dive",
     "title": "How Nmap Reveals Hidden Services & Exact Versions",
     "youtube_id": "6KoZ3hw227M"
+  },
+  {
+    "date": "2026-11-18",
+    "topic": "Kali Linux Tools Hands-On: Nmap OS Detection & Scripting Engine (NSE) Intro",
+    "title": "How Nmap Guesses Your Operating System (OS Detection)",
+    "youtube_id": "ab42_7BPk-E"
   }
 ]
