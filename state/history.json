@@ -304,5 +304,11 @@
     "topic": "Kali Linux Tools Hands-On: Nmap OS Detection & Scripting Engine (NSE) Intro",
     "title": "How Nmap Guesses Your Operating System (OS Detection)",
     "youtube_id": "ab42_7BPk-E"
+  },
+  {
+    "date": "2026-11-18",
+    "topic": "Kali Linux Tools Hands-On: Nmap NSE Scripts: HTTP and Vulnerability Scanning",
+    "title": "Why the OSI Model Actually Matters: The Networking Standard Explained",
+    "youtube_id": "ZU4Y9tpuAjk"
   }
 ]
