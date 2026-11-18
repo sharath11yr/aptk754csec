@@ -286,5 +286,11 @@
     "topic": "Kali Linux Tools Hands-On: Nmap Fundamentals: Scanning Your First Network",
     "title": "How ARP Actually Works: The Hidden Protocol Connecting Your Network",
     "youtube_id": "kJwsEKzjbiA"
+  },
+  {
+    "date": "2026-11-18",
+    "topic": "Kali Linux Tools Hands-On: Nmap Port Scanning: TCP Connect vs SYN Scan",
+    "title": "TCP Connect vs SYN Scan: Why Nmap Hangs on Locked Ports",
+    "youtube_id": "3P1ws4O1uo0"
   }
 ]
