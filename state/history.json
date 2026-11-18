@@ -292,5 +292,11 @@
     "topic": "Kali Linux Tools Hands-On: Nmap Port Scanning: TCP Connect vs SYN Scan",
     "title": "TCP Connect vs SYN Scan: Why Nmap Hangs on Locked Ports",
     "youtube_id": "3P1ws4O1uo0"
+  },
+  {
+    "date": "2026-11-18",
+    "topic": "Kali Linux Tools Hands-On: Nmap Service & Version Detection Deep Dive",
+    "title": "How Nmap Reveals Hidden Services & Exact Versions",
+    "youtube_id": "6KoZ3hw227M"
   }
 ]
