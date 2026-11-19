@@ -328,5 +328,11 @@
     "topic": "Kali Linux Tools Hands-On: Wireshark Follow TCP Streams & HTTP Analysis",
     "title": "Reconstructing Secret Conversations: How Wireshark Follows TCP Streams",
     "youtube_id": "oitUN6H5mKs"
+  },
+  {
+    "date": "2026-11-19",
+    "topic": "Kali Linux Tools Hands-On: Hydra SSH & VNC Brute Force in a Local Lab",
+    "title": "Hydra Brute Force: How It Really Cracks SSH & VNC",
+    "youtube_id": "gd007rzbKuM"
   }
 ]
