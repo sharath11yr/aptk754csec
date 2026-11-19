@@ -322,5 +322,11 @@
     "topic": "Kali Linux Tools Hands-On: Wireshark TCP Analysis: Handshakes and Retransmissions",
     "title": "Why TCP Retransmissions Crash Networks: The Hidden Handshake Cost",
     "youtube_id": "VJ5ELBNXRgA"
+  },
+  {
+    "date": "2026-11-19",
+    "topic": "Kali Linux Tools Hands-On: Wireshark Follow TCP Streams & HTTP Analysis",
+    "title": "Reconstructing Secret Conversations: How Wireshark Follows TCP Streams",
+    "youtube_id": "oitUN6H5mKs"
   }
 ]
