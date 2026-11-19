@@ -316,5 +316,11 @@
     "topic": "Kali Linux Tools Hands-On: Wireshark Interface: Capturing and Filtering Basics",
     "title": "How Rootkits Hide: The Kernel vs User Mode War",
     "youtube_id": "9e5vxD0j4kU"
+  },
+  {
+    "date": "2026-11-19",
+    "topic": "Kali Linux Tools Hands-On: Wireshark TCP Analysis: Handshakes and Retransmissions",
+    "title": "Why TCP Retransmissions Crash Networks: The Hidden Handshake Cost",
+    "youtube_id": "VJ5ELBNXRgA"
   }
 ]
