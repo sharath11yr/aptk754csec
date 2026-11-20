@@ -334,5 +334,11 @@
     "topic": "Kali Linux Tools Hands-On: Hydra SSH & VNC Brute Force in a Local Lab",
     "title": "Hydra Brute Force: How It Really Cracks SSH & VNC",
     "youtube_id": "gd007rzbKuM"
+  },
+  {
+    "date": "2026-11-20",
+    "topic": "Kali Linux Tools Hands-On: Hydra Cracking SMB and HTTP Form Passwords",
+    "title": "Buffer Overflow Anatomy: How Memory Corruption Actually Happens",
+    "youtube_id": "zTTx_MLUr6A"
   }
 ]
