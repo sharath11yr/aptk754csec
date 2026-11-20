@@ -340,5 +340,11 @@
     "topic": "Kali Linux Tools Hands-On: Hydra Cracking SMB and HTTP Form Passwords",
     "title": "Buffer Overflow Anatomy: How Memory Corruption Actually Happens",
     "youtube_id": "zTTx_MLUr6A"
+  },
+  {
+    "date": "2026-11-20",
+    "topic": "Kali Linux Tools Hands-On: Hashcat Introduction: Understanding Hash Types and Modes",
+    "title": "How Hackers Crack Stolen Passwords: The Hashcat Engine",
+    "youtube_id": "LHILrmhDyGE"
   }
 ]
