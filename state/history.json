@@ -346,5 +346,11 @@
     "topic": "Kali Linux Tools Hands-On: Hashcat Introduction: Understanding Hash Types and Modes",
     "title": "How Hackers Crack Stolen Passwords: The Hashcat Engine",
     "youtube_id": "LHILrmhDyGE"
+  },
+  {
+    "date": "2026-11-20",
+    "topic": "Kali Linux Tools Hands-On: Hashcat Attack Modes: Dictionary vs Mask Attack",
+    "title": "Dictionary vs Mask Attack: The Hidden Time Difference",
+    "youtube_id": "Rdbq-qRoUGc"
   }
 ]
