@@ -352,5 +352,11 @@
     "topic": "Kali Linux Tools Hands-On: Hashcat Attack Modes: Dictionary vs Mask Attack",
     "title": "Dictionary vs Mask Attack: The Hidden Time Difference",
     "youtube_id": "Rdbq-qRoUGc"
+  },
+  {
+    "date": "2026-11-20",
+    "topic": "Kali Linux Tools Hands-On: Hashcat GPU Acceleration and Custom Rules",
+    "title": "How to Crack Passwords FASTER: GPU Acceleration & Custom Rules",
+    "youtube_id": "3gQj2HW1dzQ"
   }
 ]
