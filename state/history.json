@@ -358,5 +358,11 @@
     "topic": "Kali Linux Tools Hands-On: Hashcat GPU Acceleration and Custom Rules",
     "title": "How to Crack Passwords FASTER: GPU Acceleration & Custom Rules",
     "youtube_id": "3gQj2HW1dzQ"
+  },
+  {
+    "date": "2026-11-21",
+    "topic": "Kali Linux Tools Hands-On: John the Ripper: Single Crack and Wordlist Modes",
+    "title": "John the Ripper Single Crack Mode: Why It Beats Hashcat for Wordlists",
+    "youtube_id": "_ZAZpGDfN2o"
   }
 ]
