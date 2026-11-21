@@ -1,0 +1,300 @@
+log:       vendor_id       : [0][0][0][0]
+log:       encoder         : Lavc59.37.100 wrapped_avframe
+log: frame=    1 fps=0.0 q=-0.0 size=N/A time=00:00:00.03 bitrate=N/A speed=N/A    
+log: frame=  486 fps=0.0 q=-0.0 size=N/A time=00:00:16.20 bitrate=N/A speed=32.4x    
+log: frame=  965 fps=964 q=-0.0 size=N/A time=00:00:32.16 bitrate=N/A speed=32.1x    
+log: frame= 1569 fps=1045 q=-0.0 size=N/A time=00:00:52.30 bitrate=N/A speed=34.8x    
+log: frame= 2226 fps=1112 q=-0.0 size=N/A time=00:01:14.20 bitrate=N/A speed=37.1x    
+log: frame= 2805 fps=1121 q=-0.0 size=N/A time=00:01:33.50 bitrate=N/A speed=37.4x    
+log: frame= 3318 fps=1105 q=-0.0 size=N/A time=00:01:50.60 bitrate=N/A speed=36.8x    
+log: frame= 3643 fps=1039 q=-0.0 size=N/A time=00:02:01.43 bitrate=N/A speed=34.6x    
+log: frame= 3946 fps=985 q=-0.0 size=N/A time=00:02:11.53 bitrate=N/A speed=32.8x    
+log: frame= 4402 fps=977 q=-0.0 size=N/A time=00:02:26.73 bitrate=N/A speed=32.6x    
+log: frame= 4852 fps=969 q=-0.0 size=N/A time=00:02:41.73 bitrate=N/A speed=32.3x    
+log: frame= 5337 fps=969 q=-0.0 size=N/A time=00:02:57.90 bitrate=N/A speed=32.3x    
+log: frame= 5882 fps=978 q=-0.0 size=N/A time=00:03:16.06 bitrate=N/A speed=32.6x    
+log: frame= 6394 fps=982 q=-0.0 size=N/A time=00:03:33.13 bitrate=N/A speed=32.7x    
+log: frame= 6518 fps=929 q=-0.0 size=N/A time=00:03:37.26 bitrate=N/A speed=  31x    
+log: frame= 6629 fps=881 q=-0.0 size=N/A time=00:03:40.96 bitrate=N/A speed=29.4x    
+log: frame= 6942 fps=865 q=-0.0 size=N/A time=00:03:51.40 bitrate=N/A speed=28.8x    
+log: frame= 7482 fps=878 q=-0.0 size=N/A time=00:04:09.40 bitrate=N/A speed=29.3x    
+log: frame= 7744 fps=858 q=-0.0 size=N/A time=00:04:18.13 bitrate=N/A speed=28.6x    
+log: frame= 8175 fps=858 q=-0.0 size=N/A time=00:04:32.50 bitrate=N/A speed=28.6x    
+log: frame= 8784 fps=875 q=-0.0 size=N/A time=00:04:52.80 bitrate=N/A speed=29.2x    
+log: frame= 9360 fps=888 q=-0.0 size=N/A time=00:05:12.00 bitrate=N/A speed=29.6x    
+log: frame= 9898 fps=897 q=-0.0 size=N/A time=00:05:29.93 bitrate=N/A speed=29.9x    
+log: frame=10526 fps=912 q=-0.0 size=N/A time=00:05:50.86 bitrate=N/A speed=30.4x    
+log: frame=10646 fps=915 q=-0.0 Lsize=N/A time=00:05:54.86 bitrate=N/A speed=30.5x    
+log: video:3660kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
+log: Aborted()
+log: FFmpeg args: [-i, input.mp4, -vf, delogo=x=1141:y=686:w=134:h=24,trim=end_frame=10556,setpts=PTS-STARTPTS, -crf, 18, -preset, superfast, -c:v, libx264, -tune, stillimage, -c:a, copy, -shortest, output.mp4]
+log: ffmpeg version 5.1.4 Copyright (c) 2000-2023 the FFmpeg developers
+log:   built with emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 3.1.40 (5c27e79dd0a9c4e27ef2326841698cdd4f6b5784)
+log:   configuration: --target-os=none --arch=x86_32 --enable-cross-compile --disable-asm --disable-stripping --disable-programs --disable-doc --disable-debug --disable-runtime-cpudetect --disable-autodetect --nm=emnm --ar=emar --ranlib=emranlib --cc=emcc --cxx=em++ --objcc=emcc --dep-cc=emcc --extra-cfl
+log:   libavutil      57. 28.100 / 57. 28.100
+log:   libavcodec     59. 37.100 / 59. 37.100
+log:   libavformat    59. 27.100 / 59. 27.100
+log:   libavdevice    59.  7.100 / 59.  7.100
+log:   libavfilter     8. 44.100 /  8. 44.100
+log:   libswscale      6.  7.100 /  6.  7.100
+log:   libswresample   4.  7.100 /  4.  7.100
+log:   libpostproc    56.  6.100 / 56.  6.100
+log: Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'input.mp4':
+log:   Metadata:
+log:     major_brand     : mp42
+log:     minor_version   : 0
+log:     compatible_brands: isommp42
+log:     encoder         : Google
+log:   Duration: 00:05:54.92, start: 0.000000, bitrate: 540 kb/s
+log:   Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, smpte170m/bt470bg/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 441 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+log:     Metadata:
+log:       handler_name    : ISO Media file produced by Google Inc.
+log:       vendor_id       : [0][0][0][0]
+log:   Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 95 kb/s (default)
+log:     Metadata:
+log:       handler_name    : ISO Media file produced by Google Inc.
+log:       vendor_id       : [0][0][0][0]
+log: Stream mapping:
+log:   Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+log:   Stream #0:1 -> #0:1 (copy)
+log: [libx264 @ 0xdf19a0] using SAR=1/1
+log: [libx264 @ 0xdf19a0] using cpu capabilities: none!
+log: [libx264 @ 0xdf19a0] profile High, level 3.1, 4:2:0, 8-bit
+log: [libx264 @ 0xdf19a0] 264 - core 164 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:-3:-3 analyse=0x3:0x3 me=dia subme=1 psy=1 psy_rd=2.00:0.70 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=
+log: Output #0, mp4, to 'output.mp4':
+log:   Metadata:
+log:     major_brand     : mp42
+log:     minor_version   : 0
+log:     compatible_brands: isommp42
+log:     encoder         : Lavf59.27.100
+log:   Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, smpte170m/bt470bg/bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 15360 tbn (default)
+log:     Metadata:
+log:       handler_name    : ISO Media file produced by Google Inc.
+log:       vendor_id       : [0][0][0][0]
+log:       encoder         : Lavc59.37.100 libx264
+log:     Side data:
+log:       cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+log:   Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 95 kb/s (default)
+log:     Metadata:
+log:       handler_name    : ISO Media file produced by Google Inc.
+log:       vendor_id       : [0][0][0][0]
+log: frame=   27 fps=0.0 q=15.0 size=       0kB time=00:00:00.66 bitrate=   0.6kbits/s speed=1.64x    
+log: frame=   68 fps=0.0 q=16.0 size=       0kB time=00:00:02.03 bitrate=   0.2kbits/s speed=2.23x    
+log: frame=  110 fps= 78 q=13.0 size=       0kB time=00:00:03.43 bitrate=   0.1kbits/s speed=2.42x    
+log: frame=  151 fps= 78 q=14.0 size=       0kB time=00:00:04.87 bitrate=   0.1kbits/s speed=2.53x    
+log: frame=  191 fps= 79 q=14.0 size=       0kB time=00:00:06.29 bitrate=   0.1kbits/s speed=2.59x    
+log: frame=  225 fps= 77 q=13.0 size=     256kB time=00:00:07.26 bitrate= 288.6kbits/s speed=2.47x    
+log: frame=  259 fps= 75 q=10.0 size=     256kB time=00:00:08.61 bitrate= 243.5kbits/s speed=2.51x    
+log: frame=  294 fps= 75 q=12.0 size=     256kB time=00:00:09.56 bitrate= 219.3kbits/s speed=2.43x    
+log: frame=  324 fps= 73 q=12.0 size=     256kB time=00:00:10.56 bitrate= 198.5kbits/s speed=2.38x    
+log: frame=  360 fps= 73 q=14.0 size=     256kB time=00:00:11.86 bitrate= 176.8kbits/s speed= 2.4x    
+log: frame=  402 fps= 74 q=15.0 size=     512kB time=00:00:13.25 bitrate= 316.4kbits/s speed=2.43x    
+log: frame=  444 fps= 74 q=14.0 size=     512kB time=00:00:14.65 bitrate= 286.3kbits/s speed=2.45x    
+log: frame=  479 fps= 74 q=16.0 size=     512kB time=00:00:15.73 bitrate= 266.6kbits/s speed=2.42x    
+log: frame=  506 fps= 72 q=16.0 size=     512kB time=00:00:16.63 bitrate= 252.2kbits/s speed=2.38x    
+log: frame=  532 fps= 71 q=17.0 size=     768kB time=00:00:17.50 bitrate= 359.5kbits/s speed=2.33x    
+log: frame=  550 fps= 69 q=16.0 size=     768kB time=00:00:18.10 bitrate= 347.6kbits/s speed=2.25x    
+log: frame=  578 fps= 68 q=13.0 size=    1024kB time=00:00:19.03 bitrate= 440.8kbits/s speed=2.23x    
+log: frame=  613 fps= 68 q=14.0 size=    1280kB time=00:00:20.22 bitrate= 518.5kbits/s speed=2.24x    
+log: frame=  646 fps= 68 q=15.0 size=    1280kB time=00:00:21.30 bitrate= 492.3kbits/s speed=2.23x    
+log: frame=  684 fps= 68 q=13.0 size=    1280kB time=00:00:22.56 bitrate= 464.7kbits/s speed=2.25x    
+log: frame=  723 fps= 68 q=12.0 size=    1280kB time=00:00:23.93 bitrate= 438.0kbits/s speed=2.27x    
+log: frame=  763 fps= 69 q=12.0 size=    1280kB time=00:00:25.33 bitrate= 413.9kbits/s speed=2.29x    
+log: frame=  798 fps= 69 q=18.0 size=    1536kB time=00:00:26.36 bitrate= 477.2kbits/s speed=2.27x    
+log: frame=  834 fps= 69 q=13.0 size=    1536kB time=00:00:27.65 bitrate= 455.0kbits/s speed=2.28x    
+log: frame=  869 fps= 69 q=13.0 size=    1536kB time=00:00:28.73 bitrate= 437.9kbits/s speed=2.28x    
+log: frame=  905 fps= 69 q=12.0 size=    1536kB time=00:00:29.97 bitrate= 419.8kbits/s speed=2.29x    
+log: frame=  940 fps= 69 q=11.0 size=    1536kB time=00:00:31.10 bitrate= 404.6kbits/s speed=2.28x    
+log: frame=  971 fps= 69 q=12.0 size=    1792kB time=00:00:32.13 bitrate= 456.9kbits/s speed=2.27x    
+log: frame= 1009 fps= 69 q=11.0 size=    1792kB time=00:00:33.40 bitrate= 439.5kbits/s speed=2.28x    
+log: frame= 1047 fps= 69 q=10.0 size=    1792kB time=00:00:34.66 bitrate= 423.5kbits/s speed=2.29x    
+log: frame= 1085 fps= 69 q=12.0 size=    1792kB time=00:00:36.01 bitrate= 407.6kbits/s speed= 2.3x    
+log: frame= 1116 fps= 69 q=16.0 size=    2048kB time=00:00:36.96 bitrate= 453.9kbits/s speed=2.29x    
+log: frame= 1152 fps= 69 q=14.0 size=    2048kB time=00:00:38.33 bitrate= 437.6kbits/s speed= 2.3x    
+log: frame= 1188 fps= 69 q=15.0 size=    2048kB time=00:00:39.36 bitrate= 426.2kbits/s speed=2.29x    
+log: frame= 1228 fps= 69 q=15.0 size=    2048kB time=00:00:40.70 bitrate= 412.2kbits/s speed= 2.3x    
+log: frame= 1268 fps= 70 q=16.0 size=    2048kB time=00:00:42.05 bitrate= 399.0kbits/s speed=2.31x    
+log: frame= 1308 fps= 70 q=15.0 size=    2048kB time=00:00:43.44 bitrate= 386.2kbits/s speed=2.32x    
+log: frame= 1346 fps= 70 q=12.0 size=    2304kB time=00:00:44.63 bitrate= 422.9kbits/s speed=2.32x    
+log: frame= 1384 fps= 70 q=17.0 size=    2304kB time=00:00:45.90 bitrate= 411.2kbits/s speed=2.33x    
+log: frame= 1421 fps= 70 q=15.0 size=    2304kB time=00:00:47.15 bitrate= 400.2kbits/s speed=2.33x    
+log: frame= 1461 fps= 70 q=14.0 size=    2304kB time=00:00:48.55 bitrate= 388.7kbits/s speed=2.34x    
+log: frame= 1500 fps= 71 q=13.0 size=    2304kB time=00:00:49.76 bitrate= 379.3kbits/s speed=2.34x    
+log: frame= 1541 fps= 71 q=14.0 size=    2560kB time=00:00:51.13 bitrate= 410.1kbits/s speed=2.35x    
+log: frame= 1581 fps= 71 q=14.0 size=    2560kB time=00:00:52.46 bitrate= 399.7kbits/s speed=2.35x    
+log: frame= 1619 fps= 71 q=16.0 size=    2560kB time=00:00:53.73 bitrate= 390.3kbits/s speed=2.36x    
+log: frame= 1660 fps= 71 q=14.0 size=    2560kB time=00:00:55.10 bitrate= 380.6kbits/s speed=2.36x    
+log: frame= 1699 fps= 71 q=15.0 size=    2560kB time=00:00:56.44 bitrate= 371.5kbits/s speed=2.37x    
+log: frame= 1738 fps= 71 q=14.0 size=    2816kB time=00:00:57.84 bitrate= 398.8kbits/s speed=2.38x    
+log: frame= 1777 fps= 72 q=15.0 size=    2816kB time=00:00:59.00 bitrate= 391.0kbits/s speed=2.38x    
+log: frame= 1818 fps= 72 q=15.0 size=    2816kB time=00:01:00.36 bitrate= 382.1kbits/s speed=2.38x    
+log: frame= 1856 fps= 72 q=12.0 size=    2816kB time=00:01:01.63 bitrate= 374.3kbits/s speed=2.39x    
+log: frame= 1895 fps= 72 q=11.0 size=    2816kB time=00:01:02.94 bitrate= 366.5kbits/s speed=2.39x    
+log: frame= 1933 fps= 72 q=12.0 size=    3072kB time=00:01:04.34 bitrate= 391.1kbits/s speed= 2.4x    
+log: frame= 1972 fps= 72 q=12.0 size=    3072kB time=00:01:05.50 bitrate= 384.2kbits/s speed= 2.4x    
+log: frame= 2011 fps= 72 q=10.0 size=    3072kB time=00:01:06.80 bitrate= 376.7kbits/s speed= 2.4x    
+log: frame= 2051 fps= 72 q=11.0 size=    3072kB time=00:01:08.13 bitrate= 369.4kbits/s speed= 2.4x    
+log: frame= 2087 fps= 72 q=15.0 size=    3072kB time=00:01:09.45 bitrate= 362.4kbits/s speed=2.41x    
+log: frame= 2127 fps= 72 q=14.0 size=    3072kB time=00:01:10.66 bitrate= 356.1kbits/s speed=2.41x    
+log: frame= 2165 fps= 72 q=13.0 size=    3328kB time=00:01:11.93 bitrate= 379.0kbits/s speed=2.41x    
+log: frame= 2205 fps= 73 q=13.0 size=    3328kB time=00:01:13.26 bitrate= 372.1kbits/s speed=2.41x    
+log: frame= 2245 fps= 73 q=13.0 size=    3328kB time=00:01:14.60 bitrate= 365.5kbits/s speed=2.41x    
+log: frame= 2277 fps= 72 q=10.0 size=    3584kB time=00:01:15.66 bitrate= 388.0kbits/s speed=2.41x    
+log: frame= 2306 fps= 72 q=10.0 size=    3584kB time=00:01:16.63 bitrate= 383.1kbits/s speed= 2.4x    
+log: frame= 2335 fps= 72 q=9.0 size=    3840kB time=00:01:17.60 bitrate= 405.4kbits/s speed=2.39x    
+log: frame= 2366 fps= 72 q=10.0 size=    3840kB time=00:01:18.73 bitrate= 399.5kbits/s speed=2.39x    
+log: frame= 2395 fps= 72 q=6.0 size=    3840kB time=00:01:19.66 bitrate= 394.9kbits/s speed=2.38x    
+log: frame= 2432 fps= 72 q=12.0 size=    3840kB time=00:01:20.83 bitrate= 389.2kbits/s speed=2.38x    
+log: frame= 2473 fps= 72 q=13.0 size=    4096kB time=00:01:22.20 bitrate= 408.2kbits/s speed=2.38x    
+log: frame= 2514 fps= 72 q=14.0 size=    4096kB time=00:01:23.56 bitrate= 401.5kbits/s speed=2.39x    
+log: frame= 2554 fps= 72 q=14.0 size=    4096kB time=00:01:24.90 bitrate= 395.2kbits/s speed=2.39x    
+log: frame= 2593 fps= 72 q=15.0 size=    4096kB time=00:01:26.20 bitrate= 389.3kbits/s speed=2.39x    
+log: frame= 2630 fps= 72 q=14.0 size=    4096kB time=00:01:27.56 bitrate= 383.2kbits/s speed= 2.4x    
+log: frame= 2669 fps= 72 q=15.0 size=    4096kB time=00:01:28.73 bitrate= 378.2kbits/s speed= 2.4x    
+log: frame= 2709 fps= 72 q=16.0 size=    4096kB time=00:01:30.06 bitrate= 372.6kbits/s speed= 2.4x    
+log: frame= 2748 fps= 72 q=13.0 size=    4096kB time=00:01:31.36 bitrate= 367.3kbits/s speed= 2.4x    
+log: frame= 2785 fps= 72 q=15.0 size=    4352kB time=00:01:32.67 bitrate= 384.7kbits/s speed= 2.4x    
+log: frame= 2822 fps= 72 q=16.0 size=    4352kB time=00:01:33.83 bitrate= 379.9kbits/s speed= 2.4x    
+log: frame= 2860 fps= 72 q=13.0 size=    4352kB time=00:01:35.10 bitrate= 374.9kbits/s speed= 2.4x    
+log: frame= 2899 fps= 72 q=14.0 size=    4352kB time=00:01:36.40 bitrate= 369.8kbits/s speed=2.41x    
+log: frame= 2937 fps= 72 q=15.0 size=    4608kB time=00:01:37.77 bitrate= 386.1kbits/s speed=2.41x    
+log: frame= 2975 fps= 72 q=16.0 size=    4608kB time=00:01:38.93 bitrate= 381.6kbits/s speed=2.41x    
+log: frame= 3015 fps= 72 q=14.0 size=    4608kB time=00:01:40.26 bitrate= 376.5kbits/s speed=2.41x    
+log: frame= 3055 fps= 73 q=16.0 size=    4608kB time=00:01:41.60 bitrate= 371.5kbits/s speed=2.41x    
+log: frame= 3089 fps= 72 q=17.0 size=    4608kB time=00:01:42.88 bitrate= 366.9kbits/s speed=2.41x    
+log: frame= 3125 fps= 72 q=13.0 size=    4864kB time=00:01:43.93 bitrate= 383.4kbits/s speed=2.41x    
+log: frame= 3164 fps= 73 q=15.0 size=    4864kB time=00:01:45.23 bitrate= 378.6kbits/s speed=2.41x    
+log: frame= 3203 fps= 73 q=14.0 size=    4864kB time=00:01:46.60 bitrate= 373.8kbits/s speed=2.41x    
+log: frame= 3243 fps= 73 q=14.0 size=    4864kB time=00:01:47.99 bitrate= 369.0kbits/s speed=2.42x    
+log: frame= 3280 fps= 73 q=12.0 size=    4864kB time=00:01:49.10 bitrate= 365.2kbits/s speed=2.42x    
+log: frame= 3317 fps= 73 q=14.0 size=    5120kB time=00:01:50.33 bitrate= 380.2kbits/s speed=2.42x    
+log: frame= 3357 fps= 73 q=13.0 size=    5120kB time=00:01:51.71 bitrate= 375.5kbits/s speed=2.42x    
+log: frame= 3395 fps= 73 q=11.0 size=    5120kB time=00:01:52.93 bitrate= 371.4kbits/s speed=2.42x    
+log: frame= 3432 fps= 73 q=14.0 size=    5120kB time=00:01:54.16 bitrate= 367.4kbits/s speed=2.42x    
+log: frame= 3472 fps= 73 q=13.0 size=    5120kB time=00:01:55.50 bitrate= 363.1kbits/s speed=2.42x    
+log: frame= 3510 fps= 73 q=14.0 size=    5376kB time=00:01:56.81 bitrate= 377.0kbits/s speed=2.42x    
+log: frame= 3543 fps= 73 q=17.0 size=    5376kB time=00:01:57.86 bitrate= 373.6kbits/s speed=2.42x    
+log: frame= 3570 fps= 73 q=16.0 size=    5632kB time=00:01:58.76 bitrate= 388.5kbits/s speed=2.41x    
+log: frame= 3591 fps= 72 q=16.0 size=    5632kB time=00:01:59.60 bitrate= 385.7kbits/s speed=2.41x    
+log: frame= 3610 fps= 72 q=17.0 size=    5888kB time=00:02:00.10 bitrate= 401.6kbits/s speed=2.39x    
+log: frame= 3628 fps= 71 q=18.0 size=    5888kB time=00:02:00.70 bitrate= 399.6kbits/s speed=2.38x    
+log: frame= 3644 fps= 71 q=19.0 size=    6144kB time=00:02:01.23 bitrate= 415.2kbits/s speed=2.36x    
+log: frame= 3660 fps= 71 q=19.0 size=    6400kB time=00:02:01.92 bitrate= 430.0kbits/s speed=2.35x    
+log: frame= 3677 fps= 70 q=17.0 size=    6656kB time=00:02:02.39 bitrate= 445.5kbits/s speed=2.34x    
+log: frame= 3694 fps= 70 q=16.0 size=    6656kB time=00:02:02.90 bitrate= 443.7kbits/s speed=2.32x    
+log: frame= 3711 fps= 69 q=18.0 size=    6912kB time=00:02:03.46 bitrate= 458.6kbits/s speed=2.31x    
+log: frame= 3728 fps= 69 q=16.0 size=    6912kB time=00:02:04.03 bitrate= 456.5kbits/s speed= 2.3x    
+log: frame= 3748 fps= 69 q=16.0 size=    7168kB time=00:02:04.71 bitrate= 470.8kbits/s speed=2.29x    
+log: frame= 3769 fps= 69 q=17.0 size=    7424kB time=00:02:05.40 bitrate= 485.0kbits/s speed=2.28x    
+log: frame= 3803 fps= 69 q=13.0 size=    7424kB time=00:02:06.57 bitrate= 480.5kbits/s speed=2.28x    
+log: frame= 3842 fps= 69 q=12.0 size=    7424kB time=00:02:07.96 bitrate= 475.3kbits/s speed=2.29x    
+log: frame= 3881 fps= 69 q=10.0 size=    7424kB time=00:02:09.13 bitrate= 471.0kbits/s speed=2.29x    
+log: frame= 3920 fps= 69 q=15.0 size=    7680kB time=00:02:10.43 bitrate= 482.4kbits/s speed=2.29x    
+log: frame= 3960 fps= 69 q=15.0 size=    7680kB time=00:02:11.76 bitrate= 477.5kbits/s speed=2.29x    
+log: frame= 4002 fps= 69 q=13.0 size=    7680kB time=00:02:13.16 bitrate= 472.5kbits/s speed= 2.3x    
+log: frame= 4041 fps= 69 q=15.0 size=    7680kB time=00:02:14.46 bitrate= 467.9kbits/s speed= 2.3x    
+log: frame= 4081 fps= 69 q=11.0 size=    7680kB time=00:02:15.85 bitrate= 463.1kbits/s speed= 2.3x    
+log: frame= 4118 fps= 69 q=12.0 size=    7936kB time=00:02:17.03 bitrate= 474.4kbits/s speed= 2.3x    
+log: frame= 4156 fps= 69 q=13.0 size=    7936kB time=00:02:18.30 bitrate= 470.1kbits/s speed= 2.3x    
+log: frame= 4192 fps= 69 q=14.0 size=    7936kB time=00:02:19.57 bitrate= 465.8kbits/s speed=2.31x    
+log: frame= 4232 fps= 69 q=14.0 size=    7936kB time=00:02:20.96 bitrate= 461.2kbits/s speed=2.31x    
+log: frame= 4271 fps= 69 q=13.0 size=    7936kB time=00:02:22.13 bitrate= 457.4kbits/s speed=2.31x    
+log: frame= 4311 fps= 69 q=13.0 size=    7936kB time=00:02:23.46 bitrate= 453.2kbits/s speed=2.31x    
+log: frame= 4350 fps= 70 q=12.0 size=    8192kB time=00:02:24.76 bitrate= 463.6kbits/s speed=2.31x    
+log: frame= 4383 fps= 70 q=17.0 size=    8192kB time=00:02:25.86 bitrate= 460.1kbits/s speed=2.31x    
+log: frame= 4406 fps= 69 q=15.0 size=    8448kB time=00:02:26.63 bitrate= 472.0kbits/s speed=2.31x    
+log: frame= 4435 fps= 69 q=15.0 size=    8448kB time=00:02:27.60 bitrate= 468.9kbits/s speed= 2.3x    
+log: frame= 4474 fps= 69 q=14.0 size=    8704kB time=00:02:28.90 bitrate= 478.9kbits/s speed=2.31x    
+log: frame= 4512 fps= 69 q=14.0 size=    8704kB time=00:02:30.25 bitrate= 474.5kbits/s speed=2.31x    
+log: frame= 4549 fps= 69 q=16.0 size=    8704kB time=00:02:31.40 bitrate= 471.0kbits/s speed=2.31x    
+log: frame= 4585 fps= 69 q=15.0 size=    8704kB time=00:02:32.60 bitrate= 467.3kbits/s speed=2.31x    
+log: frame= 4621 fps= 69 q=17.0 size=    8960kB time=00:02:33.80 bitrate= 477.2kbits/s speed=2.31x    
+log: frame= 4660 fps= 69 q=13.0 size=    8960kB time=00:02:35.10 bitrate= 473.2kbits/s speed=2.31x    
+log: frame= 4694 fps= 69 q=15.0 size=    8960kB time=00:02:36.29 bitrate= 469.6kbits/s speed=2.31x    
+log: frame= 4732 fps= 69 q=15.0 size=    8960kB time=00:02:37.50 bitrate= 466.0kbits/s speed=2.31x    
+log: frame= 4771 fps= 70 q=14.0 size=    9216kB time=00:02:38.80 bitrate= 475.4kbits/s speed=2.31x    
+log: frame= 4806 fps= 70 q=16.0 size=    9216kB time=00:02:40.00 bitrate= 471.8kbits/s speed=2.32x    
+log: frame= 4842 fps= 70 q=14.0 size=    9216kB time=00:02:41.16 bitrate= 468.4kbits/s speed=2.32x    
+log: frame= 4877 fps= 70 q=16.0 size=    9472kB time=00:02:42.33 bitrate= 478.0kbits/s speed=2.31x    
+log: frame= 4916 fps= 70 q=15.0 size=    9472kB time=00:02:43.72 bitrate= 473.9kbits/s speed=2.32x    
+log: frame= 4949 fps= 70 q=15.0 size=    9472kB time=00:02:44.73 bitrate= 471.0kbits/s speed=2.31x    
+log: frame= 4981 fps= 69 q=11.0 size=    9728kB time=00:02:45.80 bitrate= 480.7kbits/s speed=2.31x    
+log: frame= 5015 fps= 69 q=12.0 size=    9728kB time=00:02:46.97 bitrate= 477.3kbits/s speed=2.31x    
+log: frame= 5045 fps= 69 q=9.0 size=    9728kB time=00:02:47.93 bitrate= 474.5kbits/s speed=2.31x    
+log: frame= 5078 fps= 69 q=15.0 size=    9984kB time=00:02:49.03 bitrate= 483.9kbits/s speed=2.31x    
+log: frame= 5117 fps= 69 q=14.0 size=    9984kB time=00:02:50.33 bitrate= 480.2kbits/s speed=2.31x    
+log: frame= 5155 fps= 69 q=16.0 size=    9984kB time=00:02:51.61 bitrate= 476.6kbits/s speed=2.31x    
+log: frame= 5195 fps= 70 q=16.0 size=    9984kB time=00:02:53.01 bitrate= 472.7kbits/s speed=2.32x    
+log: frame= 5234 fps= 70 q=14.0 size=    9984kB time=00:02:54.23 bitrate= 469.4kbits/s speed=2.32x    
+log: frame= 5275 fps= 70 q=15.0 size=    9984kB time=00:02:55.60 bitrate= 465.8kbits/s speed=2.32x    
+log: frame= 5313 fps= 70 q=15.0 size=   10240kB time=00:02:56.86 bitrate= 474.3kbits/s speed=2.32x    
+log: frame= 5351 fps= 70 q=16.0 size=   10240kB time=00:02:58.13 bitrate= 470.9kbits/s speed=2.32x    
+log: frame= 5390 fps= 70 q=16.0 size=   10240kB time=00:02:59.51 bitrate= 467.3kbits/s speed=2.32x    
+log: frame= 5431 fps= 70 q=15.0 size=   10240kB time=00:03:00.90 bitrate= 463.7kbits/s speed=2.33x    
+log: frame= 5473 fps= 70 q=16.0 size=   10240kB time=00:03:02.29 bitrate= 460.2kbits/s speed=2.33x    
+log: frame= 5508 fps= 70 q=15.0 size=   10240kB time=00:03:03.36 bitrate= 457.5kbits/s speed=2.33x    
+log: frame= 5546 fps= 70 q=15.0 size=   10496kB time=00:03:04.63 bitrate= 465.7kbits/s speed=2.33x    
+log: frame= 5585 fps= 70 q=16.0 size=   10496kB time=00:03:06.01 bitrate= 462.2kbits/s speed=2.33x    
+log: frame= 5623 fps= 70 q=15.0 size=   10496kB time=00:03:07.20 bitrate= 459.3kbits/s speed=2.33x    
+log: frame= 5662 fps= 70 q=16.0 size=   10496kB time=00:03:08.50 bitrate= 456.1kbits/s speed=2.33x    
+log: frame= 5700 fps= 70 q=16.0 size=   10496kB time=00:03:09.76 bitrate= 453.1kbits/s speed=2.33x    
+log: frame= 5741 fps= 70 q=14.0 size=   10496kB time=00:03:11.13 bitrate= 449.9kbits/s speed=2.34x    
+log: frame= 5777 fps= 70 q=16.0 size=   10752kB time=00:03:12.33 bitrate= 458.0kbits/s speed=2.34x    
+log: frame= 5817 fps= 70 q=12.0 size=   10752kB time=00:03:13.66 bitrate= 454.8kbits/s speed=2.34x    
+log: frame= 5854 fps= 70 q=13.0 size=   10752kB time=00:03:14.90 bitrate= 451.9kbits/s speed=2.34x    
+log: frame= 5893 fps= 70 q=12.0 size=   10752kB time=00:03:16.23 bitrate= 448.9kbits/s speed=2.34x    
+log: frame= 5931 fps= 70 q=15.0 size=   10752kB time=00:03:17.46 bitrate= 446.1kbits/s speed=2.34x    
+log: frame= 5968 fps= 70 q=15.0 size=   11008kB time=00:03:18.70 bitrate= 453.8kbits/s speed=2.34x    
+log: frame= 6009 fps= 70 q=13.0 size=   11008kB time=00:03:20.06 bitrate= 450.7kbits/s speed=2.34x    
+log: frame= 6047 fps= 70 q=14.0 size=   11008kB time=00:03:21.34 bitrate= 447.9kbits/s speed=2.35x    
+log: frame= 6085 fps= 70 q=13.0 size=   11008kB time=00:03:22.73 bitrate= 444.8kbits/s speed=2.35x    
+log: frame= 6123 fps= 70 q=14.0 size=   11008kB time=00:03:23.86 bitrate= 442.3kbits/s speed=2.35x    
+log: frame= 6159 fps= 70 q=16.0 size=   11008kB time=00:03:25.06 bitrate= 439.7kbits/s speed=2.35x    
+log: frame= 6200 fps= 71 q=12.0 size=   11264kB time=00:03:26.44 bitrate= 447.0kbits/s speed=2.35x    
+log: frame= 6238 fps= 71 q=14.0 size=   11264kB time=00:03:27.84 bitrate= 444.0kbits/s speed=2.35x    
+log: frame= 6277 fps= 71 q=13.0 size=   11264kB time=00:03:29.00 bitrate= 441.5kbits/s speed=2.35x    
+log: frame= 6316 fps= 71 q=12.0 size=   11264kB time=00:03:30.30 bitrate= 438.8kbits/s speed=2.35x    
+log: frame= 6356 fps= 71 q=12.0 size=   11264kB time=00:03:31.63 bitrate= 436.0kbits/s speed=2.35x    
+log: frame= 6378 fps= 71 q=18.0 size=   11520kB time=00:03:32.48 bitrate= 444.1kbits/s speed=2.35x    
+log: frame= 6394 fps= 70 q=20.0 size=   11776kB time=00:03:32.95 bitrate= 453.0kbits/s speed=2.34x    
+log: frame= 6410 fps= 70 q=20.0 size=   11776kB time=00:03:33.43 bitrate= 452.0kbits/s speed=2.33x    
+log: frame= 6426 fps= 70 q=20.0 size=   12032kB time=00:03:33.96 bitrate= 460.7kbits/s speed=2.33x    
+log: frame= 6442 fps= 70 q=18.0 size=   12288kB time=00:03:34.50 bitrate= 469.3kbits/s speed=2.32x    
+log: frame= 6457 fps= 69 q=19.0 size=   12288kB time=00:03:35.00 bitrate= 468.2kbits/s speed=2.31x    
+log: frame= 6472 fps= 69 q=18.0 size=   12544kB time=00:03:35.50 bitrate= 476.8kbits/s speed= 2.3x    
+log: frame= 6487 fps= 69 q=19.0 size=   12800kB time=00:03:36.00 bitrate= 485.5kbits/s speed= 2.3x    
+log: frame= 6502 fps= 69 q=20.0 size=   12800kB time=00:03:36.50 bitrate= 484.3kbits/s speed=2.29x    
+log: frame= 6518 fps= 69 q=18.0 size=   13312kB time=00:03:37.12 bitrate= 502.2kbits/s speed=2.28x    
+log: frame= 6530 fps= 68 q=18.0 size=   13312kB time=00:03:37.43 bitrate= 501.5kbits/s speed=2.27x    
+log: frame= 6547 fps= 68 q=20.0 size=   13568kB time=00:03:38.05 bitrate= 509.7kbits/s speed=2.27x    
+log: frame= 6563 fps= 68 q=19.0 size=   13824kB time=00:03:38.53 bitrate= 518.2kbits/s speed=2.26x    
+log: frame= 6578 fps= 68 q=20.0 size=   14080kB time=00:03:39.03 bitrate= 526.6kbits/s speed=2.25x    
+log: frame= 6594 fps= 67 q=18.0 size=   14336kB time=00:03:39.56 bitrate= 534.9kbits/s speed=2.25x    
+log: frame= 6608 fps= 67 q=20.0 size=   14336kB time=00:03:40.03 bitrate= 533.7kbits/s speed=2.24x    
+log: frame= 6623 fps= 67 q=22.0 size=   14848kB time=00:03:40.53 bitrate= 551.6kbits/s speed=2.23x    
+log: frame= 6638 fps= 67 q=18.0 size=   14848kB time=00:03:41.03 bitrate= 550.3kbits/s speed=2.23x    
+log: frame= 6653 fps= 67 q=20.0 size=   15104kB time=00:03:41.53 bitrate= 558.5kbits/s speed=2.22x    
+log: frame= 6667 fps= 66 q=20.0 size=   15360kB time=00:03:42.00 bitrate= 566.8kbits/s speed=2.21x    
+log: frame= 6681 fps= 66 q=16.0 size=   15616kB time=00:03:42.46 bitrate= 575.0kbits/s speed=2.21x    
+log: frame= 6721 fps= 66 q=14.0 size=   15616kB time=00:03:43.80 bitrate= 571.6kbits/s speed=2.21x    
+log: frame= 6759 fps= 66 q=13.0 size=   15872kB time=00:03:45.06 bitrate= 577.7kbits/s speed=2.21x    
+log: frame= 6796 fps= 66 q=14.0 size=   15872kB time=00:03:46.41 bitrate= 574.3kbits/s speed=2.21x    
+log: frame= 6825 fps= 66 q=12.0 size=   16128kB time=00:03:47.34 bitrate= 581.1kbits/s speed=2.21x    
+log: frame= 6849 fps= 66 q=10.0 size=   16128kB time=00:03:48.06 bitrate= 579.3kbits/s speed=2.21x    
+log: frame= 6877 fps= 66 q=6.0 size=   16384kB time=00:03:49.00 bitrate= 586.1kbits/s speed= 2.2x    
+log: frame= 6903 fps= 66 q=9.0 size=   16640kB time=00:03:49.86 bitrate= 593.0kbits/s speed= 2.2x    
+log: frame= 6933 fps= 66 q=6.0 size=   16640kB time=00:03:50.86 bitrate= 590.5kbits/s speed= 2.2x    
+log: frame= 6959 fps= 66 q=10.0 size=   16896kB time=00:03:51.73 bitrate= 597.3kbits/s speed= 2.2x    
+log: frame= 6989 fps= 66 q=6.0 size=   16896kB time=00:03:52.73 bitrate= 594.7kbits/s speed= 2.2x    
+log: frame= 7017 fps= 66 q=17.0 size=   17152kB time=00:03:53.66 bitrate= 601.3kbits/s speed= 2.2x    
+log: frame= 7042 fps= 66 q=15.0 size=   17152kB time=00:03:54.50 bitrate= 599.2kbits/s speed=2.19x    
+log: frame= 7072 fps= 66 q=14.0 size=   17408kB time=00:03:55.50 bitrate= 605.5kbits/s speed=2.19x    
+log: frame= 7110 fps= 66 q=15.0 size=   17408kB time=00:03:56.76 bitrate= 602.3kbits/s speed=2.19x    
+log: frame= 7150 fps= 66 q=15.0 size=   17408kB time=00:03:58.10 bitrate= 598.9kbits/s speed=2.19x    
+log: frame= 7187 fps= 66 q=14.0 size=   17408kB time=00:03:59.42 bitrate= 595.6kbits/s speed= 2.2x    
+log: frame= 7226 fps= 66 q=13.0 size=   17664kB time=00:04:00.63 bitrate= 601.3kbits/s speed= 2.2x    
+log: frame= 7265 fps= 66 q=14.0 size=   17664kB time=00:04:01.93 bitrate= 598.1kbits/s speed= 2.2x    
+log: frame= 7302 fps= 66 q=14.0 size=   17664kB time=00:04:03.16 bitrate= 595.1kbits/s speed= 2.2x    
+log: frame= 7339 fps= 66 q=15.0 size=   17664kB time=00:04:04.52 bitrate= 591.8kbits/s speed= 2.2x    
+log: frame= 7378 fps= 66 q=13.0 size=   17920kB time=00:04:05.70 bitrate= 597.5kbits/s speed= 2.2x    
+log: frame= 7418 fps= 66 q=13.0 size=   17920kB time=00:04:07.03 bitrate= 594.3kbits/s speed=2.21x    

@@ -1,0 +1,29 @@
+{
+  "title": "Buffer Overflow: The Memory Bug That Still Breaks 2024 Systems",
+  "cover_text": "BUFFER OVERFLOW",
+  "short_hook": "Hijack program control via memory corruption.",
+  "description": "Learn how buffer overflows exploit memory corruption to hijack program control flow. In this lesson, we cover the mechanics of stack overflows, the role of the Return Address, and how attackers redirect execution. We also cover modern defenses like Stack Canaries, ASLR, and DEP. In this lesson: Understanding buffer mechanics, The stack frame layout, The overflow process & EIP overwrite, Shellcode execution concepts, Modern mitigation techniques. This is lesson 16 of our complete Kali Linux Tools Hands-On course - watch the full playlist from the beginning. Have doubts? Ask in the comments.\n\nAbout GetYr_CYBERSEC: complete cybersecurity and ethical hacking courses from beginner to advanced - networking, Linux, web security, cryptography and more - explained in depth, legally and ethically. New lessons every day.\nSubscribe and turn on notifications so you never miss a video.\n\n#KaliLinuxToolsHandsOn #cybersecurity #ethicalhacking #BufferOverflow #metasploit #ComputerScience #MemoryCorruption #StackOverflow #ReturnAddress #shellcode #ASLR #DEP #KaliLinux #programming #vulnerabilities",
+  "hashtags": [
+    "#KaliLinuxToolsHands-On",
+    "#cybersecurity",
+    "#ethicalhacking"
+  ],
+  "tags": [
+    "buffer overflow",
+    "metasploit",
+    "cybersecurity",
+    "ethical hacking",
+    "computer science",
+    "memory corruption",
+    "stack overflow",
+    "return address",
+    "shellcode",
+    "ASLR",
+    "DEP",
+    "Kali Linux",
+    "programming",
+    "vulnerabilities",
+    "code exploitation"
+  ],
+  "playlist": "Kali Linux Tools Hands-On Course - Beginner to Advanced"
+}

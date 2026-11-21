@@ -1,0 +1,99 @@
+2026-11-21 12:01:21,503 INFO Already scheduled: ['2026-11-09T12:00:00+05:30', '2026-11-09T15:00:00+05:30', '2026-11-09T18:00:00+05:30', '2026-11-10T12:00:00+05:30', '2026-11-10T15:00:00+05:30', '2026-11-10T18:00:00+05:30']
+2026-11-21 12:01:21,506 INFO Next lesson: Kali Linux Tools Hands-On #16 - Metasploit Framework: Searching and Launching Exploits
+2026-11-21 12:01:37,843 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-21 12:01:56,484 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-21 12:02:16,448 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-21 12:02:16,448 INFO Review fix: Error: The script states that on 32-bit systems, the Saved Base Pointer is 4 bytes and the Return Address is 4 bytes, totaling 14 bytes to overwrite the Return Address. This is misleading. In a typical 32-bit function prologue, the Saved Base Pointer (EBP) is pushed first, followed by the Return Address (EIP). Therefore, to overwrite the Return Address, one must write 10 bytes to fill the buffer + 4 bytes to overwrite the Saved Base Pointer + 4 bytes to overwrite the Return Address = 18 bytes total. The script incorrectly suggests the Return Address starts at offset 14.
+2026-11-21 12:02:16,448 INFO Review fix: Error: The script claims that sending 14 bytes (`AAAAAAAAAAAAAA`) will land the 14th byte exactly on the Return Address. This is incorrect. The 14th byte will overwrite the Saved Base Pointer, but the Return Address begins at byte offset 14 (0-indexed) or 15 (1-indexed), requiring 18 bytes total to overwrite it.
+2026-11-21 12:02:16,448 INFO Review fix: Error: The script states that the Stack Canary is placed 'between the local variables and the Return Address'. While conceptually correct, the canary is placed between the local variables and the Saved Base Pointer (EBP). The Return Address is above the Saved Base Pointer. This simplification might confuse students regarding the exact memory layout.
+2026-11-21 12:02:16,448 INFO Review fix: Error: The script uses the term 'EIP' (Extended Instruction Pointer) and mentions it is for 32-bit systems, but the code example and context do not clearly specify if it is 32-bit or 64-bit. Furthermore, the script mixes concepts of 32-bit (EIP) and 64-bit (RIP) without clarification. In a modern educational context, it is better to refer to the Instruction Pointer (IP/RIP/EIP) generally or specify the architecture.
+2026-11-21 12:02:16,448 INFO Review fix: Error: The script suggests that Shellcode is 'injected earlier in the buffer'. In a classic stack buffer overflow, the Shellcode is typically placed at the very beginning of the buffer (the lowest address) so that the overwritten Return Address points to it. The script's description of 'padding' at the start is correct, but the explanation could be clearer that the shellcode resides at the start of the buffer, not just 'earlier'.
+2026-11-21 12:02:16,448 INFO Review fix: Error: The script states that DEP/NX Bit marks the stack as 'non-executable' and the CPU refuses to execute code there. While correct, the script does not mention that this forces attackers to use Return-Oriented Programming (ROP) which chains existing code gadgets. The mention of ROP appears later as a mitigation bypass, but the link between DEP forcing ROP is not explicitly drawn in the explanation of Part 4.
+2026-11-21 12:02:19,602 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-21 12:02:20,366 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-21 12:02:20,366 INFO Title polished: Buffer Overflow Explained: Memory Corruption & Control | Kali Linux Tools Hands-On Course #16 -> Buffer Overflow: The Memory Bug That Still Breaks 2024 Systems
+2026-11-21 12:02:20,366 INFO YouTube title: Buffer Overflow: The Memory Bug That Still Breaks 2024 Systems
+2026-11-21 12:02:22,000 INFO Created notebook 2f506f80-e0bd-4e06-a77c-51781522f140
+2026-11-21 12:02:25,997 INFO Script added as source
+2026-11-21 12:02:30,362 INFO Started cinematic video generation (task c234232d-f92f-4fd7-84b2-31bdf4ae7115)
+2026-11-21 12:02:30,362 INFO Waiting for cinematic video (can take 30+ minutes)
+2026-11-21 12:25:33,661 INFO Downloaded cinematic video to output/video_raw.mp4
+2026-11-21 12:25:37,450 INFO Started NotebookLM Short (task f3c50b8a-8478-4a0f-ad10-6d1a79bb3b05)
+2026-11-21 12:34:05,659 INFO Downloaded NotebookLM Short to output/short_raw.mp4
+2026-11-21 12:34:09,514 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-21 12:34:11,189 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-21 12:34:12,193 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-21 12:34:25,636 INFO Watermark removal: 1%
+2026-11-21 12:34:30,642 INFO Watermark removal: 4%
+2026-11-21 12:34:35,646 INFO Watermark removal: 7%
+2026-11-21 12:34:40,652 INFO Watermark removal: 10%
+2026-11-21 12:34:45,658 INFO Watermark removal: 14%
+2026-11-21 12:34:50,664 INFO Watermark removal: 18%
+2026-11-21 12:34:55,670 INFO Watermark removal: 21%
+2026-11-21 12:35:00,676 INFO Watermark removal: 25%
+2026-11-21 12:35:05,681 INFO Watermark removal: 28%
+2026-11-21 12:35:10,688 INFO Watermark removal: 32%
+2026-11-21 12:35:15,694 INFO Watermark removal: 34%
+2026-11-21 12:35:20,937 INFO Watermark removal: 36%
+2026-11-21 12:35:25,943 INFO Watermark removal: 40%
+2026-11-21 12:35:30,951 INFO Watermark removal: 43%
+2026-11-21 12:35:35,956 INFO Watermark removal: 47%
+2026-11-21 12:35:40,962 INFO Watermark removal: 50%
+2026-11-21 12:35:45,968 INFO Watermark removal: 54%
+2026-11-21 12:35:50,974 INFO Watermark removal: 57%
+2026-11-21 12:35:55,980 INFO Watermark removal: 60%
+2026-11-21 12:36:00,987 INFO Watermark removal: 62%
+2026-11-21 12:36:05,992 INFO Watermark removal: 63%
+2026-11-21 12:36:10,997 INFO Watermark removal: 66%
+2026-11-21 12:36:16,002 INFO Watermark removal: 69%
+2026-11-21 12:36:21,309 INFO Watermark removal: 72%
+2026-11-21 12:36:26,314 INFO Watermark removal: 75%
+2026-11-21 12:36:31,321 INFO Watermark removal: 78%
+2026-11-21 12:36:36,326 INFO Watermark removal: 81%
+2026-11-21 12:36:41,330 INFO Watermark removal: 85%
+2026-11-21 12:36:46,336 INFO Watermark removal: 88%
+2026-11-21 12:36:51,343 INFO Watermark removal: 92%
+2026-11-21 12:36:56,347 INFO Watermark removal: 95%
+2026-11-21 12:37:01,353 INFO Watermark removal: 98%
+2026-11-21 12:37:06,357 INFO Clicking 'Download Clean Video'
+2026-11-21 12:37:14,406 INFO Downloaded clean video after 182s
+2026-11-21 12:37:14,514 INFO Website result: {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 351.875193, 'has_audio': True} (original {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 354.917007, 'has_audio': True})
+2026-11-21 12:37:14,547 INFO Adding channel name watermark: GetYr_CYBERSEC
+2026-11-21 12:38:38,363 INFO Added intro + video_final_main + outro
+2026-11-21 12:38:38,363 INFO Edited video saved to output/video_final.mp4
+2026-11-21 12:38:38,455 INFO Thumbnail candidate at 0.5s: detail 17.5
+2026-11-21 12:38:38,543 INFO Thumbnail candidate at 1.0s: detail 17.5
+2026-11-21 12:38:38,639 INFO Thumbnail candidate at 1.5s: detail 17.5
+2026-11-21 12:38:38,733 INFO Thumbnail candidate at 2.0s: detail 17.5
+2026-11-21 12:38:38,836 INFO Thumbnail candidate at 2.5s: detail 17.5
+2026-11-21 12:38:38,946 INFO Thumbnail candidate at 3.0s: detail 17.5
+2026-11-21 12:38:39,062 INFO Thumbnail candidate at 3.5s: detail 17.5
+2026-11-21 12:38:39,187 INFO Thumbnail candidate at 4.0s: detail 17.5
+2026-11-21 12:38:39,319 INFO Thumbnail candidate at 5.0s: detail 17.5
+2026-11-21 12:38:39,352 INFO Thumbnail taken from the video at 2.0s -> output/thumbnail.jpg
+2026-11-21 12:38:40,789 INFO Upload 36%
+2026-11-21 12:38:40,946 INFO Upload 73%
+2026-11-21 12:38:41,441 INFO Uploaded: https://youtu.be/cLDGmV7JgKo (public)
+2026-11-21 12:38:47,622 INFO Thumbnail set
+2026-11-21 12:38:48,309 INFO Added to playlist: Kali Linux Tools Hands-On Course - Beginner to Advanced
+2026-11-21 12:38:51,136 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-21 12:38:52,772 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-21 12:38:53,777 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-21 12:38:56,799 INFO Watermark removal: 0%
+2026-11-21 12:39:02,107 INFO Watermark removal: 12%
+2026-11-21 12:39:07,113 INFO Watermark removal: 24%
+2026-11-21 12:39:12,119 INFO Watermark removal: 36%
+2026-11-21 12:39:17,125 INFO Watermark removal: 49%
+2026-11-21 12:39:22,130 INFO Watermark removal: 60%
+2026-11-21 12:39:27,135 INFO Watermark removal: 71%
+2026-11-21 12:39:32,140 INFO Watermark removal: 83%
+2026-11-21 12:39:37,144 INFO Clicking 'Download Clean Video'
+2026-11-21 12:39:45,198 INFO Downloaded clean video after 51s
+2026-11-21 12:39:45,326 INFO Website result: {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 64.621134, 'has_audio': True} (original {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 67.662948, 'has_audio': True})
+2026-11-21 12:39:57,920 INFO Using NotebookLM's Short (watermark removed)
+2026-11-21 12:39:59,417 INFO Uploaded: https://youtu.be/I3LHaNMNVdc (public)
+2026-11-21 12:39:59,417 INFO Short uploaded: https://youtu.be/I3LHaNMNVdc
+2026-11-21 12:41:02,022 WARNING Instagram direct upload failed: Instagram upload failed (400): {"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} - trying the public-link method
+2026-11-21 12:42:44,102 INFO Instagram Reel posted via link (id 18103512092190220)
+2026-11-21 12:42:45,674 INFO Done: Buffer Overflow: The Memory Bug That Still Breaks 2024 Systems
+2026-11-21 12:42:48,294 INFO Deleted old NotebookLM notebook 2f506f80-e0bd-4e06-a77c-51781522f140
