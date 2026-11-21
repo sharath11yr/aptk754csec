@@ -364,5 +364,11 @@
     "topic": "Kali Linux Tools Hands-On: John the Ripper: Single Crack and Wordlist Modes",
     "title": "John the Ripper Single Crack Mode: Why It Beats Hashcat for Wordlists",
     "youtube_id": "_ZAZpGDfN2o"
+  },
+  {
+    "date": "2026-11-21",
+    "topic": "Kali Linux Tools Hands-On: John the Ripper: Incremental Mode and Performance Tuning",
+    "title": "John the Ripper Incremental Mode: Why It Beats Wordlists Every Time",
+    "youtube_id": "sZM1sKucpmY"
   }
 ]
