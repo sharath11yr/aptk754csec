@@ -370,5 +370,11 @@
     "topic": "Kali Linux Tools Hands-On: John the Ripper: Incremental Mode and Performance Tuning",
     "title": "John the Ripper Incremental Mode: Why It Beats Wordlists Every Time",
     "youtube_id": "sZM1sKucpmY"
+  },
+  {
+    "date": "2026-11-21",
+    "topic": "Kali Linux Tools Hands-On: Metasploit Framework: Searching and Launching Exploits",
+    "title": "Buffer Overflow: The Memory Bug That Still Breaks 2024 Systems",
+    "youtube_id": "cLDGmV7JgKo"
   }
 ]
