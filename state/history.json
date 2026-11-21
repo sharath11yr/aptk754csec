@@ -376,5 +376,11 @@
     "topic": "Kali Linux Tools Hands-On: Metasploit Framework: Searching and Launching Exploits",
     "title": "Buffer Overflow: The Memory Bug That Still Breaks 2024 Systems",
     "youtube_id": "cLDGmV7JgKo"
+  },
+  {
+    "date": "2026-11-21",
+    "topic": "Kali Linux Tools Hands-On: Metasploit Auxiliary Scanners: Port and Version Detection",
+    "title": "Why You Can't Hack What You Can't See: Port & Version Detection",
+    "youtube_id": "4y32A6Kjqcw"
   }
 ]
