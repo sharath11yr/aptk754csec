@@ -388,5 +388,11 @@
     "topic": "Kali Linux Tools Hands-On: Burp Suite: Installing and Configuring the Community Edition",
     "title": "How to Install Burp Suite Community Edition on Kali Linux",
     "youtube_id": "WdUgnXEpN34"
+  },
+  {
+    "date": "2026-11-22",
+    "topic": "Kali Linux Tools Hands-On: Burp Suite: Intercepting and Modifying HTTP Requests",
+    "title": "Intercept and Modify HTTP Requests: The Man-in-the-Middle Skill Every Hacker Needs",
+    "youtube_id": "ldNH6P7gkbY"
   }
 ]
