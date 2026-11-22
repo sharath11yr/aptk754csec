@@ -400,5 +400,11 @@
     "topic": "Kali Linux Tools Hands-On: sqlmap: Automated SQL Injection and Database Extraction",
     "title": "The OSI Model: Why Standard Rules Almost Broke Networking",
     "youtube_id": "Ap8TCV0hMd4"
+  },
+  {
+    "date": "2026-11-22",
+    "topic": "Kali Linux Tools Hands-On: Nikto Web Server Scanner: Identifying Out-of-Date Software",
+    "title": "Nikto: The Web Scanner That Detects Outdated Software",
+    "youtube_id": "X06RijihYLk"
   }
 ]
