@@ -394,5 +394,11 @@
     "topic": "Kali Linux Tools Hands-On: Burp Suite: Intercepting and Modifying HTTP Requests",
     "title": "Intercept and Modify HTTP Requests: The Man-in-the-Middle Skill Every Hacker Needs",
     "youtube_id": "ldNH6P7gkbY"
+  },
+  {
+    "date": "2026-11-22",
+    "topic": "Kali Linux Tools Hands-On: sqlmap: Automated SQL Injection and Database Extraction",
+    "title": "The OSI Model: Why Standard Rules Almost Broke Networking",
+    "youtube_id": "Ap8TCV0hMd4"
   }
 ]
