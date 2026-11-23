@@ -406,5 +406,11 @@
     "topic": "Kali Linux Tools Hands-On: Nikto Web Server Scanner: Identifying Out-of-Date Software",
     "title": "Nikto: The Web Scanner That Detects Outdated Software",
     "youtube_id": "X06RijihYLk"
+  },
+  {
+    "date": "2026-11-23",
+    "topic": "Kali Linux Tools Hands-On: Gobuster: Directory and DNS Brute Forcing Basics",
+    "title": "How SQL Injection Really Works: The Mechanics Behind the Attack",
+    "youtube_id": "41jg8s3VMr0"
   }
 ]
