@@ -412,5 +412,11 @@
     "topic": "Kali Linux Tools Hands-On: Gobuster: Directory and DNS Brute Forcing Basics",
     "title": "How SQL Injection Really Works: The Mechanics Behind the Attack",
     "youtube_id": "41jg8s3VMr0"
+  },
+  {
+    "date": "2026-11-23",
+    "topic": "Kali Linux Tools Hands-On: Netcat: Reverse Shells and Basic File Transfer",
+    "title": "How ARP Actually Works: The Hidden Protocol Behind Every Network",
+    "youtube_id": "A7hlvXUTSSA"
   }
 ]
