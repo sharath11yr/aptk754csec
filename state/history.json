@@ -424,5 +424,11 @@
     "topic": "Kali Linux Tools Hands-On: theHarvester: Email and Subdomain Discovery",
     "title": "theHarvester: How to Discover Hidden Emails and Subdomains",
     "youtube_id": "ZIIvHJACtDc"
+  },
+  {
+    "date": "2026-11-23",
+    "topic": "Kali Linux Tools Hands-On: Aircrack-ng: Capturing WPA Handshakes",
+    "title": "How WPA Handshakes Actually Work | Kali Linux Tools Hands-On #25",
+    "youtube_id": "6eQ7lkSj4EA"
   }
 ]
