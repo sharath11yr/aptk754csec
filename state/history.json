@@ -418,5 +418,11 @@
     "topic": "Kali Linux Tools Hands-On: Netcat: Reverse Shells and Basic File Transfer",
     "title": "How ARP Actually Works: The Hidden Protocol Behind Every Network",
     "youtube_id": "A7hlvXUTSSA"
+  },
+  {
+    "date": "2026-11-23",
+    "topic": "Kali Linux Tools Hands-On: theHarvester: Email and Subdomain Discovery",
+    "title": "theHarvester: How to Discover Hidden Emails and Subdomains",
+    "youtube_id": "ZIIvHJACtDc"
   }
 ]
