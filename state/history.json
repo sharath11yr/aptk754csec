@@ -436,5 +436,11 @@
     "topic": "Kali Linux Tools Hands-On: WPScan: Enumerating WordPress Plugins and Themes",
     "title": "How WPScan Exposes WordPress Plugins & Themes",
     "youtube_id": "8Ea-Hvtpcqo"
+  },
+  {
+    "date": "2026-11-24",
+    "topic": "Kali Linux Tools Hands-On: SearchSploit: Searching and Using Exploits from Command Line",
+    "title": "SearchSploit: The Command-Line Exploit Database Every Hacker Uses",
+    "youtube_id": "1UFNsAcizDY"
   }
 ]
