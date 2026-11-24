@@ -448,5 +448,11 @@
     "topic": "Kali Linux Tools Hands-On: tcpdump: Command Line Packet Capture and Basic Usage",
     "title": "How ARP Actually Works: The Hidden Protocol Behind Every Network Connection",
     "youtube_id": "euScNMt4Hts"
+  },
+  {
+    "date": "2026-11-24",
+    "topic": "Kali Linux Tools Hands-On: Crunch: Generating Custom Wordlists for Password Attacks",
+    "title": "Crunch: The Password Generator Hackers Use to Crack Any Code",
+    "youtube_id": "94BKShx7wFA"
   }
 ]
