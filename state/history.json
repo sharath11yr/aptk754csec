@@ -430,5 +430,11 @@
     "topic": "Kali Linux Tools Hands-On: Aircrack-ng: Capturing WPA Handshakes",
     "title": "How WPA Handshakes Actually Work | Kali Linux Tools Hands-On #25",
     "youtube_id": "6eQ7lkSj4EA"
+  },
+  {
+    "date": "2026-11-24",
+    "topic": "Kali Linux Tools Hands-On: WPScan: Enumerating WordPress Plugins and Themes",
+    "title": "How WPScan Exposes WordPress Plugins & Themes",
+    "youtube_id": "8Ea-Hvtpcqo"
   }
 ]
