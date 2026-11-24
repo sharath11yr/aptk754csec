@@ -442,5 +442,11 @@
     "topic": "Kali Linux Tools Hands-On: SearchSploit: Searching and Using Exploits from Command Line",
     "title": "SearchSploit: The Command-Line Exploit Database Every Hacker Uses",
     "youtube_id": "1UFNsAcizDY"
+  },
+  {
+    "date": "2026-11-24",
+    "topic": "Kali Linux Tools Hands-On: tcpdump: Command Line Packet Capture and Basic Usage",
+    "title": "How ARP Actually Works: The Hidden Protocol Behind Every Network Connection",
+    "youtube_id": "euScNMt4Hts"
   }
 ]
