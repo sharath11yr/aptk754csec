@@ -466,5 +466,11 @@
     "topic": "Kali Linux Tools Hands-On: Metasploit Auxiliary Scanners: Credential Harvesting and Brute Force",
     "title": "How Metasploit Scanners Actually Crack Passwords | Credential Harvesting",
     "youtube_id": "mnSnvJlMfvI"
+  },
+  {
+    "date": "2026-11-25",
+    "topic": "Kali Linux Tools Hands-On: Metasploit Post-Exploitation: Enumeration and Privilege Escalation Basics",
+    "title": "User-Mode vs Kernel-Mode: How Rootkits Hide from the System",
+    "youtube_id": "1Aiy1waBY6Y"
   }
 ]
