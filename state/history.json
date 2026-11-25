@@ -472,5 +472,11 @@
     "topic": "Kali Linux Tools Hands-On: Metasploit Post-Exploitation: Enumeration and Privilege Escalation Basics",
     "title": "User-Mode vs Kernel-Mode: How Rootkits Hide from the System",
     "youtube_id": "1Aiy1waBY6Y"
+  },
+  {
+    "date": "2026-11-25",
+    "topic": "Kali Linux Tools Hands-On: Metasploit Resource Scripts and Meterpreter Extensions",
+    "title": "How to Automate Metasploit Like a Pro: Resource Scripts Explained",
+    "youtube_id": "pmpdhKEKo4I"
   }
 ]
