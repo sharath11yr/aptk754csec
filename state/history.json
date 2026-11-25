@@ -460,5 +460,11 @@
     "topic": "Kali Linux Tools Hands-On: CEWL: Generating Custom Wordlists from Target Websites",
     "title": "How CEWL Steals Passwords from Any Website",
     "youtube_id": "f9wmy55dgsI"
+  },
+  {
+    "date": "2026-11-25",
+    "topic": "Kali Linux Tools Hands-On: Metasploit Auxiliary Scanners: Credential Harvesting and Brute Force",
+    "title": "How Metasploit Scanners Actually Crack Passwords | Credential Harvesting",
+    "youtube_id": "mnSnvJlMfvI"
   }
 ]

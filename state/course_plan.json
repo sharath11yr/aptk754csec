@@ -326,7 +326,31 @@
    "SearchSploit: Searching and Using Exploits from Command Line",
    "tcpdump: Command Line Packet Capture and Basic Usage",
    "Crunch: Generating Custom Wordlists for Password Attacks",
-   "CEWL: Generating Custom Wordlists from Target Websites"
+   "CEWL: Generating Custom Wordlists from Target Websites",
+   "Metasploit Auxiliary Scanners: Credential Harvesting and Brute Force",
+   "Metasploit Post-Exploitation: Enumeration and Privilege Escalation Basics",
+   "Metasploit Resource Scripts and Meterpreter Extensions",
+   "Burp Suite Advanced: Intruder and Repeater for Fuzzing and Payload Delivery",
+   "Burp Suite: Collaborator Everywhere and Out-of-Band Exploitation",
+   "sqlmap Advanced: Parameter Tampering, Time-Based Blind Injection, and WAF Evasion",
+   "Nikto Deep Dive: Configuring Plugins, Evasion Techniques, and Reporting",
+   "Gobuster Advanced: Custom Wordlists, DNS Subdomain Enumeration, and Virtual Host Discovery",
+   "Netcat Networking: Reverse Shells with Encoding, Obfuscation, and Stability",
+   "theHarvester Advanced: OSINT Integration, Proxy Chaining, and Report Generation",
+   "Aircrack-ng WPA2 Cracking: Handshake Capture, Replay Attacks, and PMKID Analysis",
+   "WPScan Enterprise: Authentication Bypass, Remote Code Execution, and Reporting",
+   "SearchSploit Daily Use: Exploit Verification, Chain Exploits, and Local Kernel Exploits",
+   "tcpdump Advanced: BPF Filters, Port Ranges, and Packet Analysis Pipelines",
+   "Crunch Wordlist Engineering: Optimizing Size, Combining with Rules, and GPU Feeding",
+   "CEWL Targeted Scraping: Configuring Extraction Rules, Filtering Noise, and Integration",
+   "Hashcat Attack Engineering: Hybrid Attacks (Rule + Mask) and Collision Attacks",
+   "John the Ripper Raw Mode: Custom Formats, Performance Optimization, and Multi-Hash Cracking",
+   "John the Ripper Wordlist Fine-Tuning: Salting, Blending, and Distributed Cracking",
+   "Nmap NSE Scripting: Advanced Penetration Testing Scripts and Custom NSE Development",
+   "Nmap NSE: Vulnerability Scoring with CVSS Integration and Reporting Automation",
+   "Wireshark Deep Internals: TCP Stream Reassembly, Window Scaling, and Congestion Control Analysis",
+   "Wireshark Security Forensics: Detecting Exfiltration, Malware C2, and IoC Extraction",
+   "Kali Linux Post-Install Mastery: Persistence, Custom Kernel Tweaks, and Development Environment Setup"
   ]
  }
 }
