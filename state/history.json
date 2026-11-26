@@ -484,5 +484,11 @@
     "topic": "Kali Linux Tools Hands-On: Burp Suite Advanced: Intruder and Repeater for Fuzzing and Payload Delivery",
     "title": "Inside Burp Suite Intruder: How Hackers Automate Web Fuzzing",
     "youtube_id": "qrY3FSSwV4M"
+  },
+  {
+    "date": "2026-11-26",
+    "topic": "Kali Linux Tools Hands-On: Burp Suite: Collaborator Everywhere and Out-of-Band Exploitation",
+    "title": "Burp Suite Collaborator Everywhere: The Hidden Exploit Technique Most Testers Miss",
+    "youtube_id": "872t5kxUb3Y"
   }
 ]
