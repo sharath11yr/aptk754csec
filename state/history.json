@@ -490,5 +490,11 @@
     "topic": "Kali Linux Tools Hands-On: Burp Suite: Collaborator Everywhere and Out-of-Band Exploitation",
     "title": "Burp Suite Collaborator Everywhere: The Hidden Exploit Technique Most Testers Miss",
     "youtube_id": "872t5kxUb3Y"
+  },
+  {
+    "date": "2026-11-26",
+    "topic": "Kali Linux Tools Hands-On: sqlmap Advanced: Parameter Tampering, Time-Based Blind Injection, and WAF Evasion",
+    "title": "Time-Based Blind Injection & WAF Evasion: Inside sqlmap's Advanced Tactics",
+    "youtube_id": "6DTGY6PRD4Q"
   }
 ]
