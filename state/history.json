@@ -496,5 +496,11 @@
     "topic": "Kali Linux Tools Hands-On: sqlmap Advanced: Parameter Tampering, Time-Based Blind Injection, and WAF Evasion",
     "title": "Time-Based Blind Injection & WAF Evasion: Inside sqlmap's Advanced Tactics",
     "youtube_id": "6DTGY6PRD4Q"
+  },
+  {
+    "date": "2026-11-26",
+    "topic": "Kali Linux Tools Hands-On: Nikto Deep Dive: Configuring Plugins, Evasion Techniques, and Reporting",
+    "title": "Rootkits: How They Hijack the Kernel & Why Antivirus Fails",
+    "youtube_id": "NnVupHiu9xA"
   }
 ]
