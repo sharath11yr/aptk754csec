@@ -478,5 +478,11 @@
     "topic": "Kali Linux Tools Hands-On: Metasploit Resource Scripts and Meterpreter Extensions",
     "title": "How to Automate Metasploit Like a Pro: Resource Scripts Explained",
     "youtube_id": "pmpdhKEKo4I"
+  },
+  {
+    "date": "2026-11-26",
+    "topic": "Kali Linux Tools Hands-On: Burp Suite Advanced: Intruder and Repeater for Fuzzing and Payload Delivery",
+    "title": "Inside Burp Suite Intruder: How Hackers Automate Web Fuzzing",
+    "youtube_id": "qrY3FSSwV4M"
   }
 ]
