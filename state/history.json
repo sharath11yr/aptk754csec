@@ -508,5 +508,11 @@
     "topic": "Kali Linux Tools Hands-On: Gobuster Advanced: Custom Wordlists, DNS Subdomain Enumeration, and Virtual Host Discovery",
     "title": "Gobuster Advanced: Subdomain Enumeration & Virtual Host Discovery",
     "youtube_id": "6Xh4R5Ivw6U"
+  },
+  {
+    "date": "2026-11-27",
+    "topic": "Kali Linux Tools Hands-On: Netcat Networking: Reverse Shells with Encoding, Obfuscation, and Stability",
+    "title": "How ARP Actually Works: The Hidden Protocol Behind Your Network",
+    "youtube_id": "zuzWMkIQXPo"
   }
 ]
