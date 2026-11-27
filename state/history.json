@@ -502,5 +502,11 @@
     "topic": "Kali Linux Tools Hands-On: Nikto Deep Dive: Configuring Plugins, Evasion Techniques, and Reporting",
     "title": "Rootkits: How They Hijack the Kernel & Why Antivirus Fails",
     "youtube_id": "NnVupHiu9xA"
+  },
+  {
+    "date": "2026-11-27",
+    "topic": "Kali Linux Tools Hands-On: Gobuster Advanced: Custom Wordlists, DNS Subdomain Enumeration, and Virtual Host Discovery",
+    "title": "Gobuster Advanced: Subdomain Enumeration & Virtual Host Discovery",
+    "youtube_id": "6Xh4R5Ivw6U"
   }
 ]
