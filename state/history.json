@@ -514,5 +514,11 @@
     "topic": "Kali Linux Tools Hands-On: Netcat Networking: Reverse Shells with Encoding, Obfuscation, and Stability",
     "title": "How ARP Actually Works: The Hidden Protocol Behind Your Network",
     "youtube_id": "zuzWMkIQXPo"
+  },
+  {
+    "date": "2026-11-27",
+    "topic": "Kali Linux Tools Hands-On: theHarvester Advanced: OSINT Integration, Proxy Chaining, and Report Generation",
+    "title": "How theHarvester Exposes Hidden Networks: OSINT Integration and Proxy Chaining",
+    "youtube_id": "Oy3DIiCJ2wM"
   }
 ]
