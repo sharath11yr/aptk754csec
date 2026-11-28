@@ -532,5 +532,11 @@
     "topic": "Kali Linux Tools Hands-On: WPScan Enterprise: Authentication Bypass, Remote Code Execution, and Reporting",
     "title": "WPScan Enterprise: How Attackers Bypass Authentication and Execute Remote Code",
     "youtube_id": "9s-WOAtVLN4"
+  },
+  {
+    "date": "2026-11-28",
+    "topic": "Kali Linux Tools Hands-On: SearchSploit Daily Use: Exploit Verification, Chain Exploits, and Local Kernel Exploits",
+    "title": "SearchSploit: Verify Exploits, Chain Attacks & Local Kernel Tricks",
+    "youtube_id": "GPdzzJeVH3A"
   }
 ]
