@@ -1,0 +1,153 @@
+2026-11-28 12:03:36,873 INFO Already scheduled: ['2026-11-09T12:00:00+05:30', '2026-11-09T15:00:00+05:30', '2026-11-09T18:00:00+05:30', '2026-11-10T12:00:00+05:30', '2026-11-10T15:00:00+05:30', '2026-11-10T18:00:00+05:30']
+2026-11-28 12:03:36,877 INFO Next lesson: Kali Linux Tools Hands-On #44 - tcpdump Advanced: BPF Filters, Port Ranges, and Packet Analysis Pipelines
+2026-11-28 12:03:47,526 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-28 12:04:03,512 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-28 12:04:36,774 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-28 12:04:36,774 INFO Review fix: {'line': 13, 'issue': "The script introduces 'tcpdump Advanced: BPF Filters, Port Ranges, and Packet Analysis Pipelines' in the title but the content is entirely about rootkits. This is a severe mismatch between the promised topic and the delivered content, which would confuse students expecting network analysis.", 'fix': 'The video should either be rebranded to focus on tcpdump and BPF filters as per the title, or the title should be changed to reflect the rootkit content. Given the strict review constraint to keep structure and length, the content must be rewritten to cover tcpdump and BPF filters.'}
+2026-11-28 12:04:36,774 INFO Review fix: {'line': 14, 'issue': 'The host states: "Today, we are diving deep into a topic that strikes fear into the hearts of system administrators and security professionals alike: Rootkits." This directly contradicts the video title which promises tcpdump tools.', 'fix': 'Change the opening statement to align with the title. Example: "Today, we are diving deep into tcpdump advanced filters, port ranges, and packet analysis pipelines."'}
+2026-11-28 12:04:36,774 INFO Review fix: {'line': 15, 'issue': 'The host introduces themselves as an ethical hacker and cybersecurity educator, which is fine, but the context is wrong for the titled topic.', 'fix': 'Adjust the intro to: "I\'m your host, an ethical hacker and cybersecurity educator. Today we explore tcpdump advanced BPF filters, port ranges, and packet analysis pipelines."'}
+2026-11-28 12:04:36,774 INFO Review fix: {'line': 16, 'issue': 'The script says: "Today, we are diving deep into a topic that strikes fear into the hearts of system administrators and security professionals alike: Rootkits." This is incorrect for the promised topic.', 'fix': 'Remove or rewrite this sentence to refer to tcpdump/BPF filters.'}
+2026-11-28 12:04:36,774 INFO Review fix: {'line': 17, 'issue': 'The script begins the content section with "### Part 1: What exactly is a Rootkit?" which is completely unrelated to the titled topic of tcpdump tools.', 'fix': 'Replace all rootkit-related section headers with tcpdump/BPF filter related headers. Example: "### Part 1: Introduction to tcpdump and BPF Filters."'}
+2026-11-28 12:04:36,774 INFO Review fix: {'line': 18, 'issue': "The definition of 'Rootkit' as a portmanteau of 'Root' and 'Kit' is correct terminology but irrelevant to the tcpdump topic.", 'fix': 'Remove this definition or replace it with a definition related to packet capture or BPF (Berkeley Packet Filter).'}
+2026-11-28 12:04:36,774 INFO Review fix: {'line': 19, 'issue': 'The explanation of rootkits as stealthy software for persistence and concealment is correct security theory but has no place in a tcpdump lesson.', 'fix': 'Replace with an explanation of why tcpdump is used or what BPF filters accomplish.'}
+2026-11-28 12:04:36,774 INFO Review fix: {'line': 20, 'issue': 'The analogy of the homeowner and the intruder is a good teaching tool for rootkits but is misplaced in a tcpdump lesson.', 'fix': 'Replace with an analogy relevant to network traffic, such as a security guard inspecting bags at a checkpoint.'}
+2026-11-28 12:04:36,774 INFO Review fix: {'line': 21, 'issue': "The script discusses the evolution of rootkit definitions in the context of Unix/Linux 'root' user, which is historically accurate but off-topic.", 'fix': 'Replace with a brief history of tcpdump or BPF filter development.'}
+2026-11-28 12:04:36,775 INFO Review fix: {'line': 22, 'issue': 'The script states: "A rootkit is a stealthy type of software, often malicious, designed to gain unauthorized access to a computer system and remain hidden." This is a correct definition of rootkits but irrelevant to the tcpdump topic.', 'fix': 'Replace with: "tcpdump is a powerful command-line packet analyzer used to capture and display TCP/IP packets."'}
+2026-11-28 12:04:36,775 INFO Review fix: {'line': 23, 'issue': "The key word 'stealth' is discussed in the context of rootkit evasion, which is not the focus of a tcpdump lesson on BPF filters.", 'fix': 'Replace with a discussion on how BPF filters allow selective capture of network traffic.'}
+2026-11-28 12:04:36,775 INFO Review fix: {'line': 24, 'issue': 'The comparison between rootkits and standard viruses/worms (Ransomware/Spyware) is correct infosec knowledge but distracts from the tcpdump topic.', 'fix': 'Replace with a comparison of different tcpdump filter expressions or capture modes.'}
+2026-11-28 12:04:36,775 INFO Review fix: {'line': 25, 'issue': 'The script introduces the battle between User Mode and Kernel Mode as a prerequisite for understanding rootkits, which is off-topic.', 'fix': 'Replace with an explanation of how tcpdump operates at the kernel level or uses libpcap.'}
+2026-11-28 12:04:36,775 INFO Review fix: {'line': 26, 'issue': 'The description of Ring 0 and Ring 3 is accurate OS theory but has no direct relevance to teaching BPF filters in tcpdump.', 'fix': 'Replace with how tcpdump captures packets from the network interface in promiscuous mode.'}
+2026-11-28 12:04:36,775 INFO Review fix: {'line': 27, 'issue': 'The analogy of the security guard at the entrance of a high-security facility (the Kernel) is a good rootkit analogy but misplaced here.', 'fix': 'Replace with an analogy of a network filter inspecting packets passing through a gateway.'}
+2026-11-28 12:04:38,318 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-28 12:04:38,674 INFO Using NVIDIA model: nvidia/nemotron-3.5-lightning-30b-a3b
+2026-11-28 12:04:38,674 INFO Title polished: TCPdump Advanced BPF Filters Port Ranges and Packet Analysis Pipelines | Kali Linux Tools Hands-On Course #44 -> Mastering tcpdump: Port Ranges & Packet Analysis Pipelines
+2026-11-28 12:04:38,675 INFO YouTube title: Mastering tcpdump: Port Ranges & Packet Analysis Pipelines
+2026-11-28 12:04:39,590 INFO Created notebook d26b7bd9-5960-4da0-8df3-b6e973fc7590
+2026-11-28 12:04:41,288 INFO Script added as source
+2026-11-28 12:04:42,662 INFO Started cinematic video generation (task efb860df-cf13-4af7-8716-a5e5bf113ca6)
+2026-11-28 12:04:42,663 INFO Waiting for cinematic video (can take 30+ minutes)
+2026-11-28 12:32:57,778 INFO Downloaded cinematic video to output/video_raw.mp4
+2026-11-28 12:32:59,573 INFO Started NotebookLM Short (task 898a709b-6a69-4794-ac8a-87fb150a1111)
+2026-11-28 12:48:01,047 INFO Downloaded NotebookLM Short to output/short_raw.mp4
+2026-11-28 12:48:03,488 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-28 12:48:05,157 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-28 12:48:06,162 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-28 12:48:39,583 INFO Watermark removal: 1%
+2026-11-28 12:48:49,595 INFO Watermark removal: 2%
+2026-11-28 12:48:54,600 INFO Watermark removal: 3%
+2026-11-28 12:48:59,606 INFO Watermark removal: 4%
+2026-11-28 12:49:04,611 INFO Watermark removal: 6%
+2026-11-28 12:49:09,617 INFO Watermark removal: 7%
+2026-11-28 12:49:14,987 INFO Watermark removal: 9%
+2026-11-28 12:49:19,992 INFO Watermark removal: 11%
+2026-11-28 12:49:24,999 INFO Watermark removal: 13%
+2026-11-28 12:49:30,005 INFO Watermark removal: 14%
+2026-11-28 12:49:35,010 INFO Watermark removal: 16%
+2026-11-28 12:49:40,016 INFO Watermark removal: 17%
+2026-11-28 12:49:45,022 INFO Watermark removal: 19%
+2026-11-28 12:49:50,028 INFO Watermark removal: 20%
+2026-11-28 12:49:55,035 INFO Watermark removal: 22%
+2026-11-28 12:50:00,041 INFO Watermark removal: 23%
+2026-11-28 12:50:05,047 INFO Watermark removal: 25%
+2026-11-28 12:50:10,053 INFO Watermark removal: 27%
+2026-11-28 12:50:15,390 INFO Watermark removal: 29%
+2026-11-28 12:50:20,395 INFO Watermark removal: 31%
+2026-11-28 12:50:25,400 INFO Watermark removal: 32%
+2026-11-28 12:50:30,406 INFO Watermark removal: 33%
+2026-11-28 12:50:35,412 INFO Watermark removal: 35%
+2026-11-28 12:50:40,418 INFO Watermark removal: 37%
+2026-11-28 12:50:45,424 INFO Watermark removal: 38%
+2026-11-28 12:50:50,429 INFO Watermark removal: 39%
+2026-11-28 12:51:00,443 INFO Watermark removal: 40%
+2026-11-28 12:51:05,448 INFO Watermark removal: 41%
+2026-11-28 12:51:10,454 INFO Watermark removal: 43%
+2026-11-28 12:51:15,765 INFO Watermark removal: 44%
+2026-11-28 12:51:20,771 INFO Watermark removal: 46%
+2026-11-28 12:51:25,778 INFO Watermark removal: 48%
+2026-11-28 12:51:30,783 INFO Watermark removal: 50%
+2026-11-28 12:51:35,789 INFO Watermark removal: 51%
+2026-11-28 12:51:40,796 INFO Watermark removal: 53%
+2026-11-28 12:51:45,802 INFO Watermark removal: 55%
+2026-11-28 12:51:50,808 INFO Watermark removal: 56%
+2026-11-28 12:51:55,814 INFO Watermark removal: 57%
+2026-11-28 12:52:05,826 INFO Watermark removal: 59%
+2026-11-28 12:52:10,832 INFO Watermark removal: 60%
+2026-11-28 12:52:16,161 INFO Watermark removal: 62%
+2026-11-28 12:52:21,167 INFO Watermark removal: 63%
+2026-11-28 12:52:26,174 INFO Watermark removal: 65%
+2026-11-28 12:52:31,180 INFO Watermark removal: 67%
+2026-11-28 12:52:36,186 INFO Watermark removal: 69%
+2026-11-28 12:52:41,194 INFO Watermark removal: 70%
+2026-11-28 12:52:46,200 INFO Watermark removal: 72%
+2026-11-28 12:52:51,205 INFO Watermark removal: 74%
+2026-11-28 12:52:56,210 INFO Watermark removal: 75%
+2026-11-28 12:53:01,215 INFO Watermark removal: 76%
+2026-11-28 12:53:06,220 INFO Watermark removal: 77%
+2026-11-28 12:53:11,550 INFO Watermark removal: 78%
+2026-11-28 12:53:16,555 INFO Watermark removal: 80%
+2026-11-28 12:53:21,562 INFO Watermark removal: 81%
+2026-11-28 12:53:26,567 INFO Watermark removal: 83%
+2026-11-28 12:53:31,573 INFO Watermark removal: 85%
+2026-11-28 12:53:36,579 INFO Watermark removal: 86%
+2026-11-28 12:53:41,584 INFO Watermark removal: 88%
+2026-11-28 12:53:46,588 INFO Watermark removal: 89%
+2026-11-28 12:53:56,601 INFO Watermark removal: 90%
+2026-11-28 12:54:01,606 INFO Watermark removal: 91%
+2026-11-28 12:54:06,612 INFO Watermark removal: 93%
+2026-11-28 12:54:11,959 INFO Watermark removal: 94%
+2026-11-28 12:54:16,964 INFO Watermark removal: 96%
+2026-11-28 12:54:21,970 INFO Watermark removal: 97%
+2026-11-28 12:54:26,976 INFO Watermark removal: 98%
+2026-11-28 12:54:31,981 INFO Watermark removal: 99%
+2026-11-28 12:54:36,986 INFO Clicking 'Download Clean Video'
+2026-11-28 12:54:45,100 INFO Downloaded clean video after 398s
+2026-11-28 12:54:45,309 INFO Website result: {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 405.954467, 'has_audio': True} (original {'width': 1280, 'height': 720, 'fps': 30.0, 'duration': 408.996281, 'has_audio': True})
+2026-11-28 12:54:45,375 INFO Adding channel name watermark: GetYr_CYBERSEC
+2026-11-28 12:58:06,887 INFO Added intro + video_final_main + outro
+2026-11-28 12:58:06,887 INFO Edited video saved to output/video_final.mp4
+2026-11-28 12:58:07,243 INFO Thumbnail candidate at 0.5s: detail 45.2
+2026-11-28 12:58:07,616 INFO Thumbnail candidate at 1.0s: detail 45.4
+2026-11-28 12:58:08,005 INFO Thumbnail candidate at 1.5s: detail 46.1
+2026-11-28 12:58:08,414 INFO Thumbnail candidate at 2.0s: detail 45.6
+2026-11-28 12:58:08,855 INFO Thumbnail candidate at 2.5s: detail 45.4
+2026-11-28 12:58:09,309 INFO Thumbnail candidate at 3.0s: detail 44.7
+2026-11-28 12:58:09,792 INFO Thumbnail candidate at 3.5s: detail 43.3
+2026-11-28 12:58:10,298 INFO Thumbnail candidate at 4.0s: detail 42.3
+2026-11-28 12:58:10,834 INFO Thumbnail candidate at 5.0s: detail 40.8
+2026-11-28 12:58:10,888 INFO Thumbnail taken from the video at 1.5s -> output/thumbnail.jpg
+2026-11-28 12:58:12,160 INFO Upload 13%
+2026-11-28 12:58:12,321 INFO Upload 26%
+2026-11-28 12:58:12,458 INFO Upload 39%
+2026-11-28 12:58:12,641 INFO Upload 52%
+2026-11-28 12:58:12,806 INFO Upload 65%
+2026-11-28 12:58:12,948 INFO Upload 79%
+2026-11-28 12:58:13,093 INFO Upload 92%
+2026-11-28 12:58:13,503 INFO Uploaded: https://youtu.be/5JgAtqTTOCM (public)
+2026-11-28 12:58:18,146 INFO Thumbnail set
+2026-11-28 12:58:19,074 INFO Added to playlist: Kali Linux Tools Hands-On Course - Beginner to Advanced
+2026-11-28 12:58:21,891 INFO Video selected on https://notebooklmremover.com/en, waiting for processing
+2026-11-28 12:58:23,591 INFO Chose site mode 'Quality Priority (Original FPS, Slow)'
+2026-11-28 12:58:24,594 INFO Clicking '🚀 Start Removing Watermark'
+2026-11-28 12:58:32,965 INFO Watermark removal: 6%
+2026-11-28 12:58:37,971 INFO Watermark removal: 12%
+2026-11-28 12:58:42,976 INFO Watermark removal: 19%
+2026-11-28 12:58:47,981 INFO Watermark removal: 27%
+2026-11-28 12:58:52,988 INFO Watermark removal: 34%
+2026-11-28 12:58:57,995 INFO Watermark removal: 42%
+2026-11-28 12:59:03,001 INFO Watermark removal: 50%
+2026-11-28 12:59:08,006 INFO Watermark removal: 57%
+2026-11-28 12:59:13,012 INFO Watermark removal: 64%
+2026-11-28 12:59:18,019 INFO Watermark removal: 72%
+2026-11-28 12:59:23,025 INFO Watermark removal: 80%
+2026-11-28 12:59:28,031 INFO Watermark removal: 88%
+2026-11-28 12:59:33,378 INFO Watermark removal: 95%
+2026-11-28 12:59:38,381 INFO Clicking 'Download Clean Video'
+2026-11-28 12:59:46,411 INFO Downloaded clean video after 81s
+2026-11-28 12:59:46,575 INFO Website result: {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 84.845714, 'has_audio': True} (original {'width': 720, 'height': 1280, 'fps': 30.0, 'duration': 87.887528, 'has_audio': True})
+2026-11-28 13:00:03,511 INFO Using NotebookLM's Short (watermark removed)
+2026-11-28 13:00:04,642 INFO Uploaded: https://youtu.be/Fr2S6gkh9yk (public)
+2026-11-28 13:00:04,642 INFO Short uploaded: https://youtu.be/Fr2S6gkh9yk
+2026-11-28 13:01:14,343 WARNING Instagram direct upload failed: Instagram upload failed (400): {"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}} - trying the public-link method
+2026-11-28 13:03:00,608 INFO Instagram Reel posted via link (id 18028275155941974)
+2026-11-28 13:03:01,939 INFO Done: Mastering tcpdump: Port Ranges & Packet Analysis Pipelines
+2026-11-28 13:03:03,032 INFO Deleted old NotebookLM notebook d26b7bd9-5960-4da0-8df3-b6e973fc7590

@@ -1,0 +1,29 @@
+{
+  "title": "Mastering tcpdump: Port Ranges & Packet Analysis Pipelines",
+  "cover_text": "TCPDUMP BPF FILTERS",
+  "short_hook": "Master tcpdump filters to capture only the traffic you need.",
+  "description": "Learn tcpdump advanced BPF filters, port ranges, and packet analysis pipelines to master network traffic analysis. In this lesson: - Understand BPF syntax and logic - Use port ranges for web traffic filtering - Combine conditions with AND, OR, NOT - Build efficient capture pipelines - Avoid common filtering pitfalls This is lesson 44 of our complete Kali Linux Tools Hands-On course - watch the full playlist from the beginning. Ask your doubts about BPF syntax in the comments below.\n\nAbout GetYr_CYBERSEC: complete cybersecurity and ethical hacking courses from beginner to advanced - networking, Linux, web security, cryptography and more - explained in depth, legally and ethically. New lessons every day.\nSubscribe and turn on notifications so you never miss a video.\n\n#KaliLinuxToolsHandsOn #cybersecurity #ethicalhacking #tcpdump #BpfFilters #PortRanges #PacketAnalysis #KaliLinux #NetworkSecurity #BpfSyntax #PcapAnalysis #PromiscuousMode #libpcap #PacketFiltering #NetworkMonitoring",
+  "hashtags": [
+    "#KaliLinuxToolsHands-On",
+    "#cybersecurity",
+    "#ethicalhacking"
+  ],
+  "tags": [
+    "tcpdump",
+    "BPF filters",
+    "port ranges",
+    "packet analysis",
+    "Kali Linux",
+    "network security",
+    "cybersecurity",
+    "ethical hacking",
+    "BPF syntax",
+    "pcap analysis",
+    "promiscuous mode",
+    "libpcap",
+    "packet filtering",
+    "network monitoring",
+    "cyber defense"
+  ],
+  "playlist": "Kali Linux Tools Hands-On Course - Beginner to Advanced"
+}
