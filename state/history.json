@@ -526,5 +526,11 @@
     "topic": "Kali Linux Tools Hands-On: Aircrack-ng WPA2 Cracking: Handshake Capture, Replay Attacks, and PMKID Analysis",
     "title": "The WPA2 4-Way Handshake: How It Actually Works & Why It Fails",
     "youtube_id": "ErOQ_CGCxdw"
+  },
+  {
+    "date": "2026-11-28",
+    "topic": "Kali Linux Tools Hands-On: WPScan Enterprise: Authentication Bypass, Remote Code Execution, and Reporting",
+    "title": "WPScan Enterprise: How Attackers Bypass Authentication and Execute Remote Code",
+    "youtube_id": "9s-WOAtVLN4"
   }
 ]
