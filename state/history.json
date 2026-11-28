@@ -538,5 +538,11 @@
     "topic": "Kali Linux Tools Hands-On: SearchSploit Daily Use: Exploit Verification, Chain Exploits, and Local Kernel Exploits",
     "title": "SearchSploit: Verify Exploits, Chain Attacks & Local Kernel Tricks",
     "youtube_id": "GPdzzJeVH3A"
+  },
+  {
+    "date": "2026-11-28",
+    "topic": "Kali Linux Tools Hands-On: tcpdump Advanced: BPF Filters, Port Ranges, and Packet Analysis Pipelines",
+    "title": "Mastering tcpdump: Port Ranges & Packet Analysis Pipelines",
+    "youtube_id": "5JgAtqTTOCM"
   }
 ]
